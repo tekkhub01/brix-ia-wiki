@@ -1,9 +1,15 @@
 ---
-id: agentic-rag
-pageType: entity
-sourceIds:
-  - sources/llm-memory-context-evolution-2026.md
-updatedAt: 2026-08-12T00:00:00Z
+title: "Agentic RAG"
+category: concept
+sources: [raw/notes/llm-memory-context-evolution-2026.md]
+created: 2026-04-28
+updated: 2026-08-12
+verified: 2026-08-12
+tags: [retrieval, agents, rag]
+aliases: [Agentic RAG]
+confidence: high
+summary: "Retrieval as a dynamic multi-round loop: plan, retrieve, critique, rewrite, reflect. The mainstream 2026 default, at 3-5x the per-query cost of classic RAG."
+volatility: warm
 publish: true
 ---
 # Agentic RAG
@@ -75,21 +81,17 @@ NotebookLM uses a limited form of Agentic RAG: query rewriting + hybrid retrieva
 - [[graphrag|GraphRAG]] → uses knowledge graphs as retriever
 - [[llm-wiki-karpathy|LLM Wiki]] → replaces retrieval entirely with pre-synthesis
 
-## Related
-<!-- openclaw:wiki:related:start -->
-### Referenced By
+## See Also
 
-- [GraphRAG](graphrag.md)
-- [RAG (Retrieval-Augmented Generation)](rag.md)
-- [Span-Level Attribution](span-level-attribution.md)
+- [[graphrag|GraphRAG]]
+- [[rag|RAG (Retrieval-Augmented Generation)]]
+- [[llm-wiki-karpathy|LLM Wiki (Karpathy Pattern)]]
+- [[span-level-attribution]] — links here
+- [[notebooklm]] — links here
+- [[structure-vs-iteration]] — synthesis drawing on this page
+- [[grounding-across-architectures]] — synthesis drawing on this page
+- [[memory-economics]] — synthesis drawing on this page
+- [[notebooklm-hybrid-stack]] — synthesis drawing on this page
 
-### Related Pages
+## Sources
 
-- [Claude (Anthropic)](claude-anthropic.md)
-- [Context Caching](context-caching.md)
-- [GLM 5.1](glm-5.1.md)
-- [LLM Wiki (Karpathy Pattern)](llm-wiki-karpathy.md)
-- [Long-Context Models](long-context-models.md)
-- [NotebookLM (Google)](notebooklm.md)
-- [Quantization](quantization.md)
-<!-- openclaw:wiki:related:end -->

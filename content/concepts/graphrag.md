@@ -1,9 +1,15 @@
 ---
-id: graphrag
-pageType: entity
-sourceIds:
-  - sources/llm-memory-context-evolution-2026.md
-updatedAt: 2026-08-12T00:00:00Z
+title: "GraphRAG"
+category: concept
+sources: [raw/notes/llm-memory-context-evolution-2026.md]
+created: 2026-04-28
+updated: 2026-08-12
+verified: 2026-08-12
+tags: [retrieval, knowledge-graph, rag]
+aliases: [GraphRAG, Graph RAG]
+confidence: high
+summary: "Retrieval over an entity/relationship graph rather than isolated chunks. Wins decisively on global thematic queries; its cost is now being challenged by agentic search that can iterate."
+volatility: warm
 publish: true
 ---
 # GraphRAG
@@ -75,22 +81,12 @@ Where GraphRAG still clearly wins: **global / thematic queries** — "what are t
 - [Microsoft GraphRAG GitHub](https://microsoft.github.io/graphrag/)
 - [IBM GraphRAG tutorial](https://www.ibm.com/it-it/think/tutorials/knowledge-graph-rag)
 
-## Related
-<!-- openclaw:wiki:related:start -->
-### Referenced By
+## See Also
 
-- [Agentic RAG](agentic-rag.md)
-- [CodeGraph — Pre-indexed code knowledge graph](../syntheses/codegraph-pre-indexed-code-knowledge-graph.md)
-- [LLM Wiki (Karpathy Pattern)](llm-wiki-karpathy.md)
-- [RAG (Retrieval-Augmented Generation)](rag.md)
+- [[agentic-rag|Agentic RAG]]
+- [[llm-wiki-karpathy|LLM Wiki (Karpathy Pattern)]]
+- [[rag]] — links here
+- [[structure-vs-iteration]] — synthesis drawing on this page
 
-### Related Pages
+## Sources
 
-- [Claude (Anthropic)](claude-anthropic.md)
-- [Context Caching](context-caching.md)
-- [GLM 5.1](glm-5.1.md)
-- [Long-Context Models](long-context-models.md)
-- [NotebookLM (Google)](notebooklm.md)
-- [Quantization](quantization.md)
-- [Span-Level Attribution](span-level-attribution.md)
-<!-- openclaw:wiki:related:end -->

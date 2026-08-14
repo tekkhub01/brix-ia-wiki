@@ -77,9 +77,9 @@ Tool progettato per agenti AI come Codex e Claude Code. Supporta framework moder
 ## Collegamenti
 
 ### Entità correlate nella wiki
-- **anthropic claude design labs** - Impeccable è un tool per design AI simile alle funzionalità di Claude Design
+- **[[sources/anthropic-claude-design-labs]]** - Impeccable è un tool per design AI simile alle funzionalità di Claude Design
 - **agenti fisici ai mercato 2026 deep research** - Impeccable opera nel domaine degli agenti AI per design
-- **llm memory context evolution 2026** - LIVE mode di Impeccable utilizza pattern di caching e session journal
+- **[[sources/llm-memory-context-evolution-2026]]** - LIVE mode di Impeccable utilizza pattern di caching e session journal
 <!-- openclaw:wiki:generated:end -->
 
 ## Related

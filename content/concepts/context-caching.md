@@ -1,9 +1,15 @@
 ---
-id: context-caching
-pageType: entity
-sourceIds:
-  - sources/llm-memory-context-evolution-2026.md
-updatedAt: 2026-08-12T00:00:00Z
+title: "Context Caching"
+category: concept
+sources: [raw/notes/llm-memory-context-evolution-2026.md]
+created: 2026-04-28
+updated: 2026-08-12
+verified: 2026-08-12
+tags: [inference-optimization, caching, cost]
+aliases: [Context Caching, Prompt Caching]
+confidence: high
+summary: "Reuse of computed attention state for stable prompt prefixes. A prefix-match mechanism with sharp economics and two major footguns: non-monotonic minimums and silent invalidators."
+volatility: hot
 publish: true
 ---
 # Context Caching
@@ -83,21 +89,13 @@ For on-premise LLM (GLM 5.1 + vLLM/KTransformers), similar techniques exist:
 - [[quantization|Quantization]] — complementary optimization (reduces size of cached tensors)
 - [[long-context-models|Long-Context Models]] — benefit most from caching
 
-## Related
-<!-- openclaw:wiki:related:start -->
-### Referenced By
+## See Also
 
-- [Long-Context Models](long-context-models.md)
+- [[long-context-models|Long-Context Models]]
+- [[notebooklm]] — links here
+- [[quantization]] — links here
+- [[memory-economics]] — synthesis drawing on this page
+- [[notebooklm-hybrid-stack]] — synthesis drawing on this page
 
-### Related Pages
+## Sources
 
-- [Agentic RAG](agentic-rag.md)
-- [Claude (Anthropic)](claude-anthropic.md)
-- [GLM 5.1](glm-5.1.md)
-- [GraphRAG](graphrag.md)
-- [LLM Wiki (Karpathy Pattern)](llm-wiki-karpathy.md)
-- [NotebookLM (Google)](notebooklm.md)
-- [Quantization](quantization.md)
-- [RAG (Retrieval-Augmented Generation)](rag.md)
-- [Span-Level Attribution](span-level-attribution.md)
-<!-- openclaw:wiki:related:end -->

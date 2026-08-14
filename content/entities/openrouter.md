@@ -28,13 +28,9 @@ publish: true
 **Strategic implication for BRIX-IA:** Price pressure drives local deployment. With 80% of US AI startups using open-source Chinese models as base, on-premise agents built on GLM 5.1 + RotorQuant become economically inevitable.
 
 **Source:**
-- BRIX-IA Newsletter News — Aprile 2026
 
 ## Related
 <!-- openclaw:wiki:related:start -->
 ### Related Pages
 
-- [Claude (Anthropic)](claude-anthropic.md)
-- [GLM 5.1](glm-5.1.md)
-- [RotorQuant](rotorquant.md)
 <!-- openclaw:wiki:related:end -->

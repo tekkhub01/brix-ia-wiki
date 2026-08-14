@@ -1,9 +1,15 @@
 ---
-id: long-context-models
-pageType: entity
-sourceIds:
-  - sources/llm-memory-context-evolution-2026.md
-updatedAt: 2026-08-12T00:00:00Z
+title: "Long-Context Models"
+category: concept
+sources: [raw/notes/llm-memory-context-evolution-2026.md]
+created: 2026-04-28
+updated: 2026-08-12
+verified: 2026-08-12
+tags: [llm, context-window, architecture]
+aliases: [Long Context, Long-Context Models]
+confidence: medium
+summary: "LLMs with context windows at or above 128k; the 2026 frontier tier is uniformly 1M with 128K max output. Complementary to retrieval rather than a replacement."
+volatility: hot
 publish: true
 ---
 # Long-Context Models
@@ -48,21 +54,15 @@ Long context ≠ retrieval replacement: at 1M tokens latency/cost still high, [[
 
 What changed in 2026 is that the *third* option got costed. [[llm-wiki-karpathy|LLM Wiki]] argues the cheapest large-corpus strategy is neither stuffing nor retrieving but **compiling once and re-reading the compilation** — with measured 84.6% token savings against a matched RAG baseline on a repeated-domain workload. Long context is what makes that compilation cheap to *consult*; caching is what makes it cheap to consult *repeatedly*.
 
-## Related
-<!-- openclaw:wiki:related:start -->
-### Referenced By
+## See Also
 
-- [Context Caching](context-caching.md)
+- [[context-caching|Context Caching]]
+- [[rag|RAG (Retrieval-Augmented Generation)]]
+- [[llm-wiki-karpathy|LLM Wiki (Karpathy Pattern)]]
+- [[notebooklm]] — links here
+- [[quantization]] — links here
+- [[memory-economics]] — synthesis drawing on this page
+- [[notebooklm-hybrid-stack]] — synthesis drawing on this page
 
-### Related Pages
+## Sources
 
-- [Agentic RAG](agentic-rag.md)
-- [Claude (Anthropic)](claude-anthropic.md)
-- [GLM 5.1](glm-5.1.md)
-- [GraphRAG](graphrag.md)
-- [LLM Wiki (Karpathy Pattern)](llm-wiki-karpathy.md)
-- [NotebookLM (Google)](notebooklm.md)
-- [Quantization](quantization.md)
-- [RAG (Retrieval-Augmented Generation)](rag.md)
-- [Span-Level Attribution](span-level-attribution.md)
-<!-- openclaw:wiki:related:end -->

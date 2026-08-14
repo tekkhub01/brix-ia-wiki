@@ -49,7 +49,7 @@ Piattaforma utilizzata da founder provenienti da 20+ paesi.
 ### Entità correlate nella wiki
 - **agenti fisici ai mercato 2026 deep research** - Piattaforme di startup come Startupa.ge possono essere punti di integrazione per agenti AI fisici
 - **[[entities/rag]]** - Piattaforme di startup possono utilizzare RAG per matching intelligente tra talenti, investitori e founder
-- **ai website cloner template github** - Template per creare piattaforme simili a Startupa.ge
+- **[[sources/ai-website-cloner-template-github]]** - Template per creare piattaforme simili a Startupa.ge
 <!-- openclaw:wiki:generated:end -->
 
 ## Related

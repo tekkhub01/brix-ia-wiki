@@ -1,9 +1,15 @@
 ---
-id: span-level-attribution
-pageType: entity
-sourceIds:
-  - sources/llm-memory-context-evolution-2026.md
-updatedAt: 2026-08-12T00:00:00Z
+title: "Span-Level Attribution"
+category: concept
+sources: [raw/notes/llm-memory-context-evolution-2026.md]
+created: 2026-04-28
+updated: 2026-08-12
+verified: 2026-08-12
+tags: [grounding, citations, evaluation]
+aliases: [Span-Level Attribution, Citation Grounding]
+confidence: high
+summary: "Forcing per-sentence source citations to make generation auditable. Document-level attribution is largely solved; precise span localization is not."
+volatility: warm
 publish: true
 ---
 # Span-Level Attribution
@@ -78,18 +84,14 @@ Groundedness failure rates are non-trivial even at the frontier: on RAGTruth's ~
 - **Multi-source synthesis**: how to attribute when answer combines 3–4 sources clearly? (partially characterized by *Cited but Not Verified*, not solved)
 - **Closing the span gap**: why document-level retrieval succeeds where span-level localization fails, given the model has the document in context
 
-## Related
-<!-- openclaw:wiki:related:start -->
-### Related Pages
+## See Also
 
-- [Agentic RAG](agentic-rag.md)
-- [Claude (Anthropic)](claude-anthropic.md)
-- [Context Caching](context-caching.md)
-- [GLM 5.1](glm-5.1.md)
-- [GraphRAG](graphrag.md)
-- [LLM Wiki (Karpathy Pattern)](llm-wiki-karpathy.md)
-- [Long-Context Models](long-context-models.md)
-- [NotebookLM (Google)](notebooklm.md)
-- [Quantization](quantization.md)
-- [RAG (Retrieval-Augmented Generation)](rag.md)
-<!-- openclaw:wiki:related:end -->
+- [[agentic-rag|Agentic RAG]]
+- [[rag|RAG (Retrieval-Augmented Generation)]]
+- [[llm-wiki-karpathy|LLM Wiki (Karpathy Pattern)]]
+- [[notebooklm]] — links here
+- [[grounding-across-architectures]] — synthesis drawing on this page
+- [[notebooklm-hybrid-stack]] — synthesis drawing on this page
+
+## Sources
+

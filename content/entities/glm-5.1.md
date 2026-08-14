@@ -27,8 +27,6 @@ publish: true
 - Performance parity shifts value proposition: local > cloud for cost+privacy
 
 **Related:**
-- Agenti Fisici AI 2026: Le Skill Più Richieste — cites GLM 5.1 as local deployment candidate  
-- BRIX-IA Newsletter News — Aprile 2026
 
 **Benchmark source:**
 - [Z.AI official docs](https://docs.z.ai/guides/llm/glm-5.1)
@@ -38,14 +36,4 @@ publish: true
 <!-- openclaw:wiki:related:start -->
 ### Related Pages
 
-- [Agentic RAG](agentic-rag.md)
-- [Claude (Anthropic)](claude-anthropic.md)
-- [Context Caching](context-caching.md)
-- [GraphRAG](graphrag.md)
-- [LLM Wiki (Karpathy Pattern)](llm-wiki-karpathy.md)
-- [Long-Context Models](long-context-models.md)
-- [NotebookLM (Google)](notebooklm.md)
-- [OpenRouter](openrouter.md)
-- [Quantization](quantization.md)
-- [RAG (Retrieval-Augmented Generation)](rag.md)
 <!-- openclaw:wiki:related:end -->

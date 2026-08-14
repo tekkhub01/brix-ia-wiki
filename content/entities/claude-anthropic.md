@@ -30,21 +30,10 @@ publish: true
 - Mythos incident informed security posture for on-premise agents (data sovereignty)
 
 **Sources:**
-- Claude Opus 4.7 Release Announcement
-- BRIX-IA Newsletter News — Aprile 2026
+- [[claude-opus-4-7-announcement|Claude Opus 4.7 Release Announcement]]
 
 ## Related
 <!-- openclaw:wiki:related:start -->
 ### Related Pages
 
-- [Agentic RAG](agentic-rag.md)
-- [Context Caching](context-caching.md)
-- [GLM 5.1](glm-5.1.md)
-- [GraphRAG](graphrag.md)
-- [LLM Wiki (Karpathy Pattern)](llm-wiki-karpathy.md)
-- [Long-Context Models](long-context-models.md)
-- [NotebookLM (Google)](notebooklm.md)
-- [OpenRouter](openrouter.md)
-- [Quantization](quantization.md)
-- [RAG (Retrieval-Augmented Generation)](rag.md)
 <!-- openclaw:wiki:related:end -->

@@ -1,9 +1,15 @@
 ---
-id: llm-wiki-karpathy
-pageType: entity
-sourceIds:
-  - sources/llm-memory-context-evolution-2026.md
-updatedAt: 2026-08-12T00:00:00Z
+title: "LLM Wiki (Karpathy Pattern)"
+category: concept
+sources: [raw/notes/llm-memory-context-evolution-2026.md]
+created: 2026-04-28
+updated: 2026-08-12
+verified: 2026-08-12
+tags: [knowledge-management, agentic-memory, write-time-synthesis]
+aliases: [LLM Wiki, Karpathy Pattern]
+confidence: high
+summary: "Karpathy's write-time synthesis pattern: compile sources into a persistent agent-maintained markdown wiki instead of retrieving per query. Three layers: immutable raw, LLM-owned wiki, human-owned schema."
+volatility: hot
 publish: true
 ---
 # LLM Wiki (Karpathy Pattern)
@@ -77,25 +83,6 @@ Verified as of 2026-08-12:
 
 LLM Wiki represents the shift from **retrieval-augmented** to **agentic memory**: the agent becomes the librarian that maintains the library, not just a visitor checking out books.
 
-## Related
-<!-- openclaw:wiki:related:start -->
-### Referenced By
-
-- [Agentic RAG](agentic-rag.md)
-- [GraphRAG](graphrag.md)
-- [Long-Context Models](long-context-models.md)
-- [RAG (Retrieval-Augmented Generation)](rag.md)
-- [Span-Level Attribution](span-level-attribution.md)
-- [Webwright — Microsoft Browser Agent](../syntheses/webwright-microsoft-browser-agent.md)
-
-### Related Pages
-
-- [Claude (Anthropic)](claude-anthropic.md)
-- [Context Caching](context-caching.md)
-- [GLM 5.1](glm-5.1.md)
-- [NotebookLM (Google)](notebooklm.md)
-- [Quantization](quantization.md)
-<!-- openclaw:wiki:related:end -->
 
 ## Compounding: the first empirical numbers
 
@@ -115,4 +102,17 @@ Their framing is the useful one: it reframes **LLM tokens from consumables into 
 - Hybrid Wiki + Graph: when to use each layer? (see [[graphrag|GraphRAG]] — the agentic-search benchmarks are now asking the same question from the other side)
 - Cost of maintenance: how expensive is linting at scale, and does lint cost grow super-linearly with page count?
 - Does the compounding result hold past the four-query horizon, and at what point does contradiction-resolution cost overtake ingest savings?
+
+## See Also
+
+- [[rag|RAG (Retrieval-Augmented Generation)]]
+- [[graphrag|GraphRAG]]
+- [[span-level-attribution]] — links here
+- [[long-context-models]] — links here
+- [[agentic-rag]] — links here
+- [[structure-vs-iteration]] — synthesis drawing on this page
+- [[grounding-across-architectures]] — synthesis drawing on this page
+- [[memory-economics]] — synthesis drawing on this page
+
+## Sources
 

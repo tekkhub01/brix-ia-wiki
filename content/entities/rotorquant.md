@@ -35,17 +35,12 @@ RotorQuant replaces TurboQuant as state-of-the-art for local LLM quantization in
 For a physical AI agent box targeting SMEs, quantization is the critical path to performance on affordable hardware. RotorQuant + GLM 5.1 = production-ready local agents without cloud costs.
 
 **Mentioned in:**
-- BRIX-IA Newsletter News — Aprile 2026
 
 ## Related
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
-- [Esperimenti Quantizzazione Gemma 4 12B — QAT, MTP, TurboQuant](../syntheses/esperimenti-quantizzazione-gemma-4-12b-qat-mtp-turboquant.md)
 
 ### Related Pages
 
-- [Claude (Anthropic)](claude-anthropic.md)
-- [GLM 5.1](glm-5.1.md)
-- [OpenRouter](openrouter.md)
 <!-- openclaw:wiki:related:end -->

@@ -18,7 +18,7 @@ import os
 import re
 import shutil
 import sys
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 VAULT = Path.home() / ".openclaw" / "wiki"
 CONTENT = Path(__file__).parent / "content"
@@ -28,11 +28,19 @@ CONTENT = Path(__file__).parent / "content"
 # non articoli.
 DENY_DIRS = {"reports", ".openclaw-wiki", ".obsidian", "_views"}
 
+# Appiattimento dei percorsi: il topic wiki e' annidato in profondita' e
+# senza rimappatura gli URL diventerebbero
+# /topics/llm-memory/wiki/concepts/rag. Prefisso piu' lungo per primo.
+PATH_MAP = [
+    ("topics/llm-memory/inventory/candidates", "questions"),
+    ("topics/llm-memory/wiki/concepts", "concepts"),
+    ("topics/llm-memory/wiki/topics", "topics"),
+]
+
 FM_RE = re.compile(r"\A---\r?\n(.*?)\r?\n---", re.DOTALL)
 PUBLISH_RE = re.compile(r"^publish:\s*(.+?)\s*$", re.MULTILINE)
-WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)")
 # [[target]] | [[target|label]] | [[target#h]] | [[target#h|label]]
-FULL_WIKILINK_RE = re.compile(r"\[\[([^\]|#]+?)(#[^\]|]*)?(?:\|([^\]]*))?\]\]")
+WIKILINK_RE = re.compile(r"\[\[([^\]|#]+?)(#[^\]|]*)?(?:\|([^\]]*))?\]\]")
 # [label](qualcosa.md) — link markdown relativi, usati dai blocchi
 # "related" generati dal plugin. Non sono wikilink: vanno gestiti a parte.
 MDLINK_RE = re.compile(r"\[([^\]]*)\]\((?!https?:)([^)]+?\.md)(#[^)]*)?\)")
@@ -43,87 +51,82 @@ MARK = "\x00DEFUSED\x00"
 ORPHAN_LI_RE = re.compile(r"^[ \t]*[-*+][ \t]+\x00DEFUSED\x00[^\n]*\n?", re.MULTILINE)
 
 
-def frontmatter(text: str) -> str | None:
-    m = FM_RE.match(text)
-    return m.group(1) if m else None
-
-
 def is_published(text: str) -> bool:
     """Stessa semantica di @quartz-community/explicit-publish:
     solo `true` booleano o la stringa "true"."""
-    fm = frontmatter(text)
-    if fm is None:
-        return False
-    m = PUBLISH_RE.search(fm)
+    m = FM_RE.match(text)
     if not m:
         return False
-    return m.group(1).strip().strip("\"'") == "true"
+    pm = PUBLISH_RE.search(m.group(1))
+    return bool(pm) and pm.group(1).strip().strip("\"'") == "true"
 
 
-def collect() -> tuple[list[Path], list[Path]]:
-    pub, priv = [], []
+def dest_for(rel: PurePosixPath) -> PurePosixPath:
+    """Percorso di destinazione in content/, con i prefissi rimappati."""
+    s = rel.as_posix()
+    for src, dst in PATH_MAP:
+        if s.startswith(src + "/"):
+            return PurePosixPath(dst) / s[len(src) + 1:]
+    return rel
+
+
+def collect() -> tuple[list[PurePosixPath], int]:
+    pub, priv = [], 0
     for p in sorted(VAULT.rglob("*.md")):
-        rel = p.relative_to(VAULT)
+        rel = PurePosixPath(p.relative_to(VAULT).as_posix())
         if rel.parts[0] in DENY_DIRS:
             continue
-        (pub if is_published(p.read_text(encoding="utf-8")) else priv).append(rel)
+        if is_published(p.read_text(encoding="utf-8")):
+            pub.append(rel)
+        else:
+            priv += 1
     return pub, priv
 
 
-def check_dangling(pub: list[Path]) -> list[tuple[Path, str]]:
-    """Wikilink che puntano a pagine non pubblicate -> link morti sul sito."""
-    slugs = {p.stem for p in pub}
-    dangling = []
-    for rel in pub:
-        text = (VAULT / rel).read_text(encoding="utf-8")
-        body = FM_RE.sub("", text)
-        for target in WIKILINK_RE.findall(body):
-            stem = target.strip().split("/")[-1]
-            if stem and stem not in slugs:
-                dangling.append((rel, stem))
-    return dangling
+def defuse_links(text: str, srcrel: PurePosixPath,
+                 pub: dict[str, PurePosixPath]) -> tuple[str, int]:
+    """Neutralizza i link verso pagine non pubblicate e riscrive quelli
+    verso pagine rimappate.
 
-
-def defuse_links(text: str, slugs: set[str], paths: set[str],
-                 srcdir: Path) -> tuple[str, int]:
-    """Trasforma i wikilink verso pagine NON pubblicate in testo semplice.
-
-    Senza questo, ogni [[fonte-privata]] diventa un link morto sul sito
-    pubblico — e per giunta rivela il titolo di una pagina che abbiamo
-    deciso di non pubblicare.
+    Senza questo, ogni link a una pagina privata resterebbe morto sul
+    sito e rivelerebbe il titolo di una pagina che abbiamo deciso di non
+    pubblicare. E ogni link a una pagina rimappata punterebbe al vecchio
+    percorso, che in content/ non esiste piu'.
     """
     n = 0
+    srcdir = srcrel.parent
+    destdir = dest_for(srcrel).parent
+    # I wikilink si risolvono per nome file: Quartz usa la risoluzione
+    # "shortest", quindi lo spostamento di cartella non li rompe.
+    stems = {PurePosixPath(k).stem for k in pub}
 
     def repl_wiki(m: re.Match) -> str:
         nonlocal n
-        target, _heading, label = m.group(1), m.group(2), m.group(3)
-        if target.strip().split("/")[-1] in slugs:
+        target, _h, label = m.group(1), m.group(2), m.group(3)
+        if target.strip().split("/")[-1] in stems:
             return m.group(0)
         n += 1
-        return label if label else target.strip().split("/")[-1].replace("-", " ")
+        return MARK + (label or target.strip().split("/")[-1].replace("-", " "))
 
     def repl_md(m: re.Match) -> str:
         nonlocal n
-        label, target = m.group(1), m.group(2).strip()
-        # Se il link ha un percorso, risolvilo: stem uguali in cartelle
-        # diverse esistono (sources/x.md e syntheses/x.md), e il match
-        # per solo nome terrebbe buono un link verso la pagina privata.
-        if "/" in target:
-            ok = os.path.normpath(srcdir / target).removesuffix(".md") in paths
-        else:
-            ok = Path(target).stem in slugs
-        if ok:
-            return m.group(0)
+        label, target, heading = m.group(1), m.group(2).strip(), m.group(3) or ""
+        # Risolvi rispetto alla cartella di origine: stem uguali in
+        # cartelle diverse esistono (sources/x.md e syntheses/x.md), e il
+        # match per solo nome terrebbe buono un link verso la privata.
+        key = os.path.normpath((srcdir / target).as_posix())
+        if key in pub:
+            newrel = os.path.relpath(pub[key].as_posix(), destdir.as_posix())
+            return f"[{label}]({newrel}.md{heading})"
         n += 1
         return MARK + label
 
-    text = FULL_WIKILINK_RE.sub(repl_wiki, text)
+    text = WIKILINK_RE.sub(repl_wiki, text)
     text = MDLINK_RE.sub(repl_md, text)
     # Un bullet dei blocchi "related" che puntava a una pagina privata
     # resterebbe come voce nuda senza link: si elimina la riga intera.
     text = ORPHAN_LI_RE.sub("", text)
-    text = text.replace(MARK, "")
-    return text, n
+    return text.replace(MARK, ""), n
 
 
 def main() -> int:
@@ -135,47 +138,59 @@ def main() -> int:
         print(f"ERRORE: vault non trovato: {VAULT}", file=sys.stderr)
         return 1
 
-    pub, priv = collect()
-
-    if not pub:
+    pubrels, npriv = collect()
+    if not pubrels:
         print("ERRORE: nessuna pagina con `publish: true`. Non svuoto content/.",
               file=sys.stderr)
         return 1
 
-    dangling = check_dangling(pub)
+    # chiave = percorso sorgente senza .md ; valore = destinazione senza .md
+    pub = {r.with_suffix("").as_posix(): dest_for(r).with_suffix("")
+           for r in pubrels}
 
     print(f"vault     {VAULT}")
-    print(f"pubbliche {len(pub)}")
-    print(f"private   {len(priv)} (non copiate)")
+    print(f"pubbliche {len(pubrels)}")
+    print(f"private   {npriv} (non copiate)")
 
-    if dangling:
-        print(f"\n⚠ {len(dangling)} wikilink verso pagine non pubblicate "
-              f"(diventeranno link morti):")
-        for src, target in dangling[:15]:
-            print(f"    {src} -> [[{target}]]")
-        if len(dangling) > 15:
-            print(f"    ... e altri {len(dangling) - 15}")
+    # I wikilink si risolvono per nome file: due pagine pubblicate con lo
+    # stesso stem renderebbero ambigua la destinazione. Ma i link con
+    # percorso esplicito restano risolvibili, quindi la collisione e' un
+    # problema reale solo se qualcuno usa davvero il wikilink nudo.
+    seen: dict[str, str] = {}
+    clashes: dict[str, list[str]] = {}
+    for k, v in pub.items():
+        if v.stem in seen:
+            clashes.setdefault(v.stem, [seen[v.stem]]).append(k)
+        seen[v.stem] = k
+    if clashes:
+        used = set()
+        for r in pubrels:
+            body = FM_RE.sub("", (VAULT / r).read_text(encoding="utf-8"))
+            for m in WIKILINK_RE.finditer(body):
+                used.add(m.group(1).strip().split("/")[-1])
+        for stem, files in clashes.items():
+            state = ("⚠ ambigua, il wikilink e' usato" if stem in used
+                     else "· innocua, nessun wikilink nudo la usa")
+            print(f"{state}: [[{stem}]] -> {', '.join(files)}")
 
     if args.dry_run:
         print("\n--dry-run: nessuna modifica.")
-        for rel in pub:
-            print(f"    + {rel}")
+        for r in pubrels:
+            d = dest_for(r)
+            print(f"    + {d}" + (f"   ← {r}" if d != r else ""))
         return 0
 
     if CONTENT.exists():
         shutil.rmtree(CONTENT)
-    slugs = {p.stem for p in pub}
-    paths = {str(p.with_suffix("")) for p in pub}
     defused = 0
-    for rel in pub:
-        dest = CONTENT / rel
+    for rel in pubrels:
+        dest = CONTENT / dest_for(rel)
         dest.parent.mkdir(parents=True, exist_ok=True)
-        text, n = defuse_links((VAULT / rel).read_text(encoding="utf-8"),
-                               slugs, paths, rel.parent)
+        text, n = defuse_links((VAULT / rel).read_text(encoding="utf-8"), rel, pub)
         defused += n
         dest.write_text(text, encoding="utf-8")
     if defused:
-        print(f"  {defused} wikilink verso pagine private convertiti in testo")
+        print(f"  {defused} link verso pagine private convertiti in testo")
 
     # La home non viene dal vault: l'index.md del vault e' generato dal
     # plugin e linka anche pagine private. Sta in home.md, versionato qui.
@@ -185,7 +200,7 @@ def main() -> int:
     else:
         print("⚠ home.md mancante: il sito non avra' una homepage.")
 
-    print(f"\n✓ {len(pub)} pagine in {CONTENT}")
+    print(f"\n✓ {len(pubrels)} pagine in {CONTENT}")
     return 0
 
 

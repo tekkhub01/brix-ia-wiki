@@ -1,9 +1,15 @@
 ---
-id: rag
-pageType: entity
-sourceIds:
-  - sources/llm-memory-context-evolution-2026.md
-updatedAt: 2026-08-12T00:00:00Z
+title: "RAG (Retrieval-Augmented Generation)"
+category: concept
+sources: [raw/notes/llm-memory-context-evolution-2026.md]
+created: 2026-04-28
+updated: 2026-08-12
+verified: 2026-08-12
+tags: [retrieval, rag, architecture]
+aliases: [RAG, Retrieval-Augmented Generation]
+confidence: high
+summary: "The 2020 retrieve-then-generate baseline. Still the reference point, but by 2026 superseded in production by agentic multi-round retrieval and challenged on repeated-domain workloads by write-time compilation."
+volatility: cold
 publish: true
 ---
 # RAG (Retrieval-Augmented Generation)
@@ -70,22 +76,16 @@ Two open fronts as of mid-2026:
 - [[llm-wiki-karpathy|LLM Wiki]] — post-RAG paradigm
 - [[notebooklm|NotebookLM]] — hybrid RAG + long-context product
 
-## Related
-<!-- openclaw:wiki:related:start -->
-### Referenced By
+## See Also
 
-- [Agentic RAG](agentic-rag.md)
-- [LLM Wiki (Karpathy Pattern)](llm-wiki-karpathy.md)
-- [Long-Context Models](long-context-models.md)
-- [Span-Level Attribution](span-level-attribution.md)
-- [Startupa.ge - Platform for Founders, Investors & Talent](../syntheses/startupa-ge-platform-for-founders-investors-talent.md)
+- [[agentic-rag|Agentic RAG]]
+- [[graphrag|GraphRAG]]
+- [[llm-wiki-karpathy|LLM Wiki (Karpathy Pattern)]]
+- [[span-level-attribution]] — links here
+- [[long-context-models]] — links here
+- [[grounding-across-architectures]] — synthesis drawing on this page
+- [[memory-economics]] — synthesis drawing on this page
+- [[notebooklm-hybrid-stack]] — synthesis drawing on this page
 
-### Related Pages
+## Sources
 
-- [Claude (Anthropic)](claude-anthropic.md)
-- [Context Caching](context-caching.md)
-- [GLM 5.1](glm-5.1.md)
-- [GraphRAG](graphrag.md)
-- [NotebookLM (Google)](notebooklm.md)
-- [Quantization](quantization.md)
-<!-- openclaw:wiki:related:end -->
