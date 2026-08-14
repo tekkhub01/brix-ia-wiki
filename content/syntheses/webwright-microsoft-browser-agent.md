@@ -20,7 +20,7 @@ publish: true
 # Webwright — Microsoft Browser Agent
 
 ## Cos'è
-Webwright è un progetto open source di Microsoft che funziona come **skill per agenti AI** (complementare a [[llm-wiki-karpathy|LLM Wiki]] per l automazione web) per il controllo del browser. Rilasciato su GitHub: https://github.com/microsoft/Webwright
+Webwright è un progetto open source di Microsoft che funziona come **skill per agenti AI** (complementare al [LLM Wiki](../concepts/llm-wiki-karpathy.md) per l automazione web) per il controllo del browser. Rilasciato su GitHub: https://github.com/microsoft/Webwright
 
 ## Come funziona
 A differenza degli agenti browser tradizionali (guarda pagina → predice click → esegue, ogni step = chiamata al modello), Webwright adotta un approccio diverso:

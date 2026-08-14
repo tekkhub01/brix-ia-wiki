@@ -88,5 +88,5 @@ Opus 4.7 is positioned as a step-change improvement for agentic, long-running, a
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
-- [Claude (Anthropic)](../entities/claude-anthropic.md)
+- [Anthropic](../entities/anthropic.md)
 <!-- openclaw:wiki:related:end -->

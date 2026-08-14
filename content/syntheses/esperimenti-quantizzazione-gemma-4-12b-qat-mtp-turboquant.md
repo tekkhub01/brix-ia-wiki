@@ -6,7 +6,7 @@ sourceIds:
   - pdf:Esperimenti_Quantizzazione_Gemma_4_1---96861467-650a-41d7-bc76-eedb62006fd3.pdf
 claims:
   - id: gemma4-arch
-    text: Gemma 4 12B Unified è un modello denso decoder-only (vedi [[rotorquant|RotorQuant]] per tecniche di quantizzazione avanzate) da 11,95B parametri
+    text: Gemma 4 12B Unified è un modello denso decoder-only (vedi [[scrya-com|RotorQuant]] per tecniche di quantizzazione avanzate) da 11,95B parametri
       con architettura encoder-free che proietta direttamente input multimodali
       nello spazio embedding
     status: verified

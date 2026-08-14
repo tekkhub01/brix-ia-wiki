@@ -111,8 +111,9 @@ These should link back to this source page and to existing entity pages in the w
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
+- [Google](../entities/google.md)
 - [Impeccable.style - AI Design Tool](../syntheses/impeccable-style-ai-design-tool.md)
-- [NotebookLM (Google)](../concepts/notebooklm.md)
+- [Karpathy, Andrej](../entities/karpathy-andrej.md)
 <!-- openclaw:wiki:related:end -->
 
 **Next steps:** Extract sections for article integration; design concrete LLM Wiki + Graph architecture for OpenClaw/Obsidian stack.

@@ -19,7 +19,7 @@ publish: true
 
 ## Cos'è
 
-CodeGraph è un tool locale che indicizza una codebase in un **[[graphrag|knowledge graph]] queryabile** usando Tree-sitter per parsing AST. Espone il grafo agli agenti AI (Claude Code, Codex, Cursor, Gemini CLI, opencode, Hermes) tramite **server MCP**, permettendo query immediate su simboli, chiamanti, chiamati e relazioni — senza che l'agente debba scandire i file via grep/read.
+CodeGraph è un tool locale che indicizza una codebase in un **[knowledge graph](../concepts/graphrag.md) queryabile** usando Tree-sitter per parsing AST. Espone il grafo agli agenti AI (Claude Code, Codex, Cursor, Gemini CLI, opencode, Hermes) tramite **server MCP**, permettendo query immediate su simboli, chiamanti, chiamati e relazioni — senza che l'agente debba scandire i file via grep/read.
 
 ## Problema che risolve
 

@@ -1,6 +1,8 @@
 ---
+title: "OpenRouter"
 id: openrouter
 pageType: entity
+entityType: organization
 sourceIds:
   - sources/brix-ia-newsletter-news-aprile-2026.md
 updatedAt: 2026-04-28T00:00:00Z
@@ -33,6 +35,7 @@ publish: true
 <!-- openclaw:wiki:related:start -->
 ### Related Pages
 
-- [Claude (Anthropic)](claude-anthropic.md)
-- [RotorQuant](rotorquant.md)
+- [Anthropic](anthropic.md)
+- [scrya-com](scrya-com.md)
+- [Z.AI (Zhipu AI)](z-ai.md)
 <!-- openclaw:wiki:related:end -->
