@@ -75,4 +75,5 @@ Alternativa local-first a PyMuPDF4LLM e MarkItDown per estrazione PDF→Markdown
 <!-- openclaw:wiki:related:start -->
 ### Sources
 
+- [PDF Inspector — segnalazione 2026-08-09](../sources/pdf-inspector-2026-08-09.md)
 <!-- openclaw:wiki:related:end -->

@@ -63,4 +63,5 @@ Risorsa **da esplorare** (segnalata da Peter il 2026-08-10). Utile per due motiv
 <!-- openclaw:wiki:related:start -->
 ### Sources
 
+- [Hermes Agent Skills Hub — segnalazione 2026-08-07](../sources/hermes-skills-hub-2026-08-07.md)
 <!-- openclaw:wiki:related:end -->
