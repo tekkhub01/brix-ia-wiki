@@ -33,4 +33,6 @@ publish: true
 <!-- openclaw:wiki:related:start -->
 ### Related Pages
 
+- [Claude (Anthropic)](claude-anthropic.md)
+- [RotorQuant](rotorquant.md)
 <!-- openclaw:wiki:related:end -->

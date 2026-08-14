@@ -7,7 +7,7 @@ created: 2026-08-14
 updated: 2026-08-14
 last_checked: 2026-08-14
 tags: [question, gap, llm-memory]
-summary: "Posed as open in rag.md and graphrag.md, but the cited paper already has an answer the corpus does not report."
+summary: "Posed as open in [rag](../concepts/rag.md) and [graphrag](../concepts/graphrag.md), but the cited paper already has an answer the corpus does not report."
 confidence: high
 origin: "2026-08-12 speculation pass; persisted 2026-08-14"
 publish: true
@@ -17,7 +17,7 @@ publish: true
 
 ## Why Track This
 
-Posed as open in rag.md and graphrag.md, but the cited paper already has an answer the corpus does not report.
+Posed as open in [rag](../concepts/rag.md) and [graphrag](../concepts/graphrag.md), but the cited paper already has an answer the corpus does not report.
 
 ## Current State
 

@@ -7,7 +7,7 @@ created: 2026-08-14
 updated: 2026-08-14
 last_checked: 2026-08-14
 tags: [question, gap, llm-memory]
-summary: "graphrag.md asserts community summaries beat vector-only retrieval 'by a wide margin' with no number."
+summary: "[graphrag](../concepts/graphrag.md) asserts community summaries beat vector-only retrieval 'by a wide margin' with no number."
 confidence: high
 origin: "2026-08-12 speculation pass; persisted 2026-08-14"
 publish: true
@@ -17,7 +17,7 @@ publish: true
 
 ## Why Track This
 
-graphrag.md asserts community summaries beat vector-only retrieval 'by a wide margin' with no number.
+[graphrag](../concepts/graphrag.md) asserts community summaries beat vector-only retrieval 'by a wide margin' with no number.
 
 ## Current State
 

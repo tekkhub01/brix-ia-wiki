@@ -52,3 +52,4 @@ This is worth stating explicitly because none of the three pages does: [[llm-wik
 
 ## Sources
 
+- [llm-memory-context-evolution-2026](../sources/llm-memory-context-evolution-2026.md)

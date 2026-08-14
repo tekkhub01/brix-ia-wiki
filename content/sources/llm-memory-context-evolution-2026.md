@@ -111,6 +111,8 @@ These should link back to this source page and to existing entity pages in the w
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
+- [Impeccable.style - AI Design Tool](../syntheses/impeccable-style-ai-design-tool.md)
+- [NotebookLM (Google)](../concepts/notebooklm.md)
 <!-- openclaw:wiki:related:end -->
 
 **Next steps:** Extract sections for article integration; design concrete LLM Wiki + Graph architecture for OpenClaw/Obsidian stack.

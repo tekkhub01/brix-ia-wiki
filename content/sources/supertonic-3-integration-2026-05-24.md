@@ -47,4 +47,5 @@ publish: true
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
+- [Supertonic 3 TTS — Integrazione e API in OpenClaw](../syntheses/supertonic-3-tts-integrazione-e-api-in-openclaw.md)
 <!-- openclaw:wiki:related:end -->

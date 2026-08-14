@@ -55,4 +55,5 @@ Solo una minima parte dei siti web espone API pubbliche. La maggior parte dell'i
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
+- [Webwright — Microsoft Browser Agent](../syntheses/webwright-microsoft-browser-agent.md)
 <!-- openclaw:wiki:related:end -->

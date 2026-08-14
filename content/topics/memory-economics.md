@@ -63,3 +63,4 @@ Both the LLM Wiki study and the RAG page name the same swing variable, using dif
 
 ## Sources
 
+- [llm-memory-context-evolution-2026](../sources/llm-memory-context-evolution-2026.md)

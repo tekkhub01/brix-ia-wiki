@@ -99,3 +99,4 @@ For on-premise LLM (GLM 5.1 + vLLM/KTransformers), similar techniques exist:
 
 ## Sources
 
+- [llm-memory-context-evolution-2026](../sources/llm-memory-context-evolution-2026.md)

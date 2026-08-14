@@ -81,4 +81,5 @@ CodeGraph è già utilizzabile con Claude Code e Codex via MCP. Per integrarlo i
 <!-- openclaw:wiki:related:start -->
 ### Sources
 
+- [CodeGraph — Pre-indexed code knowledge graph](../sources/codegraph-2026-05-26.md)
 <!-- openclaw:wiki:related:end -->

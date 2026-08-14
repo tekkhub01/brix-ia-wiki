@@ -86,4 +86,6 @@ Tool progettato per agenti AI come Codex e Claude Code. Supporta framework moder
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
+- [AI Website Cloner Template](../sources/ai-website-cloner-template-github.md)
+- [Introducing Claude Design by Anthropic Labs](../sources/anthropic-claude-design-labs.md)
 <!-- openclaw:wiki:related:end -->

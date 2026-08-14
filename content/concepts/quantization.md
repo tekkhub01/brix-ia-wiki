@@ -61,3 +61,4 @@ Quantization shrinks what is being cached (KV tensors), so the two compose rathe
 
 Not yet ingested into this topic's `raw/`. Provenance is a local experiment synthesis in the sibling OpenClaw memory-wiki vault:
 
+- [esperimenti-quantizzazione-gemma-4-12b-qat-mtp-turboquant](../syntheses/esperimenti-quantizzazione-gemma-4-12b-qat-mtp-turboquant.md)

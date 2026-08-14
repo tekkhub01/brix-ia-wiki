@@ -7,7 +7,7 @@ created: 2026-08-14
 updated: 2026-08-14
 last_checked: 2026-08-14
 tags: [question, gap, llm-memory]
-summary: "agentic-rag.md and context-caching.md never reference each other on this, despite the invalidation hierarchy being directly relevant."
+summary: "[agentic-rag](../concepts/agentic-rag.md) and [context-caching](../concepts/context-caching.md) never reference each other on this, despite the invalidation hierarchy being directly relevant."
 confidence: high
 origin: "2026-08-12 speculation pass; persisted 2026-08-14"
 publish: true
@@ -17,7 +17,7 @@ publish: true
 
 ## Why Track This
 
-agentic-rag.md and context-caching.md never reference each other on this, despite the invalidation hierarchy being directly relevant.
+[agentic-rag](../concepts/agentic-rag.md) and [context-caching](../concepts/context-caching.md) never reference each other on this, despite the invalidation hierarchy being directly relevant.
 
 ## Current State
 

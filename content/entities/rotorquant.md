@@ -40,7 +40,10 @@ For a physical AI agent box targeting SMEs, quantization is the critical path to
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
+- [Esperimenti Quantizzazione Gemma 4 12B — QAT, MTP, TurboQuant](../syntheses/esperimenti-quantizzazione-gemma-4-12b-qat-mtp-turboquant.md)
 
 ### Related Pages
 
+- [Claude (Anthropic)](claude-anthropic.md)
+- [OpenRouter](openrouter.md)
 <!-- openclaw:wiki:related:end -->

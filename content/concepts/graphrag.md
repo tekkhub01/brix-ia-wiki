@@ -90,3 +90,4 @@ Where GraphRAG still clearly wins: **global / thematic queries** — "what are t
 
 ## Sources
 
+- [llm-memory-context-evolution-2026](../sources/llm-memory-context-evolution-2026.md)

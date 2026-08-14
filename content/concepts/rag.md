@@ -89,3 +89,4 @@ Two open fronts as of mid-2026:
 
 ## Sources
 
+- [llm-memory-context-evolution-2026](../sources/llm-memory-context-evolution-2026.md)

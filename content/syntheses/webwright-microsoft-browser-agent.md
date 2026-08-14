@@ -53,4 +53,5 @@ La maggior parte dei siti non ha API pubbliche — solo interfacce web. Webwrigh
 <!-- openclaw:wiki:related:start -->
 ### Sources
 
+- [Webwright — Microsoft Browser Agent Skill](../sources/webwright-microsoft-github.md)
 <!-- openclaw:wiki:related:end -->

@@ -21,7 +21,7 @@ The corpus asserts wiki provenance is structurally safer than RAG citation but n
 
 ## Current State
 
-A genuine unaddressed gap rather than an unfetched source — no current citation answers it. Also an Open Thread, and the core of grounding-across-architectures.md.
+A genuine unaddressed gap rather than an unfetched source — no current citation answers it. Also an Open Thread, and the core of [grounding-across-architectures](../topics/grounding-across-architectures.md).
 
 ## Next Action
 

@@ -66,3 +66,4 @@ What changed in 2026 is that the *third* option got costed. [[llm-wiki-karpathy|
 
 ## Sources
 
+- [llm-memory-context-evolution-2026](../sources/llm-memory-context-evolution-2026.md)

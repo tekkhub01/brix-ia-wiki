@@ -305,4 +305,6 @@ AI coding agents, web development, Next.js, reverse engineering, design systems,
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
+- [Introducing Claude Design by Anthropic Labs](anthropic-claude-design-labs.md)
+- [Startupa.ge - Platform for Founders, Investors & Talent](../syntheses/startupa-ge-platform-for-founders-investors-talent.md)
 <!-- openclaw:wiki:related:end -->

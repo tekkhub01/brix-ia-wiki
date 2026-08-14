@@ -90,4 +90,5 @@ The assembled version of this argument lives in [[notebooklm-hybrid-stack]]; thi
 
 ## Sources
 
+- [llm-memory-context-evolution-2026](../sources/llm-memory-context-evolution-2026.md)
 - [NotebookLM official](https://notebooklm.google.com) — not ingested

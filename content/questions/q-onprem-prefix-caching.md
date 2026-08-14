@@ -7,7 +7,7 @@ created: 2026-08-14
 updated: 2026-08-14
 last_checked: 2026-08-14
 tags: [question, gap, llm-memory]
-summary: "context-caching.md calls this 'possible' for the on-prem use case with zero measured numbers, unlike the sharply quantified cloud section above it."
+summary: "[context-caching](../concepts/context-caching.md) calls this 'possible' for the on-prem use case with zero measured numbers, unlike the sharply quantified cloud section above it."
 confidence: high
 origin: "2026-08-12 speculation pass; persisted 2026-08-14"
 publish: true
@@ -17,7 +17,7 @@ publish: true
 
 ## Why Track This
 
-context-caching.md calls this 'possible' for the on-prem use case with zero measured numbers, unlike the sharply quantified cloud section above it.
+[context-caching](../concepts/context-caching.md) calls this 'possible' for the on-prem use case with zero measured numbers, unlike the sharply quantified cloud section above it.
 
 ## Current State
 

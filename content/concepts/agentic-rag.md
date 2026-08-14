@@ -95,3 +95,4 @@ NotebookLM uses a limited form of Agentic RAG: query rewriting + hybrid retrieva
 
 ## Sources
 
+- [llm-memory-context-evolution-2026](../sources/llm-memory-context-evolution-2026.md)

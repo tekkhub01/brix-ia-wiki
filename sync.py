@@ -115,8 +115,19 @@ def defuse_links(text: str, srcrel: PurePosixPath,
         # cartelle diverse esistono (sources/x.md e syntheses/x.md), e il
         # match per solo nome terrebbe buono un link verso la privata.
         key = os.path.normpath((srcdir / target).as_posix())
-        if key in pub:
-            newrel = os.path.relpath(pub[key].as_posix(), destdir.as_posix())
+        dest = pub.get(key)
+        # Se il percorso esatto non e' pubblicato ma esiste una pagina
+        # pubblicata con lo stesso nome, il link va rediretto, non
+        # neutralizzato: e' il caso di una pagina spostata di layer
+        # (entities/notebooklm -> concepts/notebooklm). Solo se il nome
+        # e' univoco, altrimenti non sapremmo quale scegliere.
+        if dest is None:
+            stem = PurePosixPath(key).stem
+            cand = [v for v in pub.values() if v.stem == stem]
+            if len(cand) == 1:
+                dest = cand[0]
+        if dest is not None:
+            newrel = os.path.relpath(dest.as_posix(), destdir.as_posix())
             return f"[{label}]({newrel}.md{heading})"
         n += 1
         return MARK + label
@@ -127,6 +138,101 @@ def defuse_links(text: str, srcrel: PurePosixPath,
     # resterebbe come voce nuda senza link: si elimina la riga intera.
     text = ORPHAN_LI_RE.sub("", text)
     return text.replace(MARK, ""), n
+
+
+# Menzione nuda di un file .md nel corpo, fuori da link e percorsi.
+# Es: "context-caching.md calls this 'possible'" nelle domande aperte:
+# la relazione e' gia' scritta, manca solo la sintassi del link.
+BARE_MD_RE = re.compile(r"(?<![\[\(/\w-])([a-z0-9][a-z0-9._-]*)\.md\b(?![\)\]])")
+# `index` e' il nome dell'indice del vault, non una pagina del sito.
+BARE_SKIP = {"index"}
+FENCE_RE = re.compile(r"(```.*?```|`[^`\n]*`)", re.DOTALL)
+PROV_RE = re.compile(
+    r"^(?:sourceIds|sources):[ \t]*(?:\[(?P<inline>[^\]]*)\]|\n(?P<block>(?:[ \t]+-[ \t]+\S.*\n?)+))",
+    re.MULTILINE)
+
+
+def _by_stem(pub: dict[str, PurePosixPath]) -> dict[str, PurePosixPath]:
+    """stem -> destinazione, solo per i nomi univoci."""
+    out: dict[str, PurePosixPath | None] = {}
+    for v in pub.values():
+        out[v.stem] = None if v.stem in out else v
+    return {k: v for k, v in out.items() if v is not None}
+
+
+def linkify_bare(text: str, destdir: PurePosixPath,
+                 stem_map: dict[str, PurePosixPath]) -> tuple[str, int]:
+    """Trasforma le menzioni nude `pagina.md` in link veri."""
+    n = 0
+
+    def repl(m: re.Match) -> str:
+        nonlocal n
+        stem = m.group(1)[:-3] if m.group(1).endswith(".md") else m.group(1)
+        stem = m.group(1)
+        if stem in BARE_SKIP or stem not in stem_map:
+            return m.group(0)
+        n += 1
+        rel = os.path.relpath(stem_map[stem].as_posix(), destdir.as_posix())
+        return f"[{stem}]({rel}.md)"
+
+    # Non toccare il contenuto di code fence e code span.
+    parts = FENCE_RE.split(text)
+    for i in range(0, len(parts), 2):
+        parts[i] = BARE_MD_RE.sub(repl, parts[i])
+    return "".join(parts), n
+
+
+def page_title(path: Path, fallback: str) -> str:
+    """Titolo dal frontmatter, altrimenti dal primo heading."""
+    text = path.read_text(encoding="utf-8")
+    m = FM_RE.match(text)
+    if m:
+        t = re.search(r"^title:\s*(.+?)\s*$", m.group(1), re.MULTILINE)
+        if t:
+            return t.group(1).strip().strip("\"'")
+    h = re.search(r"^#\s+(.+?)\s*$", text, re.MULTILINE)
+    return h.group(1).strip() if h else fallback
+
+
+def provenance_section(fm: str, destdir: PurePosixPath,
+                       stem_map: dict[str, PurePosixPath],
+                       selfstem: str, titles: dict[str, str],
+                       already: set[str]) -> tuple[str, int]:
+    """Proietta `sourceIds:` / `sources:` del frontmatter in link nel corpo.
+
+    Il plugin registra la provenienza nei metadati, ma Quartz costruisce
+    grafo e backlink solo dai link nel corpo: senza questa proiezione la
+    relazione esiste nel dato e sparisce nel sito.
+    """
+    refs: list[str] = []
+    for m in PROV_RE.finditer(fm):
+        raw = m.group("inline") or m.group("block") or ""
+        refs += [x.strip().strip("-").strip().strip("'\"")
+                 for x in re.split(r"[,\n]", raw)]
+
+    seen, links = set(), []
+    for r in refs:
+        if not r:
+            continue
+        stem = PurePosixPath(r).stem
+        for pref in ("source.", "synthesis.", "entity."):
+            stem = stem[len(pref):] if stem.startswith(pref) else stem
+        # `already` = pagine gia' linkate nel corpo (tipicamente dal
+        # blocco "related" del plugin): rilinkarle aggiungerebbe solo
+        # rumore duplicato.
+        if (stem == selfstem or stem in seen or stem not in stem_map
+                or stem in already):
+            continue
+        seen.add(stem)
+        rel = os.path.relpath(stem_map[stem].as_posix(), destdir.as_posix())
+        links.append(f"- [{titles.get(stem, stem)}]({rel}.md)")
+
+    if not links:
+        return "", 0
+    body = ("\n\n<!-- generato da sync.py dai metadati di provenienza "
+            "del vault; non presente nella pagina originale -->\n"
+            "## Fonti\n\n" + "\n".join(links) + "\n")
+    return body, len(links)
 
 
 def main() -> int:
@@ -182,15 +288,37 @@ def main() -> int:
 
     if CONTENT.exists():
         shutil.rmtree(CONTENT)
-    defused = 0
+    stem_map = _by_stem(pub)
+    titles = {r.stem: page_title(VAULT / r, r.stem) for r in pubrels}
+    linked_re = re.compile(r"\[[^\]]*\]\((?!https?:)([^)#]+?)\.md")
+    defused = linked = proven = 0
     for rel in pubrels:
-        dest = CONTENT / dest_for(rel)
+        destrel = dest_for(rel)
+        dest = CONTENT / destrel
         dest.parent.mkdir(parents=True, exist_ok=True)
-        text, n = defuse_links((VAULT / rel).read_text(encoding="utf-8"), rel, pub)
+        src = (VAULT / rel).read_text(encoding="utf-8")
+
+        text, n = defuse_links(src, rel, pub)
         defused += n
+        text, n = linkify_bare(text, destrel.parent, stem_map)
+        linked += n
+        fm = FM_RE.match(src)
+        if fm:
+            already = {PurePosixPath(m).stem for m in linked_re.findall(text)}
+            already |= {m.strip().split("/")[-1]
+                        for m in WIKILINK_RE.findall(text) for m in [m[0]]}
+            extra, n = provenance_section(fm.group(1), destrel.parent,
+                                          stem_map, destrel.stem, titles, already)
+            text, proven = text.rstrip() + "\n" + extra, proven + n
+
         dest.write_text(text, encoding="utf-8")
+
     if defused:
         print(f"  {defused} link verso pagine private convertiti in testo")
+    if linked:
+        print(f"  {linked} menzioni nude trasformate in link")
+    if proven:
+        print(f"  {proven} link di provenienza proiettati dal frontmatter")
 
     # La home non viene dal vault: l'index.md del vault e' generato dal
     # plugin e linka anche pagine private. Sta in home.md, versionato qui.

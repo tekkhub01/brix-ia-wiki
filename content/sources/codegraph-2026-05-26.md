@@ -83,4 +83,5 @@ Tested on 7 real-world codebases with Claude Opus 4.7:
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
+- [CodeGraph — Pre-indexed code knowledge graph](../syntheses/codegraph-pre-indexed-code-knowledge-graph.md)
 <!-- openclaw:wiki:related:end -->

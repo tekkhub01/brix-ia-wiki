@@ -41,4 +41,5 @@ Il 24 maggio 2026, PK ha richiesto un'analisi di Supertonic 3 (TTS) per integraz
 <!-- openclaw:wiki:related:start -->
 ### Sources
 
+- [Supertonic 3 TTS — Integrazione e API](../sources/supertonic-3-integration-2026-05-24.md)
 <!-- openclaw:wiki:related:end -->
