@@ -48,7 +48,7 @@ Solo una minima parte dei siti web espone API pubbliche. La maggior parte dell'i
 ## Riferimenti
 
 - GitHub: https://github.com/microsoft/Webwright
-- Scoperto tramite: INCUBE.AI (Telegram), 2026-06-06
+- Scoperto il 2026-06-06
 - Lingua originale: russo
 
 ## Related

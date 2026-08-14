@@ -45,7 +45,7 @@ La maggior parte dei siti non ha API pubbliche — solo interfacce web. Webwrigh
 - GitHub: https://github.com/microsoft/Webwright
 - Requisiti: Python ≥3.10, Playwright/Chromium
 - Backend supportati: OpenAI, Anthropic, OpenRouter
-- Lingua originale: post russo da INCUBE.AI (Telegram)
+- Lingua originale della segnalazione: russo
 - Data scoperta: 2026-06-06
 <!-- openclaw:wiki:generated:end -->
 

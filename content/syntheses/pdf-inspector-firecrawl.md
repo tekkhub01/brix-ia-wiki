@@ -3,9 +3,9 @@ pageType: synthesis
 id: synthesis.pdf-inspector-firecrawl
 title: PDF Inspector (Firecrawl)
 sourceIds:
-  - https://github.com/firecrawl/pdf-inspector
+  - source.pdf-inspector-2026-08-09
 status: active
-updatedAt: 2026-08-03T08:02:29.385Z
+updatedAt: 2026-08-14T14:29:34.590Z
 publish: true
 ---
 
@@ -39,20 +39,40 @@ Libreria Rust (veloce) per l'ispezione, classificazione ed estrazione testo da P
 - **Multi-column layout** — Rilevamento colonne stile giornale, reading order sequenziale, supporto RTL.
 - **Encoding issue detection** — Flagga encoding rotti per fallback a OCR.
 - **Single document load** — Il documento è parsato una volta e condiviso tra detection ed extraction (no I/O ridondante).
-- **Browser WebAssembly** — Stesso parser Rust in browser/Web Workers, CMaps embeddati, zero round-trip server.
+- **Browser WebAssembly** — Stesso parser Rust in browser/Web Workers, CMaps embedditi, zero round-trip server.
 - **Lightweight** — Pure Rust, nessun modello ML, nessun servizio esterno. Una sola dipendenza: `lopdf`.
 
+## Pipeline intelligente (routing OCR)
+
+Principio guida: **non avviare l'OCR sull'intero documento per default**. pdf-inspector classifica prima, estrae in nativo dove possibile e manda all'OCR solo le pagine problematiche.
+
+- **Fast path senza dipendenze esterne:** nessun LLM, nessuna API esterna, nessun SaaS, nessuna dipendenza di rete. Ideale per pipeline PDF di grandi dimensioni dove l'OCR è di solito la fase più costosa e lenta.
+- **Confronto pipeline:**
+  - Prima: `PDF → OCR di tutte le pagine → parsing`
+  - Dopo: `PDF → classificazione → estrazione nativa → OCR solo delle pagine complesse`
+  - Risultato: meno calcoli, latenza più bassa, privacy dei dati più facile da controllare (niente invio a servizi esterni).
+- **Architettura:** byte grezzi del PDF → detector (identifica il tipo: scansionato vs basato su testo) + extractor (font, content stream, layout, tabelle) → modulo markdown (analisi, conversione, post-processing) → output Markdown finale.
+
 ## Bindings
+
 Python, Node.js (napi), WebAssembly browser.
 
 ## Performance
+
 Valutato su opendataloader-bench (200 PDF, OCR disabilitato, M4 Pro, 2026-07-31). Overall 0.875 / Reading Order 0.915 / Tables 0.814 / Headings 0.788 / Speed 0.470s (200 docs). Supera liteparse, opendataloader, pymupdf4llm e markitdown in qualità e velocità.
 
 ## Rilevanza
+
 Alternativa local-first a PyMuPDF4LLM e MarkItDown per estrazione PDF→Markdown, senza OCR ed eseguita localmente. Utile per pipeline RAG/document-processing. Potenziale integrazione con le skill di estrazione PDF (es. `mineru`) per il routing smart scanned-vs-text (classifica prima di decidere se serve OCR).
+
+## Provenienza
+
+- Repo ufficiale Firecrawl: https://github.com/firecrawl/pdf-inspector
+- Segnalato il 2026-08-09, con diagramma di architettura detector/extractor → markdown.
 <!-- openclaw:wiki:generated:end -->
 
 ## Related
 <!-- openclaw:wiki:related:start -->
-- No related pages yet.
+### Sources
+
 <!-- openclaw:wiki:related:end -->
