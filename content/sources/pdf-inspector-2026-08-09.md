@@ -8,6 +8,9 @@ ingestedAt: 2026-08-14T14:29:18.230Z
 updatedAt: 2026-08-14T14:29:18.230Z
 status: active
 publish: true
+date: 2026-08-09
+tags: [pdf, ocr, rust, document-processing, firecrawl, pdf-inspector]
+url: https://github.com/firecrawl/pdf-inspector
 ---
 
 # PDF Inspector — segnalazione 2026-08-09
@@ -18,25 +21,9 @@ publish: true
 - Bytes: 2054
 - Updated: 2026-08-14T14:29:18.230Z
 
-## Content
-```text
----
-id: pdf-inspector-2026-08-09
-pageType: source
-title: "PDF Inspector — post di segnalazione (2026-08-09)"
-type: source
-date: 2026-08-09
-updatedAt: 2026-08-09T00:00:00Z
-tags: [pdf, ocr, rust, document-processing, firecrawl, pdf-inspector]
-url: https://github.com/firecrawl/pdf-inspector
-publish: true
----
-
-# PDF Inspector — post di segnalazione (2026-08-09)
-
 **Repository:** https://github.com/firecrawl/pdf-inspector
 
-**Provenienza:** segnalazione del 2026-08-09. Testo originale in russo; sotto la traduzione italiana usata per la sintesi. Fonte primaria: https://github.com/firecrawl/pdf-inspector
+**Provenienza:** segnalazione del 2026-08-09. Testo originale in russo; sotto la traduzione italiana usata per la sintesi.
 
 ## Contenuto del post (traduzione IT)
 
@@ -73,7 +60,6 @@ Il diagramma mostra l'architettura di pdf-inspector per la classificazione local
 - byte grezzi del PDF → *detector* (identifica il tipo: scansionato vs basato su testo) + *extractor* (font, content stream, layout, tabelle);
 - il modulo *markdown* esegue analisi, conversione e post-processing → output Markdown finale.
 
-```
 
 ## Notes
 <!-- openclaw:human:start -->

@@ -13,6 +13,9 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+### Collegamenti
+- Prodotto da [Firecrawl](../entities/firecrawl.md), insieme ad [anydoc](anydoc-firecrawl.md) — stessa impronta: Rust, local-first, niente rete sul percorso veloce
+- Complementare a MinerU, non alternativo: decide *quali* pagine mandare all'OCR, non lo sostituisce
 <!-- openclaw:human:end -->
 
 ## Summary
@@ -76,4 +79,8 @@ Alternativa local-first a PyMuPDF4LLM e MarkItDown per estrazione PDF→Markdown
 ### Sources
 
 - [PDF Inspector — segnalazione 2026-08-09](../sources/pdf-inspector-2026-08-09.md)
+
+### Referenced By
+
+- [Firecrawl](../entities/firecrawl.md)
 <!-- openclaw:wiki:related:end -->

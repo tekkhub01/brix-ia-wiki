@@ -8,6 +8,9 @@ ingestedAt: 2026-08-14T15:01:11.559Z
 updatedAt: 2026-08-14T15:01:11.559Z
 status: active
 publish: true
+date: 2026-08-14
+tags: [ai-agent, rlm, coding-agent, autonomous-agent, long-running, primeintellect, typescript, mit]
+url: https://github.com/PrimeIntellect-ai/prime-agent
 ---
 
 # Prime Agent — repo PrimeIntellect (2026-08-14)
@@ -17,22 +20,6 @@ publish: true
 - Path: `/home/brix-ia/.openclaw/workspace/prime-agent-primeintellect-2026-08-14.md`
 - Bytes: 3667
 - Updated: 2026-08-14T15:01:11.559Z
-
-## Content
-````text
----
-id: prime-agent-primeintellect-2026-08-14
-pageType: source
-title: "Prime Agent — Self-Improving RLM Agent (PrimeIntellect-ai)"
-type: source
-date: 2026-08-14
-updatedAt: 2026-08-14T14:58:00Z
-tags: [ai-agent, rlm, coding-agent, autonomous-agent, long-running, primeintellect, typescript, mit]
-url: https://github.com/PrimeIntellect-ai/prime-agent
-publish: true
----
-
-# Prime Agent — Self-Improving RLM Agent (PrimeIntellect-ai)
 
 **Repo:** https://github.com/PrimeIntellect-ai/prime-agent
 **Linguaggio:** TypeScript · **License:** MIT · **Stars:** ~15.8k (al 2026-08-14)
@@ -75,7 +62,6 @@ Agent di coding/ricerca **long-running e autonomo** (MIT, TypeScript, ~15.8k⭐,
 
 - Repo: https://github.com/PrimeIntellect-ai/prime-agent (letto e salvato su richiesta di Peter, 2026-08-14).
 
-````
 
 ## Notes
 <!-- openclaw:human:start -->

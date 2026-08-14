@@ -71,5 +71,8 @@ Da testare se può sostituire/affiancare MinerU sui progetti OCR correnti.
 
 ## Related
 <!-- openclaw:wiki:related:start -->
-- No related pages yet.
+### Referenced By
+
+- [Firecrawl](../entities/firecrawl.md)
+- [PDF Inspector (Firecrawl)](pdf-inspector-firecrawl.md)
 <!-- openclaw:wiki:related:end -->

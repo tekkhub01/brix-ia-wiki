@@ -8,6 +8,9 @@ ingestedAt: 2026-08-14T14:33:12.816Z
 updatedAt: 2026-08-14T14:33:12.816Z
 status: active
 publish: true
+date: 2026-08-14
+tags: [coding-agent, cli, ai-agent, jcode, developer-tools]
+url: https://jcode.sh/
 ---
 
 # JCode — segnalazione 2026-08-14
@@ -18,25 +21,9 @@ publish: true
 - Bytes: 1364
 - Updated: 2026-08-14T14:33:12.816Z
 
-## Content
-```text
----
-id: jcode-coding-agent
-pageType: source
-title: "JCode — Agente di coding super-veloce"
-type: source
-date: 2026-08-14
-updatedAt: 2026-08-14T00:00:00Z
-tags: [coding-agent, cli, ai-agent, jcode, developer-tools]
-url: https://jcode.sh/
-publish: true
----
-
-# JCode — Agente di coding super-veloce
-
 **Sito:** https://jcode.sh/
 
-**Provenienza:** segnalazione del 2026-08-14. Fonte primaria: https://jcode.sh/
+**Provenienza:** segnalazione del 2026-08-14.
 
 ## Descrizione
 
@@ -58,7 +45,6 @@ Agente di coding pensato solo per scrivere codice:
 
 Landing page stile GitHub README con terminale che mostra snippet di codice e log; in basso una box digita domande su *memory flow*, funzioni di ricerca e link alla documentazione, per mostrare le capacità interattive.
 
-```
 
 ## Notes
 <!-- openclaw:human:start -->

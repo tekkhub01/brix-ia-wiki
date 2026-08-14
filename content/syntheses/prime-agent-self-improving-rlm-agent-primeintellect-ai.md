@@ -14,6 +14,10 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+### Collegamenti
+- Prodotto da [Prime Intellect](../entities/prime-intellect.md)
+- I sub-agent ricorsivi sono la stessa struttura di loop dell'[agentic RAG](../concepts/agentic-rag.md), spostata dal retrieval all'esecuzione
+- Il Continual Harness è l'idea dell'[LLM Wiki](../concepts/llm-wiki-karpathy.md) applicata all'agente invece che alla conoscenza: accumulare stato riusabile invece di ricostruirlo
 <!-- openclaw:human:end -->
 
 ## Summary
@@ -66,4 +70,8 @@ Agent di coding/ricerca **long-running e autonomo** (MIT, TypeScript, ~15.8k⭐,
 ### Sources
 
 - [Prime Agent — repo PrimeIntellect (2026-08-14)](../sources/prime-agent-primeintellect-2026-08-14.md)
+
+### Referenced By
+
+- [Prime Intellect](../entities/prime-intellect.md)
 <!-- openclaw:wiki:related:end -->

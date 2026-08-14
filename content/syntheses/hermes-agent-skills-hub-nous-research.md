@@ -14,6 +14,9 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+### Collegamenti
+- Prodotto da [Nous Research](../entities/nous-research.md)
+- Stesso formato di [Webwright](webwright-microsoft-browser-agent.md), che abbiamo integrato come skill di agente: il registry è un bacino da cui pescare, non solo una vetrina
 <!-- openclaw:human:end -->
 
 ## Summary
@@ -27,7 +30,7 @@ publish: true
 
 ## Cos'è
 
-Skills Hub ufficiale di **Hermes Agent** (agente AI di Nous Research): registry/browser per **scoprire, cercare e installare skill e plugin** per l'agente. Interfaccia Docusaurus; il catalogo (rivendicati 88k+ skill su più registry) viene caricato dinamicamente lato client, quindi non è scrapabile staticamente — da aprire nel browser per l'esplorazione reale.
+Skills Hub ufficiale di **Hermes Agent** (agente AI di Nous Research): registry/browser per **scoprire, cercare e installare skill e plugin** per l'agente. Interfaccia Docusaurus; il catalogo (la pagina dichiara «88k+ skills across every registry»; la segnalazione del 2026-08-07 parlava di 90.684 — cifra non confermata sul sito, verifica 2026-08-14) viene caricato dinamicamente lato client, quindi non è scrapabile staticamente — da aprire nel browser per l'esplorazione reale.
 
 ## Numeri (al 2026-08-07)
 
@@ -64,4 +67,8 @@ Risorsa **da esplorare** (segnalata da Peter il 2026-08-10). Utile per due motiv
 ### Sources
 
 - [Hermes Agent Skills Hub — segnalazione 2026-08-07](../sources/hermes-skills-hub-2026-08-07.md)
+
+### Referenced By
+
+- [Nous Research](../entities/nous-research.md)
 <!-- openclaw:wiki:related:end -->

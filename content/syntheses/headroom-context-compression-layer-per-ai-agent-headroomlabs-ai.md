@@ -14,6 +14,10 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+### Collegamenti
+- Prodotto da [Headroom Labs](../entities/headroom-labs.md)
+- Terza leva sul costo del contesto, accanto a [context caching](../concepts/context-caching.md) (riusa il prefisso) e ai [modelli long-context](../concepts/long-context-models.md) (allargano la finestra). Headroom riduce ciò che entra
+- I suoi numeri sono in unità ancora diverse dalle quattro già confrontate in [memory-economics](../topics/memory-economics.md)
 <!-- openclaw:human:end -->
 
 ## Summary
@@ -22,7 +26,7 @@ publish: true
 
 **Repo:** https://github.com/headroomlabs-ai/headroom
 **Docs:** https://docs.headroomlabs.ai/docs
-**Linguaggio:** Python · **License:** Apache-2.0 · **Stars:** ~66k (al 2026-08-14)
+**Linguaggio:** Rust · **License:** Apache-2.0 · **Stars:** 66,3k (verificato sul repo il 2026-08-14)
 
 ## Cos'è
 
@@ -80,4 +84,8 @@ Strumento di **context compression** mature (Apache-2.0, molto attivo, ~66k star
 ### Sources
 
 - [Headroom — segnalazione 2026-08-04](../sources/headroom-2026-08-04.md)
+
+### Referenced By
+
+- [Headroom Labs](../entities/headroom-labs.md)
 <!-- openclaw:wiki:related:end -->

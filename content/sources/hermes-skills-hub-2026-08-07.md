@@ -8,6 +8,9 @@ ingestedAt: 2026-08-14T14:36:43.984Z
 updatedAt: 2026-08-14T14:36:43.984Z
 status: active
 publish: true
+date: 2026-08-07
+tags: [agent-skills, skills-hub, nous-research, hermes, claude-code, codex, cursor, developer-tools]
+url: https://hermes-agent.nousresearch.com/docs/skills
 ---
 
 # Hermes Agent Skills Hub — segnalazione 2026-08-07
@@ -18,25 +21,9 @@ publish: true
 - Bytes: 1530
 - Updated: 2026-08-14T14:36:43.984Z
 
-## Content
-```text
----
-id: hermes-agent-skills-hub-2026-08-07
-pageType: source
-title: "Hermes Agent Skills Hub — 90.684 skill per agenti (Nous Research)"
-type: source
-date: 2026-08-07
-updatedAt: 2026-08-07T18:00:42Z
-tags: [agent-skills, skills-hub, nous-research, hermes, claude-code, codex, cursor, developer-tools]
-url: https://hermes-agent.nousresearch.com/docs/skills
-publish: true
----
-
-# Hermes Agent Skills Hub — 90.684 skill per agenti
-
 **Sito:** https://hermes-agent.nousresearch.com/docs/skills
 
-**Provenienza:** segnalazione del 2026-08-07. Fonte primaria: https://hermes-agent.nousresearch.com/docs/skills
+**Provenienza:** segnalazione del 2026-08-07.
 
 ## Descrizione
 
@@ -54,7 +41,6 @@ Gli sviluppatori di Hermes (Nous Research) hanno raccolto migliaia di skill per 
 
 La piattaforma presenta oltre 90.000 skill distribuite su **11 registry**. Si può navigare tra categorie diverse (gaming, analytics, ecc.); cliccando una skill a sinistra appare il comando di installazione specifico, rendendo facile estendere le capacità dell'agente. Link alla documentazione ufficiale: hermes-agent.nousresearch.com/docs/skills
 
-```
 
 ## Notes
 <!-- openclaw:human:start -->

@@ -3,7 +3,7 @@ title: "Agentic RAG"
 category: concept
 sources: [raw/notes/llm-memory-context-evolution-2026.md]
 created: 2026-04-28
-updated: 2026-08-12
+updated: 2026-08-14
 verified: 2026-08-12
 tags: [retrieval, agents, rag]
 aliases: [Agentic RAG]
@@ -92,6 +92,7 @@ NotebookLM uses a limited form of Agentic RAG: query rewriting + hybrid retrieva
 - [[grounding-across-architectures]] — synthesis drawing on this page
 - [[memory-economics]] — synthesis drawing on this page
 - [[notebooklm-hybrid-stack]] — synthesis drawing on this page
+- [Prime Agent](../syntheses/prime-agent-self-improving-rlm-agent-primeintellect-ai.md) — sub-agent ricorsivi come chiamate di funzione, con harness che accumula stato; memory-wiki
 
 ## Sources
 

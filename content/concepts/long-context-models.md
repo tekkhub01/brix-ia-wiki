@@ -3,7 +3,7 @@ title: "Long-Context Models"
 category: concept
 sources: [raw/notes/llm-memory-context-evolution-2026.md]
 created: 2026-04-28
-updated: 2026-08-12
+updated: 2026-08-14
 verified: 2026-08-12
 tags: [llm, context-window, architecture]
 aliases: [Long Context, Long-Context Models]
@@ -63,6 +63,7 @@ What changed in 2026 is that the *third* option got costed. [[llm-wiki-karpathy|
 - [[quantization]] — links here
 - [[memory-economics]] — synthesis drawing on this page
 - [[notebooklm-hybrid-stack]] — synthesis drawing on this page
+- [Headroom](../syntheses/headroom-context-compression-layer-per-ai-agent-headroomlabs-ai.md) — riduce ciò che entra nella finestra invece di allargarla; memory-wiki
 
 ## Sources
 

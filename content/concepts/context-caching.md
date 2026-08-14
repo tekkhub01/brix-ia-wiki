@@ -3,7 +3,7 @@ title: "Context Caching"
 category: concept
 sources: [raw/notes/llm-memory-context-evolution-2026.md]
 created: 2026-04-28
-updated: 2026-08-12
+updated: 2026-08-14
 verified: 2026-08-12
 tags: [inference-optimization, caching, cost]
 aliases: [Context Caching, Prompt Caching]
@@ -96,6 +96,7 @@ For on-premise LLM (GLM 5.1 + vLLM/KTransformers), similar techniques exist:
 - [[quantization]] — links here
 - [[memory-economics]] — synthesis drawing on this page
 - [[notebooklm-hybrid-stack]] — synthesis drawing on this page
+- [Headroom](../syntheses/headroom-context-compression-layer-per-ai-agent-headroomlabs-ai.md) — comprime il contesto prima dell'invio invece di riusarne il prefisso; leva adiacente, memory-wiki
 
 ## Sources
 

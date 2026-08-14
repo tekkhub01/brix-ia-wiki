@@ -3,7 +3,7 @@ title: "The Economics of LLM Memory: Retrieval, Compilation, and Caching"
 category: topic
 sources: [raw/notes/llm-memory-context-evolution-2026.md]
 created: 2026-08-12
-updated: 2026-08-12
+updated: 2026-08-14
 verified: 2026-08-12
 tags: [economics, retrieval, write-time-synthesis, caching, cost]
 aliases: [Memory Economics, RAG vs Compilation Cost, LLM Memory Cost Models]
@@ -60,6 +60,7 @@ Both the LLM Wiki study and the RAG page name the same swing variable, using dif
 - [[grounding-across-architectures|Grounding and Failure Modes Across Memory Architectures]]
 - [[structure-vs-iteration|Structure vs. Iteration]]
 - [[notebooklm-hybrid-stack]] — synthesis drawing on this page
+- [Headroom](../syntheses/headroom-context-compression-layer-per-ai-agent-headroomlabs-ai.md) — un quinto numero, in unità ancora diverse: 15–20% sui coding agent, 60–95% su JSON; memory-wiki
 
 ## Sources
 

@@ -13,6 +13,9 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+### Collegamenti
+- Si posiziona esplicitamente contro Claude Code di [Anthropic](../entities/anthropic.md) — il 245× dichiarato è sul tempo di avvio, non sulla qualità dell'output
+- Importa le sessioni da Claude Code, Codex, OpenCode e Cursor: si propone come sostituto drop-in, il che rende il confronto verificabile sul campo
 <!-- openclaw:human:end -->
 
 ## Summary
