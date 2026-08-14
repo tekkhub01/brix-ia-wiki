@@ -3,7 +3,7 @@ pageType: source
 id: source.prime-agent-primeintellect-2026-08-14
 title: "Prime Agent — repo PrimeIntellect (2026-08-14)"
 sourceType: local-file
-sourcePath: /home/brix-ia/.openclaw/workspace/prime-agent-primeintellect-2026-08-14.md
+sourcePath: prime-agent-primeintellect-2026-08-14.md
 ingestedAt: 2026-08-14T15:01:11.559Z
 updatedAt: 2026-08-14T15:01:11.559Z
 status: active
@@ -16,10 +16,9 @@ url: https://github.com/PrimeIntellect-ai/prime-agent
 # Prime Agent — repo PrimeIntellect (2026-08-14)
 
 ## Source
-- Type: `local-file`
-- Path: `/home/brix-ia/.openclaw/workspace/prime-agent-primeintellect-2026-08-14.md`
+- Origine: https://github.com/PrimeIntellect-ai/prime-agent
+- Ingerita da file locale `prime-agent-primeintellect-2026-08-14.md` il 2026-08-14
 - Bytes: 3667
-- Updated: 2026-08-14T15:01:11.559Z
 
 **Repo:** https://github.com/PrimeIntellect-ai/prime-agent
 **Linguaggio:** TypeScript · **License:** MIT · **Stars:** ~15.8k (al 2026-08-14)

@@ -162,7 +162,13 @@ def _by_stem(pub: dict[str, PurePosixPath]) -> dict[str, PurePosixPath]:
 
 def linkify_bare(text: str, destdir: PurePosixPath,
                  stem_map: dict[str, PurePosixPath]) -> tuple[str, int]:
-    """Trasforma le menzioni nude `pagina.md` in link veri."""
+    """Trasforma le menzioni nude `pagina.md` in link veri, solo nel corpo.
+
+    Il frontmatter va escluso: un valore che finisce in `.md` — per esempio
+    `sourcePath: pagina.md` — verrebbe riscritto come link markdown, e il
+    risultato non e' piu' YAML valido. Il build fallisce sull'intero sito,
+    non solo su quella pagina.
+    """
     n = 0
 
     def repl(m: re.Match) -> str:
@@ -175,10 +181,15 @@ def linkify_bare(text: str, destdir: PurePosixPath,
         rel = os.path.relpath(stem_map[stem].as_posix(), destdir.as_posix())
         return f"[{stem}]({rel}.md)"
 
+    # Il frontmatter resta intatto: si riscrive solo da qui in poi.
+    fm = FM_RE.match(text)
+    head, text = (text[:fm.end()], text[fm.end():]) if fm else ("", text)
+
     # Non toccare il contenuto di code fence e code span.
     parts = FENCE_RE.split(text)
     for i in range(0, len(parts), 2):
         parts[i] = BARE_MD_RE.sub(repl, parts[i])
+    parts[0] = head + parts[0]
     return "".join(parts), n
 
 

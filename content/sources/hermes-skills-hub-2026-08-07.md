@@ -3,7 +3,7 @@ pageType: source
 id: source.hermes-skills-hub-2026-08-07
 title: "Hermes Agent Skills Hub — segnalazione 2026-08-07"
 sourceType: local-file
-sourcePath: /home/brix-ia/.openclaw/workspace/hermes-skills-hub-2026-08-07.md
+sourcePath: hermes-skills-hub-2026-08-07.md
 ingestedAt: 2026-08-14T14:36:43.984Z
 updatedAt: 2026-08-14T14:36:43.984Z
 status: active
@@ -16,10 +16,9 @@ url: https://hermes-agent.nousresearch.com/docs/skills
 # Hermes Agent Skills Hub — segnalazione 2026-08-07
 
 ## Source
-- Type: `local-file`
-- Path: `/home/brix-ia/.openclaw/workspace/hermes-skills-hub-2026-08-07.md`
+- Origine: https://hermes-agent.nousresearch.com/docs/skills
+- Ingerita da file locale `hermes-skills-hub-2026-08-07.md` il 2026-08-14
 - Bytes: 1530
-- Updated: 2026-08-14T14:36:43.984Z
 
 **Sito:** https://hermes-agent.nousresearch.com/docs/skills
 

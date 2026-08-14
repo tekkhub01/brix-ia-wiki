@@ -3,7 +3,7 @@ pageType: source
 id: source.jcode-coding-agent-2026-08-14
 title: "JCode — segnalazione 2026-08-14"
 sourceType: local-file
-sourcePath: /home/brix-ia/.openclaw/workspace/jcode-coding-agent-2026-08-14.md
+sourcePath: jcode-coding-agent-2026-08-14.md
 ingestedAt: 2026-08-14T14:33:12.816Z
 updatedAt: 2026-08-14T14:33:12.816Z
 status: active
@@ -16,10 +16,9 @@ url: https://jcode.sh/
 # JCode — segnalazione 2026-08-14
 
 ## Source
-- Type: `local-file`
-- Path: `/home/brix-ia/.openclaw/workspace/jcode-coding-agent-2026-08-14.md`
+- Origine: https://jcode.sh/
+- Ingerita da file locale `jcode-coding-agent-2026-08-14.md` il 2026-08-14
 - Bytes: 1364
-- Updated: 2026-08-14T14:33:12.816Z
 
 **Sito:** https://jcode.sh/
 

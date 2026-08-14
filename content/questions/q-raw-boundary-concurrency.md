@@ -7,7 +7,7 @@ created: 2026-08-14
 updated: 2026-08-14
 last_checked: 2026-08-14
 tags: [question, gap, llm-memory]
-summary: "[llm-wiki-karpathy](../concepts/llm-wiki-karpathy.md) describes 5-10 agents fanning out but never asks what happens when two synthesis agents touch the same page."
+summary: "llm-wiki-karpathy.md describes 5-10 agents fanning out but never asks what happens when two synthesis agents touch the same page."
 confidence: high
 origin: "2026-08-12 speculation pass; persisted 2026-08-14"
 publish: true

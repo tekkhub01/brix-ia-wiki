@@ -3,7 +3,7 @@ pageType: source
 id: source.pdf-inspector-2026-08-09
 title: "PDF Inspector — segnalazione 2026-08-09"
 sourceType: local-file
-sourcePath: /home/brix-ia/.openclaw/workspace/pdf-inspector-2026-08-09.md
+sourcePath: pdf-inspector-2026-08-09.md
 ingestedAt: 2026-08-14T14:29:18.230Z
 updatedAt: 2026-08-14T14:29:18.230Z
 status: active
@@ -16,10 +16,9 @@ url: https://github.com/firecrawl/pdf-inspector
 # PDF Inspector — segnalazione 2026-08-09
 
 ## Source
-- Type: `local-file`
-- Path: `/home/brix-ia/.openclaw/workspace/pdf-inspector-2026-08-09.md`
+- Origine: https://github.com/firecrawl/pdf-inspector
+- Ingerita da file locale `pdf-inspector-2026-08-09.md` il 2026-08-14
 - Bytes: 2054
-- Updated: 2026-08-14T14:29:18.230Z
 
 **Repository:** https://github.com/firecrawl/pdf-inspector
 

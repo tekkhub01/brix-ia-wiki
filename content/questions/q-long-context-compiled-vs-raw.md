@@ -7,7 +7,7 @@ created: 2026-08-14
 updated: 2026-08-14
 last_checked: 2026-08-14
 tags: [question, gap, llm-memory]
-summary: "[long-context-models](../concepts/long-context-models.md) never engages positional-degradation findings at all, despite resting its central claim on context quality rather than window size."
+summary: "long-context-models.md never engages positional-degradation findings at all, despite resting its central claim on context quality rather than window size."
 confidence: high
 origin: "2026-08-12 speculation pass; persisted 2026-08-14"
 publish: true
