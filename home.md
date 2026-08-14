@@ -35,10 +35,16 @@ una per una.
 [[span-level-attribution|Attribuzione span-level]] ·
 [[quantization|Quantizzazione]] · [[notebooklm|NotebookLM]]
 
-## Modelli e piattaforme
+## Chi le costruisce
 
-[[claude-anthropic|Claude]] · [[glm-5.1|GLM 5.1]] ·
-[[openrouter|OpenRouter]] · [[rotorquant|RotorQuant]]
+Aziende e persone, con i loro prodotti dentro la pagina di chi li rilascia —
+Claude sta in Anthropic, GLM 5.1 in Z.AI, RotorQuant in scrya-com.
+
+[[anthropic|Anthropic]] · [[google|Google]] · [[z-ai|Z.AI]] ·
+[[openrouter|OpenRouter]] · [[firecrawl|Firecrawl]] ·
+[[nous-research|Nous Research]] · [[prime-intellect|Prime Intellect]] ·
+[[headroom-labs|Headroom Labs]] · [[scrya-com|scrya-com]] ·
+[[karpathy-andrej|Andrej Karpathy]]
 
 ## Strumenti
 
