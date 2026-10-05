@@ -88,6 +88,27 @@ Per [harness-vs-model](../topics/harness-vs-model.md): i mods cambiano
 l'harness *a runtime e per-utente* — un benchmark "Claude Code" corso con mods diversi non è
 lo stesso harness. Ricade nel problema delle [due classifiche](../syntheses/due-classifiche-per-lo-stesso-benchmark.md).
 
+## Ecosistema community (ricercato il 5/10)
+
+- **[awesome-claude-code-mods](https://github.com/karanb192/awesome-claude-code-mods)** —
+  catalogo indipendente di **1.744 mod pubblici** scansionati da GitHub (scan 4/10), con
+  l'output di `claude plugin validate` per ciascuno: cosa può leggere/scrivere/eseguire/inviare
+  in rete. È la risposta pratica al problema dei permessi: browse su mods.aidojo.si.
+- **Mod ufficiali built-in**: Anthropic usa i mod per features proprie (/diff, supporto
+  AGENTS.md) — la superficie pubblica e quella interna sono lo stesso meccanismo.
+- **`next-steps`** (marketplace `anthropics/claude-plugins-community`) — suggerisce cosa fare
+  dopo ogni turno, incluso scegliere skill e comandi.
+- Mod community notevoli (per stelle/capacità): **token-optimizer** (alexgreensh, 2.5k —
+  "ghost tokens", sopravvivenza alla compaction), **ctx-handoff-mod** (cablate — handoff
+  automatico a conversazione fresca a soglia di contesto), **claude-flightdeck** (scasella —
+  dashboard live contesto/costo), **prismantis** (reply tematizzate con tabelle/grafici),
+  **terminal-browser** (zenbu-labs — browser nel terminale), **claude-pokemon-mod** (il
+  "gioco sopra il prompt" del post russo è un mod reale), **glass** (look da desktop-app).
+  **OneWave-AI/claude-code-mods**: 10 mod MIT con 155 test, orientati guardrail.
+- Annuncio: post @ClaudeDevs 1/10 (non 5/10 — la segnalazione INCUBE era in ritardo di 4
+  giorni); Boris Cherny: "non c'è motivo per cui l'esperienza di Claude di tutti debba
+  essere identica".
+
 ## Riferimenti
 
 - Docs: https://code.claude.com/docs/en/plugins/mods/overview (più le pagine /interface, /events, /api, /admin, /create)
