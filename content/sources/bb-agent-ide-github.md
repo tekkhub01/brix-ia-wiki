@@ -67,6 +67,7 @@ agente che si auto-costruisce) — è nella pagina della fonte Orca.
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
+- [Claude Code Mods — plugin per personalizzare interfaccia e tool call (docs ufficiali)](claude-code-mods-docs-2026-10-05.md)
 - [deepseek harness github](deepseek-harness-github.md)
 - [Orca ADE — agente di orchestrazione per flotte di agenti paralleli (GitHub stablyai/orca)](orca-ade-github.md)
 <!-- openclaw:wiki:related:end -->

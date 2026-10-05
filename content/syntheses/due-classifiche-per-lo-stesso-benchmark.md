@@ -124,6 +124,7 @@ harness né perché conti. Questi numeri sono la ragione empirica per aprirlo.
 ### Referenced By
 
 - [Artificial Analysis](../entities/artificial-analysis.md)
+- [Claude Code Mods — plugin per personalizzare interfaccia e tool call (docs ufficiali)](../sources/claude-code-mods-docs-2026-10-05.md)
 - [Harness Engineering — Agent = Model + Harness: The 6-Layer Production Playbook](../sources/harness-engineering-6-layer-playbook-2026.md)
 - [Laude Institute](../entities/laude-institute.md)
 - [LLM-as-a-Verifier — la verifica come asse di scaling](llm-as-a-verifier-la-verifica-come-asse-di-scaling.md)

@@ -76,6 +76,9 @@ solo in chat". Verificato alla fonte:
 - Contesto vault: è il filone desktop dell'architettura "Everything is a Plugin" già
   documentato nella sintesi collegata; per il confronto a tre con bb e Orca →
   [bb-agent-ide-github](bb-agent-ide-github.md) e [orca-ade-github](orca-ade-github.md).
+  **Definizione formale delle Claude Code Mods ora in vault** (5/10):
+  [claude-code-mods-docs-2026-10-05](claude-code-mods-docs-2026-10-05.md) — è il superset
+  che il layer di compatibilità di DeepSeek dichiara di voler contenere.
 
 <!-- openclaw:human:end -->
 
@@ -84,6 +87,7 @@ solo in chat". Verificato alla fonte:
 ### Referenced By
 
 - [bb — The agent IDE that builds itself (GitHub get-bb/bb)](bb-agent-ide-github.md)
+- [Claude Code Mods — plugin per personalizzare interfaccia e tool call (docs ufficiali)](claude-code-mods-docs-2026-10-05.md)
 - [DeepSeek](../entities/deepseek.md)
 - [DeepSeek Harness — Agent Harness "Everything is a Plugin"](../syntheses/deepseek-harness-agent-harness-everything-is-a-plugin.md)
 - [Orca ADE — agente di orchestrazione per flotte di agenti paralleli (GitHub stablyai/orca)](orca-ade-github.md)
