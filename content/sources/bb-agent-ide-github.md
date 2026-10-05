@@ -67,5 +67,6 @@ agente che si auto-costruisce) — è nella pagina della fonte Orca.
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
+- [deepseek harness github](deepseek-harness-github.md)
 - [Orca ADE — agente di orchestrazione per flotte di agenti paralleli (GitHub stablyai/orca)](orca-ade-github.md)
 <!-- openclaw:wiki:related:end -->

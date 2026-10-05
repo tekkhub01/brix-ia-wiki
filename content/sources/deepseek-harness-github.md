@@ -51,6 +51,32 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+
+### Update 2026-10-05 — desktop macOS/Windows (verifica via GitHub API)
+
+Segnalazione INCUBE.AI (canale Telegram russo, 4/10): "DeepSeek ha rilasciato Harness per
+macOS e Windows — alternativa aperta a Claude Code e Codex; l'agente può crearsi plugin da
+solo in chat". Verificato alla fonte:
+
+- **Sì, desktop macOS/Windows reale**: release `dsh-v0.2.0-rc.2` (29/9) integra il comando
+  `dsh` nell'app desktop (gestione plugin senza installare Node/pnpm); fix dedicati su porte
+  Windows riservate, sandbox PowerShell con diagnosi/riparazione permessi autorizzata,
+  firma Node per macOS Intel. Ultima release `dsh-v0.2.1-alpha.1` (3/10) — **ancora alpha**.
+- **Sì, self-creation di plugin**: `v0.2.1-alpha.1` aggiunge l'ingresso "fai creare il plugin
+  all'agente" nella pagina di gestione plugin (bozza + esecuzione solo dopo invio richiesta).
+  Nella stessa release: layer di compatibilità **sperimentale con Claude Code Mods** —
+  dichiarato esplicitamente come verifica che le Mods siano un sottoinsieme del plugin API,
+  non compatibilità reale. Lettura onesta: DeepSeek sta mappando il terreno, non promettendo
+  migrazione.
+- **No, "alternativa a Claude Code/Codex" è impreciso**: Harness resta provider-agnostic
+  ("qualunque modello"), gira su account DeepSeek ma non sostituisce quelle CLI — le ospita
+  affiancate: Orca lo lista tra i ~35 agenti che pilota. È un concorrente della *superficie*
+  (desktop agent con workspace/file/terminal), non del motore.
+- **Numeri**: 243.732 stelle (da 146.796 al 17/8 — +97k in ~7 settimane), push attivo 3/10.
+- Contesto vault: è il filone desktop dell'architettura "Everything is a Plugin" già
+  documentato nella sintesi collegata; per il confronto a tre con bb e Orca →
+  [bb-agent-ide-github](bb-agent-ide-github.md) e [orca-ade-github](orca-ade-github.md).
+
 <!-- openclaw:human:end -->
 
 ## Related

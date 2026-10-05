@@ -76,4 +76,5 @@ Orca è interamente un effetto-harness sul throughput del programmatore.
 ### Referenced By
 
 - [bb — The agent IDE that builds itself (GitHub get-bb/bb)](bb-agent-ide-github.md)
+- [deepseek harness github](deepseek-harness-github.md)
 <!-- openclaw:wiki:related:end -->
