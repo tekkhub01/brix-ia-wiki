@@ -59,9 +59,13 @@ la **superficie multi-ingoresso** (desktop/web/CLI/HTTP) come parte del design d
 non come client calato sopra. Riguarda da vicino anche
 [harness-vs-model](../topics/harness-vs-model.md): se l'harness si
 auto-costruisce, il confine model/harness diventa una variabile del prodotto stesso.
-Il thread-steering/hand-off tocca il tema di `q-workflow-vs-agent-structure`.
+Il thread-steering/hand-off tocca il tema di `q-workflow-vs-agent-structure`. Il confronto diretto
+con [Orca ADE](orca-ade-github.md) — stesso genere, tesi opposte (flotta di agenti altrui vs
+agente che si auto-costruisce) — è nella pagina della fonte Orca.
 
 ## Related
 <!-- openclaw:wiki:related:start -->
-- No related pages yet.
+### Referenced By
+
+- [Orca ADE — agente di orchestrazione per flotte di agenti paralleli (GitHub stablyai/orca)](orca-ade-github.md)
 <!-- openclaw:wiki:related:end -->

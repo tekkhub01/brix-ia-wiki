@@ -60,4 +60,5 @@ publish: true
 - [bb — The agent IDE that builds itself (GitHub get-bb/bb)](bb-agent-ide-github.md)
 - [DeepSeek](../entities/deepseek.md)
 - [DeepSeek Harness — Agent Harness "Everything is a Plugin"](../syntheses/deepseek-harness-agent-harness-everything-is-a-plugin.md)
+- [Orca ADE — agente di orchestrazione per flotte di agenti paralleli (GitHub stablyai/orca)](orca-ade-github.md)
 <!-- openclaw:wiki:related:end -->
