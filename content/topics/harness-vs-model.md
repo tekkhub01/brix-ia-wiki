@@ -61,3 +61,4 @@ The convergence is what carries the claim — four methods, one direction — no
 - [Harness Engineering — the 6-layer playbook](../sources/harness-engineering-6-layer-playbook-2026.md)
 - [LLM-as-a-Verifier (arXiv 2607.05391)](../sources/llm-as-a-verifier-arxiv-2607-05391.md)
 - [Verifica sulle fonti primarie dei benchmark](../sources/verifica-leaderboard-benchmark-2026-08-26.md)
+- [bb — The agent IDE that builds itself](../sources/bb-agent-ide-github.md) — un harness che si auto-costruisce: qui il confine model/harness diventa una variabile del prodotto

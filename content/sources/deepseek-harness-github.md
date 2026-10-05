@@ -57,6 +57,7 @@ publish: true
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
+- [bb — The agent IDE that builds itself (GitHub get-bb/bb)](bb-agent-ide-github.md)
 - [DeepSeek](../entities/deepseek.md)
 - [DeepSeek Harness — Agent Harness "Everything is a Plugin"](../syntheses/deepseek-harness-agent-harness-everything-is-a-plugin.md)
 <!-- openclaw:wiki:related:end -->

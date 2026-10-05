@@ -127,6 +127,7 @@ Documento è una sintesi *indipendente* di materiale pubblico (Hashimoto, field 
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
+- [bb — The agent IDE that builds itself (GitHub get-bb/bb)](bb-agent-ide-github.md)
 - [BRIX-IA](../entities/brix-ia.md)
 - [Deep Agents from Scratch — LangChain course](deep-agents-from-scratch.md)
 <!-- openclaw:wiki:related:end -->
