@@ -101,7 +101,9 @@ lo stesso harness. Ricade nel problema delle [due classifiche](../syntheses/due-
 - Mod community notevoli (per stelle/capacità): **token-optimizer** (alexgreensh, 2.5k —
   "ghost tokens", sopravvivenza alla compaction), **ctx-handoff-mod** (cablate — handoff
   automatico a conversazione fresca a soglia di contesto), **claude-flightdeck** (scasella —
-  dashboard live contesto/costo), **prismantis** (reply tematizzate con tabelle/grafici),
+  dashboard live contesto/costo — **codice analizzato il 5/10: osservatore puro**, ogni hook
+  passa l'evento invariato, zero rete/processi/file, redaction credenziali in `redact()`, MIT,
+  il miglior candidato da provare per primo), **prismantis** (reply tematizzate con tabelle/grafici),
   **terminal-browser** (zenbu-labs — browser nel terminale), **claude-pokemon-mod** (il
   "gioco sopra il prompt" del post russo è un mod reale), **glass** (look da desktop-app).
   **OneWave-AI/claude-code-mods**: 10 mod MIT con 155 test, orientati guardrail.
