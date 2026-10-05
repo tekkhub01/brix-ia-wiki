@@ -70,5 +70,7 @@ Risorsa **da esplorare** (segnalata da Peter il 2026-08-10). Utile per due motiv
 
 ### Referenced By
 
+- [Claude Code Tips (ykdojo) — le 5 skill più interessanti](claude-code-tips-ykdojo-le-5-skill-più-interessanti.md)
 - [Nous Research](../entities/nous-research.md)
+- [Skill OpenClaw: progress-check (barre di avanzamento ASCII)](skill-openclaw-progress-check-barre-di-avanzamento-ascii.md)
 <!-- openclaw:wiki:related:end -->

@@ -1,7 +1,7 @@
 ---
 id: brix-ia-llm-locale-2026-guida-hardware-pmi
 pageType: source
-updatedAt: 2026-03-20T00:00:00Z
+updatedAt: 2026-09-13T04:40:00Z
 publish: true
 ---
 
@@ -328,8 +328,20 @@ Then pick the right price tier from the decision matrix.
 
 **Categories:** AI Infrastructure, Hardware Procurement, Local LLMs, SME Guides, MoE Models, Bandwidth Optimization, Benchmarking
 
+## Collegamenti (dreaming 2026-08-15)
+
+- Scala per bit aggiornata al 2026-08: [Qwen3.8 su Unsloth](../syntheses/qwen3-8-unsloth-inferenza-locale.md)
+- I quant su cui poggiano le stime: [Unsloth](../entities/unsloth.md); i modelli: [Alibaba](../entities/alibaba.md)
+
 ## Related
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
+- [Alibaba](../entities/alibaba.md)
+- [BRIX-IA](../entities/brix-ia.md)
+- [Hardware per inferenza locale domestica — presente e futuro](../syntheses/hardware-per-inferenza-locale-domestica-presente-e-futuro.md)
+- [Libre WebUI — Privacy-First Web Interface for Local AI](libre-webui-github.md)
+- [NVIDIA](../entities/nvidia.md)
+- [Qwen3.8 su Unsloth — la scala hardware dell'inferenza locale](../syntheses/qwen3-8-unsloth-inferenza-locale.md)
+- [Unsloth](../entities/unsloth.md)
 <!-- openclaw:wiki:related:end -->

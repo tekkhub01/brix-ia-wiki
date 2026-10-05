@@ -68,5 +68,6 @@ Il diagramma mostra l'architettura di pdf-inspector per la classificazione local
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
+- [Firecrawl](../entities/firecrawl.md)
 - [PDF Inspector (Firecrawl)](../syntheses/pdf-inspector-firecrawl.md)
 <!-- openclaw:wiki:related:end -->

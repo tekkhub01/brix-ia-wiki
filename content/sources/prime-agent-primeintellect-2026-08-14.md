@@ -71,4 +71,5 @@ Agent di coding/ricerca **long-running e autonomo** (MIT, TypeScript, ~15.8k⭐,
 ### Referenced By
 
 - [Prime Agent — Self-Improving RLM Agent (PrimeIntellect-ai)](../syntheses/prime-agent-self-improving-rlm-agent-primeintellect-ai.md)
+- [Prime Intellect](../entities/prime-intellect.md)
 <!-- openclaw:wiki:related:end -->

@@ -5,7 +5,7 @@ title: Impeccable.style - AI Design Tool
 sourceIds:
   - web_fetch:https://impeccable.style/
 status: active
-updatedAt: 2026-05-19T14:32:30.657Z
+updatedAt: 2026-09-13T04:40:00Z
 publish: true
 ---
 
@@ -13,6 +13,9 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+### Collegamenti (dreaming 2026-08-15)
+- Stesso cluster strumenti di design: [icons0.dev](icons0-dev-icon-search-engine-con-mcp-server.md)
+
 <!-- openclaw:human:end -->
 
 ## Summary
@@ -77,9 +80,9 @@ Tool progettato per agenti AI come Codex e Claude Code. Supporta framework moder
 ## Collegamenti
 
 ### Entità correlate nella wiki
-- **[[sources/anthropic-claude-design-labs]]** - Impeccable è un tool per design AI simile alle funzionalità di Claude Design
-- **agenti fisici ai mercato 2026 deep research** - Impeccable opera nel domaine degli agenti AI per design
-- **[[sources/llm-memory-context-evolution-2026]]** - LIVE mode di Impeccable utilizza pattern di caching e session journal
+- **[Introducing Claude Design by Anthropic Labs](../sources/anthropic-claude-design-labs.md)** - Impeccable è un tool per design AI simile alle funzionalità di Claude Design
+- **Agenti Fisici AI 2026: Il Mercato — Deep Research** - Impeccable opera nel domaine degli agenti AI per design
+- **[LLM Memory & Context Evolution — Deep Research](../sources/llm-memory-context-evolution-2026.md)** - LIVE mode di Impeccable utilizza pattern di caching e session journal
 <!-- openclaw:wiki:generated:end -->
 
 ## Related
@@ -87,5 +90,6 @@ Tool progettato per agenti AI come Codex e Claude Code. Supporta framework moder
 ### Referenced By
 
 - [AI Website Cloner Template](../sources/ai-website-cloner-template-github.md)
+- [icons0.dev — Icon Search Engine con MCP Server](icons0-dev-icon-search-engine-con-mcp-server.md)
 - [Introducing Claude Design by Anthropic Labs](../sources/anthropic-claude-design-labs.md)
 <!-- openclaw:wiki:related:end -->

@@ -5,7 +5,7 @@ title: Webwright — Microsoft Browser Agent
 sourceIds:
   - webwright-microsoft-github
 status: active
-updatedAt: 2026-06-06T12:46:17.140Z
+updatedAt: 2026-09-13T04:40:00Z
 publish: true
 ---
 
@@ -13,6 +13,9 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+### Collegamenti (dreaming 2026-08-15)
+- Cluster agent-loop: [Archon](../sources/archon-workflow-engine.md), [Loop Engineering](../sources/loop-engineering-complete-guide-huashu.md)
+
 <!-- openclaw:human:end -->
 
 ## Summary
@@ -57,6 +60,12 @@ La maggior parte dei siti non ha API pubbliche — solo interfacce web. Webwrigh
 
 ### Referenced By
 
+- [Archon — Open-source workflow engine for AI coding agents](../sources/archon-workflow-engine.md)
+- [Claude Code Tips (ykdojo) — le 5 skill più interessanti](claude-code-tips-ykdojo-le-5-skill-più-interessanti.md)
+- [DeepSeek Harness — Agent Harness "Everything is a Plugin"](deepseek-harness-agent-harness-everything-is-a-plugin.md)
+- [Due classifiche per lo stesso benchmark — perché un punteggio non è del modello](due-classifiche-per-lo-stesso-benchmark.md)
+- [Harness Engineering — Agent = Model + Harness: The 6-Layer Production Playbook](../sources/harness-engineering-6-layer-playbook-2026.md)
 - [Hermes Agent Skills Hub (Nous Research)](hermes-agent-skills-hub-nous-research.md)
+- [Loop Engineering — The Complete Guide](../sources/loop-engineering-complete-guide-huashu.md)
 - [Nous Research](../entities/nous-research.md)
 <!-- openclaw:wiki:related:end -->

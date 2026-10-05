@@ -1,7 +1,7 @@
 ---
 id: libre-webui-github
 pageType: source
-updatedAt: 2026-03-10T00:00:00Z
+updatedAt: 2026-09-13T04:40:00Z
 publish: true
 ---
 
@@ -371,7 +371,18 @@ Found a vulnerability? Email [security@kroonen.ai](mailto:security@kroonen.ai)
 ## Categories
 Local AI, privacy, open-source, self-hosted, web UI, Ollama, chat interface, AI agents, OpenClaw, plugin architecture, document RAG, multi-provider, ethics, charter
 
+## Collegamenti (dreaming 2026-08-15)
+
+- Stessa categoria, scelte opposte: LobeChat
+- Stesso pattern self-hosted privacy-first in altro dominio: [Immich](immich-project.md)
+- I modelli che questa UI serve: [Alibaba](../entities/alibaba.md) (famiglia Qwen)
+- La fascia hardware sottostante: [guida LLM locale per PMI](brix-ia-llm-locale-2026-guida-hardware-pmi.md)
+
 ## Related
 <!-- openclaw:wiki:related:start -->
-- No related pages yet.
+### Referenced By
+
+- [Alibaba](../entities/alibaba.md)
+- [Hugging Face](../entities/hugging-face.md)
+- [Immich — Self-hosted Photo/Video Management](immich-project.md)
 <!-- openclaw:wiki:related:end -->

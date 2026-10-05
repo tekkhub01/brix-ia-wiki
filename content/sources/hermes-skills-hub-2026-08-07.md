@@ -50,4 +50,5 @@ La piattaforma presenta oltre 90.000 skill distribuite su **11 registry**. Si pu
 ### Referenced By
 
 - [Hermes Agent Skills Hub (Nous Research)](../syntheses/hermes-agent-skills-hub-nous-research.md)
+- [Nous Research](../entities/nous-research.md)
 <!-- openclaw:wiki:related:end -->

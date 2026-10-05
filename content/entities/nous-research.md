@@ -5,7 +5,7 @@ pageType: entity
 entityType: organization
 sourceIds:
   - sources/hermes-skills-hub-2026-08-07.md
-updatedAt: 2026-08-14T00:00:00Z
+updatedAt: 2026-09-13T05:00:00Z
 publish: true
 ---
 
@@ -34,6 +34,11 @@ rende un formato di interscambio più che un lock-in.
 
 Analisi completa: [Hermes Agent Skills Hub (Nous Research)](../syntheses/hermes-agent-skills-hub-nous-research.md)
 
+### Novità (verifica 2026-09-13)
+
+- **Bot Mode per Hermes Desktop** (17 agosto 2026): i profili agente diventano "Bots" con ruolo, modello, memoria e skill propri, interoperabili fra loro (MarkTechPost, @NousResearch).
+- Round da **$75M a valutazione $1.5B** (TechCrunch, 13 luglio 2026, Robot Ventures + USV) — più dell'intera storia di funding precedente (~$70M).
+
 ## Perché ci interessa
 
 Le nostre skill OpenClaw sono scritte a mano una per una. Un registry con skill
@@ -42,7 +47,7 @@ vedi [Webwright](../syntheses/webwright-microsoft-browser-agent.md), che abbiamo
 integrato esattamente come skill di agente.
 
 **Sources:**
-- [[hermes-skills-hub-2026-08-07|Hermes Agent Skills Hub — segnalazione 2026-08-07]]
+- [Hermes Agent Skills Hub — segnalazione 2026-08-07](../sources/hermes-skills-hub-2026-08-07.md)
 
 ## Related
 <!-- openclaw:wiki:related:start -->

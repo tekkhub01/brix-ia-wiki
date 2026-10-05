@@ -1,7 +1,7 @@
 ---
 id: ai-website-cloner-template-github
 pageType: source
-updatedAt: 2026-02-28T00:00:00Z
+updatedAt: 2026-09-13T04:40:00Z
 publish: true
 ---
 
@@ -270,8 +270,8 @@ Two files power all platform support. Edit once, regenerate for all agents:
 - Claude Design (visual handoff from prototype)
 - Claude Code (implementation)
 - shadcn/ui (component library)
-- **[[syntheses/startupa-ge-platform-for-founders-investors-talent]]** — Template utile per creare piattaforme di startup simili
-- **[[syntheses/impeccable-style-ai-design-tool]]** — Tool complementare per il design workflow
+- **[Startupa.ge - Platform for Founders, Investors & Talent](../syntheses/startupa-ge-platform-for-founders-investors-talent.md)** — Template utile per creare piattaforme di startup simili
+- **[Impeccable.style - AI Design Tool](../syntheses/impeccable-style-ai-design-tool.md)** — Tool complementare per il design workflow
 
 ---
 

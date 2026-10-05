@@ -5,7 +5,7 @@ pageType: entity
 entityType: organization
 sourceIds:
   - sources/brix-ia-newsletter-news-aprile-2026.md
-updatedAt: 2026-08-14T00:00:00Z
+updatedAt: 2026-09-13T05:00:00Z
 publish: true
 ---
 
@@ -14,7 +14,7 @@ publish: true
 **Type:** organization — progetto open-source  
 **Repository:** https://github.com/scrya-com/rotorquant  
 **Rilevanza per questo vault:** autore di RotorQuant, la tecnica di
-quantizzazione nello stack di OfficeNode
+quantizzazione nello stack di [OfficeNode](brix-ia.md)
 
 ## Tecniche
 
@@ -34,7 +34,7 @@ quantizzazione di LLM locali.
 L'efficienza estrema sui parametri (372 contro 16K) è ciò che rende praticabile
 il throughput su hardware a basso consumo: Intel N100, Apple Silicon.
 
-> Cifre non ri-verificate dopo il 2026-04-28.
+> Cifre ri-verificate il 2026-09-13 contro README GitHub e sito scrya.com: coerenza piena (PPL 6,91 vs 7,07; decode +28%; prefill 5,3×; 372 parametri, 44× meno). Il paper è di marzo 2026 (John D. Pope, Scrya), nessuna release successiva trovata.
 
 **Analisi tecnica:** la quantizzazione come argomento — e in particolare la
 compressione della KV cache come leva sulla lunghezza di contesto utile — è
@@ -43,15 +43,22 @@ nel topic wiki.
 
 **Sources:**
 
+## Collegamenti (dreaming 2026-08-15)
+
+- L'altro metodo di quantizzazione misurato in questo vault: [Unsloth](unsloth.md)
+
 ## Related
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
 - [Esperimenti Quantizzazione Gemma 4 12B — QAT, MTP, TurboQuant](../syntheses/esperimenti-quantizzazione-gemma-4-12b-qat-mtp-turboquant.md)
+- [L'Incrocio delle Tecnologie di Compressione Locale — Gemma 4 12B tra QAT, MTP e TurboQuant](../sources/l-incrocio-delle-tecnologie-di-compressione-locale-gemma-4-12b-tra-qat-mtp-e-turboquant.md)
 
 ### Related Pages
 
 - [Anthropic](anthropic.md)
+- [BRIX-IA](brix-ia.md)
+- [Hugging Face](hugging-face.md)
 - [OpenRouter](openrouter.md)
 - [Z.AI (Zhipu AI)](z-ai.md)
 <!-- openclaw:wiki:related:end -->

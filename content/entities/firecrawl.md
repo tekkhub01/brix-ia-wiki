@@ -5,7 +5,7 @@ pageType: entity
 entityType: organization
 sourceIds:
   - sources/pdf-inspector-2026-08-09.md
-updatedAt: 2026-08-14T00:00:00Z
+updatedAt: 2026-09-13T05:00:00Z
 publish: true
 ---
 
@@ -46,6 +46,10 @@ dopo:   PDF → classificazione → estrazione nativa → OCR solo delle pagine 
 
 Analisi completa: [PDF Inspector (Firecrawl)](../syntheses/pdf-inspector-firecrawl.md)
 
+### Novità (verifica 2026-09-13)
+
+La piattaforma commerciale si è allargata oltre le due librerie Rust tracciate qui: endpoint **Agent** (ricerca web autonoma da prompt), **/interact** (scrape + azioni sulla pagina), **Firecrawl Index / Developer Index** (claim: scraping fino a 5× più veloce con opt-in), Java SDK community. Trazione dichiarata: $14.5M Series A (Nexus Venture Partners), 350k+ developer, 48k+ stelle GitHub. Non cambia il perimetro di interesse del vault (anydoc e PDF Inspector restano il lato on-premise).
+
 ## Perché ci interessa
 
 Entrambi risolvono lo stesso problema che affrontiamo con MinerU e Gotenberg:
@@ -54,11 +58,16 @@ un servizio esterno. PDF Inspector in particolare è complementare, non
 alternativo: decide *cosa* mandare all'OCR, non lo sostituisce.
 
 **Sources:**
-- [[pdf-inspector-2026-08-09|PDF Inspector — segnalazione 2026-08-09]]
+- [PDF Inspector — segnalazione 2026-08-09](../sources/pdf-inspector-2026-08-09.md)
+
+## Collegamenti (dreaming 2026-08-15)
+
+- Stessa catena documentale, lato rendering: [Gotenberg](../syntheses/gotenberg.md)
 
 ## Related
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
+- [Gotenberg](../syntheses/gotenberg.md)
 - [PDF Inspector (Firecrawl)](../syntheses/pdf-inspector-firecrawl.md)
 <!-- openclaw:wiki:related:end -->

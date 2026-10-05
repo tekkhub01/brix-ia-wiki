@@ -5,7 +5,7 @@ title: Startupa.ge - Platform for Founders, Investors & Talent
 sourceIds:
   - web_fetch:https://startupa.ge/
 status: active
-updatedAt: 2026-05-19T14:32:37.402Z
+updatedAt: 2026-09-13T04:40:00Z
 publish: true
 ---
 
@@ -47,9 +47,9 @@ Piattaforma utilizzata da founder provenienti da 20+ paesi.
 ## Collegamenti
 
 ### Entità correlate nella wiki
-- **agenti fisici ai mercato 2026 deep research** - Piattaforme di startup come Startupa.ge possono essere punti di integrazione per agenti AI fisici
+- **Agenti Fisici AI 2026: Il Mercato — Deep Research** - Piattaforme di startup come Startupa.ge possono essere punti di integrazione per agenti AI fisici
 - **[RAG](../concepts/rag.md)** - Piattaforme di startup possono utilizzare RAG per matching intelligente tra talenti, investitori e founder
-- **[[sources/ai-website-cloner-template-github]]** - Template per creare piattaforme simili a Startupa.ge
+- **[AI Website Cloner Template](../sources/ai-website-cloner-template-github.md)** - Template per creare piattaforme simili a Startupa.ge
 <!-- openclaw:wiki:generated:end -->
 
 ## Related

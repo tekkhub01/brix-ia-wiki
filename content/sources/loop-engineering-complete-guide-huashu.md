@@ -1,13 +1,17 @@
 ---
 id: loop-engineering-complete-guide-huashu
 pageType: source
-updatedAt: 2026-06-25T06:00:00Z
+updatedAt: 2026-09-13T05:00:00Z
+verified: 2026-09-13
 claims: []
 links: []
 publish: true
 ---
 
 # Loop Engineering — The Complete Guide
+
+> Verifica sweep 2026-09-13: fonte ri-legata al tema harness del vault; nessuna
+> novità che la smentisca. Resta un riferimento di giugno 2026.
 
 **Source:** PDF by HuaShu (花叔)
 **Version:** v260615 (June 2026)
@@ -149,7 +153,19 @@ Gaps to fill:
 ## Categories
 Loop Engineering, AI agents, agent orchestration, automation, Addy Osmani, HuaShu, Peter Steinberger, Boris Cherny, harness engineering, Claude Code, OpenClaw
 
+## Collegamenti (dreaming 2026-08-15)
+
+- [Archon](archon-workflow-engine.md) è questa tesi resa eseguibile: workflow YAML deterministici invece di prompt
+- [Prime Agent](../syntheses/prime-agent-self-improving-rlm-agent-primeintellect-ai.md) è il grado successivo: il loop che riscrive se stesso
+- Altri agenti del cluster: [JCode](../syntheses/jcode-agente-di-coding-super-veloce.md), [Webwright](../syntheses/webwright-microsoft-browser-agent.md)
+- Boris Cherny lavora in [Anthropic](../entities/anthropic.md)
+
 ## Related
 <!-- openclaw:wiki:related:start -->
-- No related pages yet.
+### Referenced By
+
+- [Archon — Open-source workflow engine for AI coding agents](archon-workflow-engine.md)
+- [JCode — Agente di coding super-veloce](../syntheses/jcode-agente-di-coding-super-veloce.md)
+- [Prime Agent — Self-Improving RLM Agent (PrimeIntellect-ai)](../syntheses/prime-agent-self-improving-rlm-agent-primeintellect-ai.md)
+- [Webwright — Microsoft Browser Agent](../syntheses/webwright-microsoft-browser-agent.md)
 <!-- openclaw:wiki:related:end -->

@@ -1,10 +1,10 @@
 ---
 title: "Long-Context Models"
 category: concept
-sources: [raw/notes/llm-memory-context-evolution-2026.md]
+sources: [raw/notes/llm-memory-context-evolution-2026.md, sources/lost-in-the-middle-abs.md]
 created: 2026-04-28
-updated: 2026-08-14
-verified: 2026-08-12
+updated: 2026-10-04
+verified: 2026-10-04
 tags: [llm, context-window, architecture]
 aliases: [Long Context, Long-Context Models]
 confidence: medium
@@ -38,6 +38,18 @@ Two things worth noting. **1M is now the default, not an opt-in** — on Claude 
 - Whole codebases, long documents, multi-document reasoning fit in a single prompt
 - Reduces dependence on chunking + RAG retrieval for medium corpora
 - Enables persistent agent state across sessions without external memory
+
+> **Caveat posizionale — ora con fonte primaria in vault.** A bigger window does not
+> mean the content is used well. [Lost in the Middle](../sources/lost-in-the-middle-abs.md)
+> (Liu et al., arXiv 2307.03172, abstract ingerita 2026-10-04) misura la curva a U:
+> performance highest at the beginning or end of the context, significantly degraded
+> in the middle, **"even for explicitly long-context models"** — on multi-document QA
+> and key-value retrieval. Two honest limits on the transfer: the paper is July 2023,
+> pre-dating the 1M tier described above, and its tasks are about *locating* relevant
+> information, not reasoning over it. The operational consequence for this vault's
+> own pattern (compilazione + rilettura): a compiled page placed mid-context is not
+> equivalent to the same page at the edges — ordering of what goes into the window
+> is a design variable, not a detail.
 
 ## Inference cost
 

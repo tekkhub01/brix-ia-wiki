@@ -5,7 +5,7 @@ pageType: entity
 entityType: organization
 sourceIds:
   - sources/prime-agent-primeintellect-2026-08-14.md
-updatedAt: 2026-08-14T00:00:00Z
+updatedAt: 2026-09-13T05:00:00Z
 publish: true
 ---
 
@@ -46,6 +46,12 @@ curl -fsSL https://app.primeintellect.ai/prime-agent/install.sh | sh
 
 Analisi completa: [Prime Agent — Self-Improving RLM Agent](../syntheses/prime-agent-self-improving-rlm-agent-primeintellect-ai.md)
 
+### Novità (verifica 2026-09-13)
+
+- Research: "Uncovering a universal offline sandbox escape" (25 ago), "Measuring Autonomous AI Research" (14 ago), Prime Flash MoE — kernel MoE ottimizzati Blackwell (13 ago).
+- Rilasci: **SYNTHETIC-2** (4M reasoning traces collaborative) e **INTELLECT-3**, MoE 100B+ trained with large-scale RL.
+- Serie A da $130M (Radical Ventures) — contesto già noto al vault via la sintesi Prime Agent.
+
 ## Perché ci interessa
 
 Il Continual Harness è la stessa idea che regge questa wiki, applicata
@@ -55,11 +61,13 @@ ricostruirlo a ogni sessione. Il confronto naturale è con
 patrimonio sono pagine, qui sono skill e memorie dell'harness.
 
 **Sources:**
-- [[prime-agent-primeintellect-2026-08-14|Prime Agent — repo PrimeIntellect (2026-08-14)]]
+- [Prime Agent — repo PrimeIntellect (2026-08-14)](../sources/prime-agent-primeintellect-2026-08-14.md)
 
 ## Related
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
+- [DeepSeek](deepseek.md)
 - [Prime Agent — Self-Improving RLM Agent (PrimeIntellect-ai)](../syntheses/prime-agent-self-improving-rlm-agent-primeintellect-ai.md)
+- [Scaling Intelligence Lab (Stanford)](scaling-intelligence-lab.md)
 <!-- openclaw:wiki:related:end -->

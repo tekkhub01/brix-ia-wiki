@@ -1,0 +1,62 @@
+---
+pageType: source
+id: source.deepseek-harness-github
+title: deepseek harness github
+sourceType: local-file
+sourcePath: /tmp/deepseek-harness-github.md
+ingestedAt: 2026-08-17T14:30:16.444Z
+updatedAt: 2026-08-17T14:30:16.444Z
+status: active
+publish: true
+---
+
+# deepseek harness github
+
+## Source
+- Type: `local-file`
+- Path: `/tmp/deepseek-harness-github.md`
+- Bytes: 1918
+- Updated: 2026-08-17T14:30:16.444Z
+
+## Content
+## DeepSeek Harness — Annuncio e verifica (GitHub)
+
+**Source:** https://github.com/deepseek-ai/deepseek-harness
+**Author:** DeepSeek (org deepseek-ai) + segnalazione via canale Telegram di aggregazione news AI (russo)
+**Type:** Agent harness open source (developer preview)
+**Category:** AI agents, plugin architecture, agent frameworks
+
+---
+
+### Claim originale (canale Telegram di news AI, 2026-08-17 13:01 UTC, russo)
+- "Creiamo agenti AI dal nulla con DeepSeek: la neuronet ha lanciato l'ambiente agentico Harness, ora il repo in piu rapida crescita su GitHub."
+- "In 3 giorni il progetto ha superato 130.000 stelle."
+- Feature chiave: un plugin puo essere TUTTO (modelli, sessioni, skill, sandbox, persino la UI). Architettura su Cordis. Schema: qualunque modello + qualunque componente = agente pronto.
+- Community: 6000 skill pronte. Topic: https://github.com/topics/dsh-plugin
+- Install: git clone https://github.com/deepseek-ai/deepseek-harness -> cd deepseek-harness -> pnpm install -> pnpm run build -> pnpm dsh web
+- Landing: https://deepseek.com/harness/en/ (quick-start npx @deepseek-ai/dsh web)
+
+### Verifica live (Claudia, GitHub API + sito ufficiale, 2026-08-17 16:20 CEST)
+- Repo deepseek-ai/deepseek-harness: pubblico, org ufficiale deepseek-ai, licenza MIT, codice sorgente incluso.
+- 146.796 stelle (created_at 2026-08-13T11:56:32Z) — claim "130k in 3 giorni" confermato e superato.
+- 14.979 fork
+- Topic dsh-plugin: 6.576 repository community (claim "6000 skill" confermato).
+- Homepage deepseek.com/harness risponde 200 ("Everything is a plugin").
+- Nota: developer preview, non stable. npx esegue codice da npm (rischio supply-chain basso ma presente).
+
+### Riferimenti
+- GitHub: https://github.com/deepseek-ai/deepseek-harness
+- Topic plugin: https://github.com/topics/dsh-plugin
+- Homepage: https://deepseek.com/harness
+
+## Notes
+<!-- openclaw:human:start -->
+<!-- openclaw:human:end -->
+
+## Related
+<!-- openclaw:wiki:related:start -->
+### Referenced By
+
+- [DeepSeek](../entities/deepseek.md)
+- [DeepSeek Harness — Agent Harness "Everything is a Plugin"](../syntheses/deepseek-harness-agent-harness-everything-is-a-plugin.md)
+<!-- openclaw:wiki:related:end -->

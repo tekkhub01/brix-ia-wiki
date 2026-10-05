@@ -5,7 +5,7 @@ pageType: entity
 entityType: organization
 sourceIds:
   - sources/headroom-2026-08-04.md
-updatedAt: 2026-08-14T00:00:00Z
+updatedAt: 2026-09-13T05:00:00Z
 publish: true
 ---
 
@@ -40,6 +40,10 @@ riduzione è sul percorso di lettura, non sull'archivio.
 
 Analisi completa: [Headroom — Context compression layer](../syntheses/headroom-context-compression-layer-per-ai-agent-headroomlabs-ai.md)
 
+### Novità (verifica 2026-09-13)
+
+Il progetto ha esteso la compressione lato **output** (verbosity steering ed effort routing gestiti dal proxy) e aggiunto statistiche token/costo per sessione in chiaro. Le cifre del vault (15–20% coding, 60–95% JSON) sono già quelle "ristrette" — nessuna correzione necessaria.
+
 ## Perché ci interessa
 
 È la terza strada sul costo del contesto, accanto alle due che il topic wiki già
@@ -52,11 +56,16 @@ che è il problema aperto in
 [memory-economics](../topics/memory-economics.md).
 
 **Sources:**
-- [[headroom-2026-08-04|Headroom — segnalazione 2026-08-04]]
+- [Headroom — segnalazione 2026-08-04](../sources/headroom-2026-08-04.md)
+
+## Collegamenti (dreaming 2026-08-15)
+
+- Comprimere la KV cache è l'altra leva sulla stessa voce di costo: [quantization](../concepts/quantization.md)
 
 ## Related
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
 - [Headroom — Context compression layer per AI agent (headroomlabs-ai)](../syntheses/headroom-context-compression-layer-per-ai-agent-headroomlabs-ai.md)
+- [nicepkg](nicepkg.md)
 <!-- openclaw:wiki:related:end -->

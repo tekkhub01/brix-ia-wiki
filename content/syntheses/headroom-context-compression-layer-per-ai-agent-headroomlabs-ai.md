@@ -15,6 +15,7 @@ publish: true
 ## Notes
 <!-- openclaw:human:start -->
 ### Collegamenti
+- Fra gli agenti che dichiara di avvolgere c'è Grok, di [xAI](../entities/xai.md)
 - Prodotto da [Headroom Labs](../entities/headroom-labs.md)
 - Terza leva sul costo del contesto, accanto a [context caching](../concepts/context-caching.md) (riusa il prefisso) e ai [modelli long-context](../concepts/long-context-models.md) (allargano la finestra). Headroom riduce ciò che entra
 - I suoi numeri sono in unità ancora diverse dalle quattro già confrontate in [memory-economics](../topics/memory-economics.md)
@@ -87,5 +88,7 @@ Strumento di **context compression** mature (Apache-2.0, molto attivo, ~66k star
 
 ### Referenced By
 
+- [CtxPort — portabilità del contesto tra AI](ctxport-portabilità-del-contesto-tra-ai.md)
 - [Headroom Labs](../entities/headroom-labs.md)
+- [xAI](../entities/xai.md)
 <!-- openclaw:wiki:related:end -->

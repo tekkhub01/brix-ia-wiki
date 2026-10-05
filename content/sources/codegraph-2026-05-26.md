@@ -2,7 +2,7 @@
 id: source.codegraph-2026-05-26
 pageType: source
 title: CodeGraph — Pre-indexed code knowledge graph
-updatedAt: 2026-05-26T16:45:00Z
+updatedAt: 2026-09-13T04:40:00Z
 publish: true
 ---
 

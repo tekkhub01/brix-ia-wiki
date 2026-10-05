@@ -4,7 +4,7 @@ pageType: synthesis
 title: CodeGraph — Pre-indexed code knowledge graph
 sourceIds:
   - source.codegraph-2026-05-26
-updatedAt: 2026-05-26T16:45:00Z
+updatedAt: 2026-09-13T04:40:00Z
 publish: true
 ---
 
@@ -82,4 +82,8 @@ CodeGraph è già utilizzabile con Claude Code e Codex via MCP. Per integrarlo i
 ### Sources
 
 - [CodeGraph — Pre-indexed code knowledge graph](../sources/codegraph-2026-05-26.md)
+
+### Referenced By
+
+- [Google Code Wiki — la documentazione come wiki ricompilata](google-code-wiki-documentazione-viva-dei-repository.md)
 <!-- openclaw:wiki:related:end -->

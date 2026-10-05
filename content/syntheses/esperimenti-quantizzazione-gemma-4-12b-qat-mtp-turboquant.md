@@ -3,10 +3,10 @@ pageType: synthesis
 id: synthesis.esperimenti-quantizzazione-gemma-4-12b-qat-mtp-turboquant
 title: Esperimenti Quantizzazione Gemma 4 12B — QAT, MTP, TurboQuant
 sourceIds:
-  - pdf:Esperimenti_Quantizzazione_Gemma_4_1---96861467-650a-41d7-bc76-eedb62006fd3.pdf
+  - source.l-incrocio-delle-tecnologie-di-compressione-locale-gemma-4-12b-tra-qat-mtp-e-turboquant
 claims:
   - id: gemma4-arch
-    text: Gemma 4 12B Unified è un modello denso decoder-only (vedi [[scrya-com|RotorQuant]] per tecniche di quantizzazione avanzate) da 11,95B parametri
+    text: Gemma 4 12B Unified è un modello denso decoder-only (vedi [RotorQuant](../entities/scrya-com.md) per tecniche di quantizzazione avanzate) da 11,95B parametri
       con architettura encoder-free che proietta direttamente input multimodali
       nello spazio embedding
     status: verified
@@ -54,7 +54,7 @@ claims:
         note: Sezione incompatibilità software
 confidence: 0.9
 status: active
-updatedAt: 2026-06-11T10:10:37.117Z
+updatedAt: 2026-09-13T04:40:00Z
 publish: true
 ---
 
@@ -62,6 +62,17 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+### Collegamenti nel vault
+- Fonte primaria (ingerita il 28/08, prima era solo un riferimento `pdf:` che non risolveva): [L'Incrocio delle Tecnologie di Compressione Locale](../sources/l-incrocio-delle-tecnologie-di-compressione-locale-gemma-4-12b-tra-qat-mtp-e-turboquant.md)
+- [Google](../entities/google.md) — Gemma 4 12B Unified · [scrya-com](../entities/scrya-com.md) — TurboQuant · [Unsloth](../entities/unsloth.md) — Dynamic QAT
+- [Qwen3.8-Flash-Next — MoE 125B locale a 75GB](qwen3-8-flash-next-moe-125b-locale-a-75gb-unified-ram.md) — l'altra serie KLD/top-1 del vault
+- [Hardware per inferenza locale domestica](hardware-per-inferenza-locale-domestica-presente-e-futuro.md) — le macchine su cui questi footprint contano
+### Collegamenti (dreaming 2026-08-15)
+- Secondo corpus indipendente sulle stesse tecniche: [Qwen3.8 su Unsloth](qwen3-8-unsloth-inferenza-locale.md) — concorda sul metodo, diverge su MTP
+- Il metodo Dynamic misurato qui è di [Unsloth](../entities/unsloth.md); RotorQuant, successore di TurboQuant, è di [scrya-com](../entities/scrya-com.md)
+- L'argomento: [quantization](../concepts/quantization.md)
+- Divergenza registrata: [MTP × compressione KV](../questions/q-mtp-vs-kv-compression.md)
+
 <!-- openclaw:human:end -->
 
 ## Summary
@@ -126,6 +137,17 @@ Analizzare tecniche di ottimizzazione per inferenza locale di **Gemma 4 12B Unif
 
 ## Related
 <!-- openclaw:wiki:related:start -->
-- No related pages yet.
+### Sources
+
+- [L'Incrocio delle Tecnologie di Compressione Locale — Gemma 4 12B tra QAT, MTP e TurboQuant](../sources/l-incrocio-delle-tecnologie-di-compressione-locale-gemma-4-12b-tra-qat-mtp-e-turboquant.md)
+
+### Referenced By
+
+- [Hardware per inferenza locale domestica — presente e futuro](hardware-per-inferenza-locale-domestica-presente-e-futuro.md)
+- [L'Incrocio delle Tecnologie di Compressione Locale — Gemma 4 12B tra QAT, MTP e TurboQuant](../sources/l-incrocio-delle-tecnologie-di-compressione-locale-gemma-4-12b-tra-qat-mtp-e-turboquant.md)
+- [Qwen3.8 — How to Run Locally (Unsloth)](../sources/qwen3-8-how-to-run-locally-unsloth.md)
+- [Qwen3.8 su Unsloth — la scala hardware dell'inferenza locale](qwen3-8-unsloth-inferenza-locale.md)
+- [Qwen3.8-Flash-Next — MoE 125B locale a 75GB (unified/RAM)](qwen3-8-flash-next-moe-125b-locale-a-75gb-unified-ram.md)
+- [Unsloth](../entities/unsloth.md)
 <!-- openclaw:wiki:related:end -->
 <!-- openclaw:wiki:generated:end -->

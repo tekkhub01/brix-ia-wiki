@@ -1,10 +1,10 @@
 ---
 title: "Span-Level Attribution"
 category: concept
-sources: [raw/notes/llm-memory-context-evolution-2026.md]
+sources: [raw/notes/llm-memory-context-evolution-2026.md, sources/the-facts-grounding-leaderboard-jacovi-et-al-arxiv-2501-03200.md, sources/ragtruth-a-hallucination-corpus-wu-et-al-arxiv-2401-00396.md, sources/cited-but-not-verified-abs.md]
 created: 2026-04-28
-updated: 2026-08-12
-verified: 2026-08-12
+updated: 2026-10-04
+verified: 2026-10-04
 tags: [grounding, citations, evaluation]
 aliases: [Span-Level Attribution, Citation Grounding]
 confidence: high
@@ -67,15 +67,16 @@ UI layer reads these markers and creates clickable footnotes linking to original
 
 ## Benchmarks and measured performance (2026)
 
-- **FACTS Grounding** — enforces attribution at sentence/span level and uses a *consensus of multiple LLM judges* rather than a single grader. Each prompt pairs a request with a full document up to 32k tokens; every substantive claim must be supported by that context.
+- **FACTS Grounding** ([Jacovi et al., arXiv 2501.03200](../sources/the-facts-grounding-leaderboard-jacovi-et-al-arxiv-2501-03200.md), Google DeepMind) — each prompt pairs a request with a full document up to **32k tokens**, requiring a long-form response fully grounded in that document. Judging is automated and two-phase: (1) responses that don't fulfil the request are disqualified outright, (2) surviving responses are judged on groundedness. The final factuality score is an **aggregate of multiple judge models** (multi-judge consensus, chosen via held-out test-set prompt selection) to mitigate evaluation bias; public + private splits guard leaderboard integrity.
+- **RAGTruth** ([Wu et al., arXiv 2401.00396](../sources/ragtruth-a-hallucination-corpus-wu-et-al-arxiv-2401-00396.md), ACL 2024) — the corpus behind the failure-rate figures below: **nearly 18,000 naturally generated RAG responses** (not "chunks" — the unit is the response), manually annotated at case *and word* level with hallucination intensity. Its headline transferable finding: a small LLM fine-tuned on RAGTruth matches prompt-based GPT-4-level hallucination detection.
 - **ALCE / ASQA / BioASQ / ExpertQA** — score citation quality on three separable axes: document-level correctness, **evidence span identification**, and claim-citation faithfulness.
 - **[Explicit Evidence Grounding via Structured Inline Citation Generation](https://arxiv.org/html/2606.07130)** — inline structured citation emission, the direct descendant of the hidden-token scheme described above.
 
 **The central empirical finding, and it validates the "Limits" section above:** models are broadly good at identifying the *right document* and materially worse at identifying the *precise supporting span within it*. Document-level attribution is largely solved; span-level is not.
 
-Groundedness failure rates are non-trivial even at the frontier: on RAGTruth's ~18K labeled response chunks the median frontier model fails groundedness on **5–8%** of answers. The characteristic 2026 production failure mode is a high grounded-response score paired with a much lower claim-to-citation *alignment* rate — i.e. the citation exists and the source is real, but it does not actually support the specific sentence attached to it. Which is precisely the misattribution risk this page's Limits section flags.
+Groundedness failure rates are non-trivial even at the frontier: on RAGTruth's ~18K labeled responses the median frontier model fails groundedness on **5–8%** of answers (the corpus itself is now in the vault; this specific percentage is still secondhand — it is not in the abstract, it is in the paper's benchmark tables). The characteristic 2026 production failure mode is a high grounded-response score paired with a much lower claim-to-citation *alignment* rate — i.e. the citation exists and the source is real, but it does not actually support the specific sentence attached to it. Which is precisely the misattribution risk this page's Limits section flags.
 
-**[Cited but Not Verified](https://arxiv.org/pdf/2605.06635)** applies this to deep-research agents specifically, and answers one of the open questions below from the negative direction: multi-source synthesis attribution is where parsing and verification of agent citations most often breaks down.
+**[Cited but Not Verified](../sources/cited-but-not-verified-abs.md)** (Onweller et al., arXiv 2605.06635 — abstract in vault dal 2026-10-04) applies this to deep-research agents specifically, and now with its primary source: the framework scores citations on three axes (**Link Works / Relevant Content / Fact Check**), and the shape of the failure is exactly this page's thesis — frontier models pass link validity at **94%+** and relevance at **80%+** while factual accuracy sits at **39–77%**. The paper's own ablation adds the depth effect the corpus carried secondhand: Fact Check accuracy **drops ~42%** as tool calls scale from 2 to 150 — "more retrieval does not produce more accurate citations" is the authors' conclusion, not an inference. Fewer than half of open-source models produce cited reports at all in one-shot: attribution is a trained capability, not a formatting instruction.
 
 ## Future research
 

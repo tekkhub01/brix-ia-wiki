@@ -5,7 +5,7 @@ pageType: entity
 entityType: organization
 sourceIds:
   - sources/brix-ia-newsletter-news-aprile-2026.md
-updatedAt: 2026-04-28T00:00:00Z
+updatedAt: 2026-09-13T04:40:00Z
 publish: true
 ---
 
@@ -27,6 +27,8 @@ publish: true
 2. Step 3.5 Flash
 3. DeepSeek V3.2
 
+**Update 2026-09-13 (web check, no new primary source ingested):** the Chinese-model dominance trend continued through a generational turnover. As of usage data through Sep 1, 2026, the top of the ranking is DeepSeek V4 Flash 0731 (~12.1T cumulative tokens), GLM 5.3 Flash (~10T), GPT-5.6 Luna (~9.5T) — the Feb–Mar leaders (MiniMax M2.5, Step 3.5 Flash, DeepSeek V3.2) have been displaced. OpenAI ran large discounts on Terra and Luna from Jul 27 to Aug 14, 2026 (analyzed on the OpenRouter blog, Aug 25). Sources: openrouter.ai/blog, datastudios.org rankings roundup (secondary).
+
 **Strategic implication for BRIX-IA:** Price pressure drives local deployment. With 80% of US AI startups using open-source Chinese models as base, on-premise agents built on GLM 5.1 + RotorQuant become economically inevitable.
 
 **Source:**
@@ -36,6 +38,8 @@ publish: true
 ### Related Pages
 
 - [Anthropic](anthropic.md)
+- [BRIX-IA](brix-ia.md)
+- [Hugging Face](hugging-face.md)
 - [scrya-com](scrya-com.md)
 - [Z.AI (Zhipu AI)](z-ai.md)
 <!-- openclaw:wiki:related:end -->

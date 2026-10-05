@@ -1,7 +1,7 @@
 ---
 id: anthropic-claude-design-labs
 pageType: source
-updatedAt: 2026-03-15T00:00:00Z
+updatedAt: 2026-09-13T04:40:00Z
 claims: []
 links: []
 publish: true
@@ -89,10 +89,10 @@ Claude Design is a new Anthropic Labs product enabling collaboration with Claude
 
 ## Use Cases
 
-**See also:** [[syntheses/impeccable-style-ai-design-tool]] per workflow di design automation e detect
+**See also:** [Impeccable.style - AI Design Tool](../syntheses/impeccable-style-ai-design-tool.md) per workflow di design automation e detect
 
 ### Workflow Comparison
-| Feature | Claude Design | [[syntheses/impeccable-style-ai-design-tool]] |
+| Feature | Claude Design | [Impeccable.style - AI Design Tool](../syntheses/impeccable-style-ai-design-tool.md) |
 |---------|---------------|------------------|
 | Focus | Prototipi visivi, mockup | Workflow design AI end-to-end |
 | Modalità | Web-based | CLI tool |
@@ -218,8 +218,8 @@ Share with team, collect feedback in group conversations
 4. **Anthropic Labs** — experimental product incubator
 
 ### Related Tools
-- **[[syntheses/impeccable-style-ai-design-tool]]** — Tool CLI per design AI simile a Claude Design, con focus su coerenza del brand e workflow automation
-- **[[sources/ai-website-cloner-template-github]]** — Template per clonare siti web con AI, complementare a Claude Design per la creazione di prototipi
+- **[Impeccable.style - AI Design Tool](../syntheses/impeccable-style-ai-design-tool.md)** — Tool CLI per design AI simile a Claude Design, con focus su coerenza del brand e workflow automation
+- **[AI Website Cloner Template](ai-website-cloner-template-github.md)** — Template per clonare siti web con AI, complementare a Claude Design per la creazione di prototipi
 
 ### Workflow Integration
 - Design (Claude Design) → Development (Claude Code) → Publishing (Canva or standalone)
@@ -254,5 +254,6 @@ AI-powered design, prototyping, design systems, product development, Claude Opus
 <!-- openclaw:wiki:related:start -->
 ### Referenced By
 
+- [icons0.dev — Icon Search Engine con MCP Server](../syntheses/icons0-dev-icon-search-engine-con-mcp-server.md)
 - [Impeccable.style - AI Design Tool](../syntheses/impeccable-style-ai-design-tool.md)
 <!-- openclaw:wiki:related:end -->

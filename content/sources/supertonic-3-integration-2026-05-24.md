@@ -1,7 +1,7 @@
 ---
 id: supertonic-3-integration-2026-05-24
 pageType: source
-updatedAt: 2026-05-24T09:44:00Z
+updatedAt: 2026-09-13T04:40:00Z
 claims: []
 links: []
 publish: true
@@ -11,7 +11,7 @@ publish: true
 
 ## Fonte
 - **Data:** 24 maggio 2026
-- **Richiedente:** PK (@pk21kps)
+- **Richiedente:** PK
 - **Contesto:** Analisi di Supertonic 3 (TTS) per integrazione in OpenClaw
 
 ## Fine-tuning

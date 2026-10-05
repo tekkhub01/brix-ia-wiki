@@ -1,7 +1,7 @@
 ---
 id: webwright-microsoft-github
 pageType: source
-updatedAt: 2026-06-06T00:00:00Z
+updatedAt: 2026-09-13T04:40:00Z
 publish: true
 ---
 

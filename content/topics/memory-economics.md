@@ -3,8 +3,8 @@ title: "The Economics of LLM Memory: Retrieval, Compilation, and Caching"
 category: topic
 sources: [raw/notes/llm-memory-context-evolution-2026.md]
 created: 2026-08-12
-updated: 2026-08-14
-verified: 2026-08-12
+updated: 2026-09-13
+verified: 2026-09-13
 tags: [economics, retrieval, write-time-synthesis, caching, cost]
 aliases: [Memory Economics, RAG vs Compilation Cost, LLM Memory Cost Models]
 confidence: medium
@@ -22,14 +22,16 @@ Every concept page in this cluster makes an economic argument for its own approa
 |---|---|---|---|---|
 | [[rag]] | Token cost | Qualitative only ("lower... only top-k chunks vs full document") | pure long-context stuffing | per query |
 | [[agentic-rag]] | Per-query cost multiplier | 3–5× | classic (single-shot) RAG | per query |
-| [[llm-wiki-karpathy]] | Cumulative tokens | 47K vs 305K (**84.6% saved**); projected 53.7–81.3% at 30 days | "a matched RAG baseline" (unspecified: classic or agentic) | 4-query run, then a 30-day projection |
+| [[llm-wiki-karpathy]] | Cumulative tokens | 47K vs 305K (**84.6% saved**); projected 53.7–81.3% at 30 days | **specified as of 2026-09-13 ingest: the 305K figure is the paper's Long-Context baseline, not classic Chunk-RAG** — full-text ranking: Chunk-RAG 13.6K < Compounding 47K < Long-Context 305K | 4-query run, then a 30-day projection |
 | [[context-caching]] | Per-request price multiplier | read ≈0.1×, write 1.25× (5-min TTL) or 2× (1-hour TTL) | uncached input at 1× | break-even at 2 or 3 repeated requests |
 
 Four different denominators (per-query multiplier, cumulative token count, per-request price multiplier, qualitative-only), two different time horizons that don't map onto each other (a "query" in the agentic-RAG table is not the same unit as a "request" in the caching table, and neither maps onto the 4-query / 30-day horizon the wiki study uses), and — most importantly — three different, non-interchangeable baselines.
 
-## The unresolved seam: what is "a matched RAG baseline"?
+## The seam, closed (2026-09-13): what "a matched RAG baseline" actually was
 
-The [[llm-wiki-karpathy|LLM Wiki]] compounding study (Wen & Ku, arXiv 2604.11243) reports 84.6% token savings against "a matched RAG baseline." It does not say whether that baseline is classic single-shot RAG or the 2026 production-standard agentic RAG stack — and [[rag|RAG]]'s own page is explicit that classic RAG is "the baseline to beat, not the deployed architecture." If the study's baseline was classic RAG, then the *actual* 2026 comparison — wiki vs the agentic RAG stack teams really run, which [[agentic-rag|Agentic RAG]] prices at 3–5× classic RAG per query — would show an even larger gap. But nobody has published that number. Multiplying 84.6% by the 3–5× agentic multiplier to manufacture an "wiki saves ~90-95% vs agentic RAG" headline would be inventing a statistic neither source states. This wiki declines to do that arithmetic; it flags the gap instead.
+This section used to flag the Wen & Ku study's baseline (arXiv 2604.11243) as unspecified — classic RAG or agentic RAG? The full text is now ingested (`sources/wen-ku-knowledge-compounding-under-the-agentic-roi-framework-arxiv-2604-11243.md`), and the answer was neither of the two guesses: the paper defines **two** stateless baselines, and the 305K figure is the **Long-Context** one (~70K tokens/query × 4). The three-way cumulative ranking over the four-query run is **Chunk-RAG 13.6K < Compounding 47K < Long-Context 305K**.
+
+That reframes the corpus's most load-bearing number. The 84.6% saving is real but is a saving **against context stuffing, not against classic RAG** — against Chunk-RAG, compounding spends roughly 3.5× *more* raw tokens (47K vs 13.6K). The paper is explicit that this is the point: "Compounding does not minimize raw token cost; instead, it converts a portion of each query's expenditure into a persistent asset," and even at full saturation its per-query cost "typically remains above Chunk-RAG's flat 3.4K floor." The wiki-vs-RAG comparison the seam asked for — against classic or agentic chunk retrieval — is still unpublished; what the study actually beats is stuffing. The earlier warning against chaining 84.6% with the [[agentic-rag|Agentic RAG]] 3–5× multiplier stands, and is now reinforced: the multiplier was pointed at the wrong baseline.
 
 ## Caching complicates both sides of that comparison
 

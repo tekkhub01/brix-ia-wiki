@@ -13,6 +13,10 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+### Collegamenti (dreaming 2026-08-15)
+- Modello di [Alibaba](../entities/alibaba.md), famiglia Qwen
+- Le altre metà della catena audio: Nvidia Parakeet TDT per STT, [Supertonic 3](supertonic-3-tts-integrazione-e-api-in-openclaw.md) per TTS
+
 <!-- openclaw:human:end -->
 
 ## Summary
@@ -67,5 +71,8 @@ Da **testare** (segnalato da Peter il 2026-08-10). Utile per:
 
 ## Related
 <!-- openclaw:wiki:related:start -->
-- No related pages yet.
+### Referenced By
+
+- [Alibaba](../entities/alibaba.md)
+- [Supertonic 3 TTS — Integrazione e API in OpenClaw](supertonic-3-tts-integrazione-e-api-in-openclaw.md)
 <!-- openclaw:wiki:related:end -->

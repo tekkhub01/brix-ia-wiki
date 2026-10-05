@@ -6,15 +6,16 @@ sourceIds:
   - https://icons0.dev/
 claims:
   - id: icons0-size
-    text: icons0.dev indicizza 200k+ icone da 150+ collezioni open-source (223
-      collezioni verificate)
+    text: icons0.dev indicizza 200k+ icone da 150+ collezioni open-source (236
+      collezioni alla verifica 2026-09-13)
     status: verified
     confidence: 0.9
     evidence:
       - kind: web
         sourceId: https://icons0.dev/
-        note: "Meta description e UI mostrano '200k+ icons · 150+ collections', pagina
-          reale: 223 collections"
+        updatedAt: 2026-09-13T04:40:00Z
+        note: "Meta description e UI mostrano '200k+ icons · 150+ collections'; contatore
+          live del sito: 236 collections (223 al crawl di giugno, in crescita)"
   - id: icons0-mcp
     text: icons0.dev offre un MCP server per integrazione con AI coding agent
     status: verified
@@ -22,6 +23,7 @@ claims:
     evidence:
       - kind: web
         sourceId: https://icons0.dev/
+        updatedAt: 2026-09-13T04:40:00Z
         note: "Pulsante [mcp] nell'header, meta description: 'connect the MCP server to
           your AI coding agent'"
   - id: icons0-shadcn
@@ -32,10 +34,11 @@ claims:
     evidence:
       - kind: web
         sourceId: https://icons0.dev/
+        updatedAt: 2026-09-13T04:40:00Z
         note: Mostrato nell'header del sito
 confidence: 0.85
 status: active
-updatedAt: 2026-06-11T15:30:52.218Z
+updatedAt: 2026-09-13T04:40:00Z
 publish: true
 ---
 
@@ -43,6 +46,9 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+### Collegamenti (dreaming 2026-08-15)
+- Stesso cluster strumenti di design: [Impeccable.style](impeccable-style-ai-design-tool.md), [Claude Design (Anthropic Labs)](../sources/anthropic-claude-design-labs.md)
+
 <!-- openclaw:human:end -->
 
 ## Summary
@@ -91,6 +97,8 @@ Ricercare icone da usare in progetti web, installarle via shadcn CLI, o collegar
 
 ## Related
 <!-- openclaw:wiki:related:start -->
-- No related pages yet.
+### Referenced By
+
+- [Impeccable.style - AI Design Tool](impeccable-style-ai-design-tool.md)
 <!-- openclaw:wiki:related:end -->
 <!-- openclaw:wiki:generated:end -->

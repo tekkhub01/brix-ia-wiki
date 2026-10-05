@@ -3,9 +3,10 @@ pageType: source
 id: source.nvidia-parakeet-tdt-0-6b-v2
 title: Nvidia Parakeet TDT 0.6B v2
 sourceType: local-file
-sourcePath: /tmp/wiki_parakeet.md
+sourcePath: workspace/wiki_sources/nvidia-parakeet-tdt-0-6b-v2.md (originale /tmp cancellato; contenuto preservato in pagina)
 ingestedAt: 2026-06-18T12:15:13.304Z
-updatedAt: 2026-06-18T12:15:13.304Z
+updatedAt: 2026-09-13T05:00:00Z
+verified: 2026-09-13
 status: active
 publish: true
 ---

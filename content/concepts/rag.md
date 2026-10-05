@@ -1,10 +1,10 @@
 ---
 title: "RAG (Retrieval-Augmented Generation)"
 category: concept
-sources: [raw/notes/llm-memory-context-evolution-2026.md]
+sources: [raw/notes/llm-memory-context-evolution-2026.md, lewis-et-al-retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks-arxiv-2005-11401]
 created: 2026-04-28
-updated: 2026-08-12
-verified: 2026-08-12
+updated: 2026-09-13
+verified: 2026-09-13
 tags: [retrieval, rag, architecture]
 aliases: [RAG, Retrieval-Augmented Generation]
 confidence: high
@@ -15,8 +15,16 @@ publish: true
 # RAG (Retrieval-Augmented Generation)
 
 **Type:** foundational AI architecture pattern  
-**Introduced:** 2020 (Lewis et al., "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks")  
+**Introduced:** 2020 ([Lewis et al., "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"](../sources/lewis-et-al-retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks-arxiv-2005-11401.md), arXiv 2005.11401 — ingested 2026-09-13)  
 **Status:** Standard baseline; evolved into Agentic RAG, GraphRAG, LLM Wiki
+
+> **Precision from the origin paper (verified 2026-09-13):** the 2020 RAG is a
+> *jointly fine-tuned* model — parametric seq2seq + non-parametric dense-index
+> memory accessed by a neural retriever, trained end-to-end. The four-step pipeline
+> below is retrieval-augmented **inference** over a frozen LLM, the 2023+ production
+> descendant. The distinction matters for this vault because two of the paper's
+> named open problems — provenance and knowledge updating — are exactly the axes
+> the llm-wiki and span-attribution pages treat as 2026 frontiers.
 
 ## Core pipeline
 
@@ -90,3 +98,4 @@ Two open fronts as of mid-2026:
 ## Sources
 
 - [llm-memory-context-evolution-2026](../sources/llm-memory-context-evolution-2026.md)
+- [Lewis et al., RAG (arXiv 2005.11401)](../sources/lewis-et-al-retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks-arxiv-2005-11401.md) — origin paper, ingested 2026-09-13

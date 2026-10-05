@@ -3,8 +3,8 @@ title: "LLM Wiki (Karpathy Pattern)"
 category: concept
 sources: [raw/notes/llm-memory-context-evolution-2026.md]
 created: 2026-04-28
-updated: 2026-08-12
-verified: 2026-08-12
+updated: 2026-09-13
+verified: 2026-09-13
 tags: [knowledge-management, agentic-memory, write-time-synthesis]
 aliases: [LLM Wiki, Karpathy Pattern]
 confidence: high
@@ -90,6 +90,8 @@ The "does it compound or does it rot?" question got its first measurement in **W
 
 Measured on a four-query run: **47K cumulative tokens under the compounding regime vs 305K on a matched RAG baseline — 84.6% saved.** Projected over 30 days: 53.7% saving at moderate topic concentration, 81.3% at high concentration.
 
+**Correction from the full-text ingest (2026-09-13):** "matched RAG baseline" is the paper's Long-Context baseline, not classic chunk RAG. The full three-way ranking is **Chunk-RAG 13.6K < Compounding 47K < Long-Context 305K** (cumulative over the four queries). The 84.6% is therefore a saving *against context stuffing*; against classic RAG the compounding regime costs ~3.5× more raw tokens, by design — the paper's own framing is that it "does not minimize raw token cost" but converts each query's expenditure into a persistent asset (its Chunk-RAG floor is ~3.4K/query flat, and compounding "typically remains above" it even at saturation). The experiment ran on doubao-seed-2-0-pro; the authors' own limitations section calls the four-query sample insufficient and asks for 100+ sequential queries per domain.
+
 Three mechanisms drive the reduction:
 1. Ingestion cost is amortized across every later retrieval
 2. High-quality answers are recycled back into synthesis pages
@@ -101,7 +103,7 @@ Their framing is the useful one: it reframes **LLM tokens from consumables into 
 
 - Hybrid Wiki + Graph: when to use each layer? (see [[graphrag|GraphRAG]] — the agentic-search benchmarks are now asking the same question from the other side)
 - Cost of maintenance: how expensive is linting at scale, and does lint cost grow super-linearly with page count?
-- Does the compounding result hold past the four-query horizon, and at what point does contradiction-resolution cost overtake ingest savings?
+- Does the compounding result hold past the four-query horizon, and at what point does contradiction-resolution cost overtake ingest savings? — *the 2026-09-13 full-text ingest partially answers: the paper's 30-day projection (53.7–81.3%) is a calibrated extrapolation, not measured data, and the authors themselves flag the four-query sample as insufficient. The horizon question remains empirically open.*
 
 ## See Also
 

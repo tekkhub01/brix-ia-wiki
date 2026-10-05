@@ -5,7 +5,7 @@ title: Gotenberg
 sourceIds:
   - https://gotenberg.dev/
 status: active
-updatedAt: 2026-06-03T17:12:54.718Z
+updatedAt: 2026-09-13T04:40:00Z
 publish: true
 ---
 
@@ -13,6 +13,10 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+### Collegamenti (dreaming 2026-08-15)
+- Stessa catena documentale, lato rendering: [anydoc](anydoc-firecrawl.md) e [PDF Inspector](pdf-inspector-firecrawl.md)
+- Entrambi di [Firecrawl](../entities/firecrawl.md)
+
 <!-- openclaw:human:end -->
 
 ## Summary
@@ -23,6 +27,11 @@ publish: true
 **GitHub:** https://github.com/gotenberg/gotenberg
 **Docker Hub:** https://hub.docker.com/r/gotenberg/gotenberg
 **Documentazione:** https://gotenberg.dev/docs/getting-started/introduction
+
+## Stato release (verifica web 2026-09-13)
+
+- Ultima release: **v8.37.0** (2026-09-11). Serie v8.x attiva; roadmap **v9.0.0** già aperta come issue (#1484).
+- **Sicurezza:** advisory GO-2026-5080 — lettura PDF arbitraria via `stampExpression`/`watermarkExpression` nelle rotte merge/split/convert; patchata nelle release di agosto. Rilasci recenti irrigidiscono anche l'SSRF: i file OOXML/RTF/ODF caricati possono incorporare URL esterni che LibreOffice risolveva sotto i filtri Go — ora ogni fetch in uscita da LibreOffice passa da un forward proxy in-process (`gotenberg.DecideOutbound`). Se si usa Gotenberg con upload non fidati, aggiornare ad almeno v8.36/v8.37.
 
 ## Cos'è
 
@@ -98,5 +107,9 @@ Gotenberg è adottato da migliaia di aziende in produzione e da progetti open-so
 
 ## Related
 <!-- openclaw:wiki:related:start -->
-- No related pages yet.
+### Referenced By
+
+- [anydoc (Firecrawl)](anydoc-firecrawl.md)
+- [Firecrawl](../entities/firecrawl.md)
+- [PDF Inspector (Firecrawl)](pdf-inspector-firecrawl.md)
 <!-- openclaw:wiki:related:end -->

@@ -2,7 +2,7 @@
 id: source.archon-workflow-engine
 pageType: source
 title: Archon — Open-source workflow engine for AI coding agents
-updatedAt: 2026-06-10T07:20:00Z
+updatedAt: 2026-09-13T04:40:00Z
 publish: true
 ---
 
@@ -140,7 +140,19 @@ Archon is complementary to OpenClaw — while OpenClaw is a personal AI assistan
 - Telemetry is opt-in and anonymous (workflow names for bundled only, "custom" for yours)
 - Docs designed for both humans and AI (`/llms.txt`, `/llms-full.txt`, `/llms-small.txt`)
 
+## Collegamenti (dreaming 2026-08-15)
+
+- Implementa la tesi di [Loop Engineering — The Complete Guide](loop-engineering-complete-guide-huashu.md): la struttura la possiedi tu, il modello riempie i passi
+- Stesso cluster: [Prime Agent](../syntheses/prime-agent-self-improving-rlm-agent-primeintellect-ai.md), [JCode](../syntheses/jcode-agente-di-coding-super-veloce.md), [Webwright](../syntheses/webwright-microsoft-browser-agent.md)
+
 ## Related
 <!-- openclaw:wiki:related:start -->
-- No related pages yet.
+### Referenced By
+
+- [DeepSeek Harness — Agent Harness "Everything is a Plugin"](../syntheses/deepseek-harness-agent-harness-everything-is-a-plugin.md)
+- [Due classifiche per lo stesso benchmark — perché un punteggio non è del modello](../syntheses/due-classifiche-per-lo-stesso-benchmark.md)
+- [JCode — Agente di coding super-veloce](../syntheses/jcode-agente-di-coding-super-veloce.md)
+- [Loop Engineering — The Complete Guide](loop-engineering-complete-guide-huashu.md)
+- [Prime Agent — Self-Improving RLM Agent (PrimeIntellect-ai)](../syntheses/prime-agent-self-improving-rlm-agent-primeintellect-ai.md)
+- [Webwright — Microsoft Browser Agent](../syntheses/webwright-microsoft-browser-agent.md)
 <!-- openclaw:wiki:related:end -->

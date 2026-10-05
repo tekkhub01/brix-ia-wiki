@@ -14,6 +14,9 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+### Collegamenti (dreaming 2026-08-15)
+- Cluster agent-loop: [Archon](../sources/archon-workflow-engine.md), [Loop Engineering](../sources/loop-engineering-complete-guide-huashu.md)
+
 ### Collegamenti
 - Prodotto da [Prime Intellect](../entities/prime-intellect.md)
 - I sub-agent ricorsivi sono la stessa struttura di loop dell'[agentic RAG](../concepts/agentic-rag.md), spostata dal retrieval all'esecuzione
@@ -73,5 +76,12 @@ Agent di coding/ricerca **long-running e autonomo** (MIT, TypeScript, ~15.8k⭐,
 
 ### Referenced By
 
+- [Archon — Open-source workflow engine for AI coding agents](../sources/archon-workflow-engine.md)
+- [Deep Agents from Scratch — LangChain course](../sources/deep-agents-from-scratch.md)
+- [DeepSeek Harness — Agent Harness "Everything is a Plugin"](deepseek-harness-agent-harness-everything-is-a-plugin.md)
+- [Due classifiche per lo stesso benchmark — perché un punteggio non è del modello](due-classifiche-per-lo-stesso-benchmark.md)
+- [Harness Engineering — Agent = Model + Harness: The 6-Layer Production Playbook](../sources/harness-engineering-6-layer-playbook-2026.md)
+- [LLM-as-a-Verifier — la verifica come asse di scaling](llm-as-a-verifier-la-verifica-come-asse-di-scaling.md)
+- [Loop Engineering — The Complete Guide](../sources/loop-engineering-complete-guide-huashu.md)
 - [Prime Intellect](../entities/prime-intellect.md)
 <!-- openclaw:wiki:related:end -->

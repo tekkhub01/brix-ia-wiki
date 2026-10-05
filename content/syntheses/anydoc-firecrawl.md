@@ -13,6 +13,9 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+### Collegamenti (dreaming 2026-08-15)
+- Stessa catena documentale, lato rendering: [Gotenberg](gotenberg.md)
+
 <!-- openclaw:human:end -->
 
 ## Summary
@@ -74,5 +77,6 @@ Da testare se può sostituire/affiancare MinerU sui progetti OCR correnti.
 ### Referenced By
 
 - [Firecrawl](../entities/firecrawl.md)
+- [Gotenberg](gotenberg.md)
 - [PDF Inspector (Firecrawl)](pdf-inspector-firecrawl.md)
 <!-- openclaw:wiki:related:end -->

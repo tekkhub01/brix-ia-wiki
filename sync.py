@@ -31,10 +31,23 @@ DENY_DIRS = {"reports", ".openclaw-wiki", ".obsidian", "_views"}
 # Appiattimento dei percorsi: il topic wiki e' annidato in profondita' e
 # senza rimappatura gli URL diventerebbero
 # /topics/llm-memory/wiki/concepts/rag. Prefisso piu' lungo per primo.
+# Tutti i topic sono appiattiti sulle stesse tre cartelle: gli articoli
+# stanno insieme per tipo, non per topic, ed e' l'assetto con cui gli URL
+# di llm-memory sono gia' pubblici.
+#
+# NON dare a un topic un namespace col proprio nome (`harness/...`): la
+# cartella collide con lo slug della pagina omonima e con i suoi alias, e
+# `try_files $uri $uri/ $uri.html` prova la directory PRIMA del file, quindi
+# /wiki/harness finisce sull'indice di cartella invece che sull'articolo.
+# Contro le collisioni di nome fra topic c'e' check_collisions(), che ferma
+# il sync: e' quello il presidio, non il namespace.
 PATH_MAP = [
     ("topics/llm-memory/inventory/candidates", "questions"),
     ("topics/llm-memory/wiki/concepts", "concepts"),
     ("topics/llm-memory/wiki/topics", "topics"),
+    ("topics/harness/inventory/candidates", "questions"),
+    ("topics/harness/wiki/concepts", "concepts"),
+    ("topics/harness/wiki/topics", "topics"),
 ]
 
 FM_RE = re.compile(r"\A---\r?\n(.*?)\r?\n---", re.DOTALL)
@@ -80,7 +93,25 @@ def collect() -> tuple[list[PurePosixPath], int]:
             pub.append(rel)
         else:
             priv += 1
+    check_collisions(pub)
     return pub, priv
+
+
+def check_collisions(pub: list[PurePosixPath]) -> None:
+    """Due sorgenti che finiscono sullo stesso file in content/ sono una
+    perdita silenziosa: l'ultima copiata vince e nessuno se ne accorge.
+    Il rischio nasce dall'appiattimento di PATH_MAP, quindi va fermato qui
+    e non a valle."""
+    seen: dict[str, PurePosixPath] = {}
+    for rel in pub:
+        d = dest_for(rel).as_posix()
+        if d in seen:
+            raise SystemExit(
+                f"ERRORE: collisione di destinazione su '{d}'.\n"
+                f"  {seen[d]}\n  {rel}\n"
+                "Rinomina una delle due o dai al topic un namespace in PATH_MAP."
+            )
+        seen[d] = rel
 
 
 def defuse_links(text: str, srcrel: PurePosixPath,

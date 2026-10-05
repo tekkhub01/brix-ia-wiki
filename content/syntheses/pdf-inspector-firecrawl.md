@@ -13,6 +13,9 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+### Collegamenti (dreaming 2026-08-15)
+- Stessa catena documentale, lato rendering: [Gotenberg](gotenberg.md)
+
 ### Collegamenti
 - Prodotto da [Firecrawl](../entities/firecrawl.md), insieme ad [anydoc](anydoc-firecrawl.md) — stessa impronta: Rust, local-first, niente rete sul percorso veloce
 - Complementare a MinerU, non alternativo: decide *quali* pagine mandare all'OCR, non lo sostituisce
@@ -83,4 +86,5 @@ Alternativa local-first a PyMuPDF4LLM e MarkItDown per estrazione PDF→Markdown
 ### Referenced By
 
 - [Firecrawl](../entities/firecrawl.md)
+- [Gotenberg](gotenberg.md)
 <!-- openclaw:wiki:related:end -->

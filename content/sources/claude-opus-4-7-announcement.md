@@ -1,7 +1,7 @@
 ---
 id: claude-opus-4-7-announcement
 pageType: source
-updatedAt: 2026-04-07T00:00:00Z
+updatedAt: 2026-09-13T04:40:00Z
 publish: true
 ---
 
