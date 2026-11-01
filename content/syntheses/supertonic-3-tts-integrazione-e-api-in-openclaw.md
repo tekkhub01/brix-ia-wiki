@@ -36,7 +36,7 @@ Il 24 maggio 2026, PK ha richiesto un'analisi di Supertonic 3 (TTS) per integraz
 
 ## Risorse
 - Repository ufficiale: `supertone-inc/supertonic`
-- Voice Builder: `https://supertonic.supertone.ai/voice_builder`
+- Voice Builder: l'URL `https://supertonic.supertone.ai/voice_builder` non risponde più (verificato 2026-11-01). Accessi attuali: https://supertone.ai e repo https://github.com/supertone-inc/supertonic
 - Esempio API: codice FastAPI (vedi fonte).
 <!-- openclaw:wiki:generated:end -->
 
