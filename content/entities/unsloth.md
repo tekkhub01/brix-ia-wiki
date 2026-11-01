@@ -5,7 +5,7 @@ pageType: entity
 entityType: organization
 sourceIds:
   - sources/qwen3-8-how-to-run-locally-unsloth.md
-updatedAt: 2026-08-15T00:00:00Z
+updatedAt: 2026-10-18T04:00:00Z
 publish: true
 ---
 
@@ -73,6 +73,17 @@ veloce, -70% VRAM).
 
 Branch `iq1-narrow` su `unslothai/llama.cpp` per i data-type 1-bit estesi, non
 ancora upstream.
+
+### Unsloth Studio — incidente di sicurezza (settembre 2026, seconda mano)
+
+Dark Reading (29/9/2026): una vulnerabilità **patchata** di Unsloth Studio
+permetteva a modelli malevoli di eseguire codice Python arbitrario durante
+l'ispezione del modello, via l'impostazione `trust_remote_code`. Non è una
+novità di prodotto ma un dato di rischio rilevante per questo vault: l'attacco
+via pesos/modello è la stessa superficie discussa a proposito del
+[vault-dependency su hugging-face](hugging-face.md) e degli incidenti rogue-agent
+(ottobre 2026). Da verificare alla fonte (CVE/advisory Unsloth) prima di
+citarlo come fatto consolidato.
 
 ## Perché ci interessa
 

@@ -15,6 +15,10 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+
+### Collegamenti (audit 2026-10-22)
+- Entità: [[entities/google|Google]]
+- Lettura critica sui benchmark frontier: [[syntheses/due-classifiche-per-lo-stesso-benchmark|Due classifiche per lo stesso benchmark]]
 <!-- openclaw:human:end -->
 
 ## Summary
@@ -23,14 +27,14 @@ publish: true
 
 ![Tabella benchmark Gemini 4 Argon vs competitor](../_attachments/gemini-4-argon-benchmarks-table-2026-09-30.jpg)
 
-*Tabella comparativa (da INCUBE.AI): Argon vs GPT-6 Astra vs Claude Fable 5.1 vs Claude Opus 5.5 su 8 categorie. Nota: Vibe Code Bench 91.9% e GraphWalks 99.7% NON compaiono nel blog ufficiale Google.*
+*Tabella comparativa (da post Telegram, non dal blog ufficiale): Argon vs GPT-6 Astra vs Claude Fable 5.1 vs Claude Opus 5.5 su 8 categorie. Nota: Vibe Code Bench 91.9% e GraphWalks 99.7% NON compaiono nel blog ufficiale Google.*
 
 ## L'annuncio
 
 Google, 30 settembre 2026: nuovo modello frontier **Gemini 4 Argon** per task lunghi e complessi. Blog: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/
 
 **Numeri chiave (verificati sul blog):**
-- Output token limit **1M** (da 64K) — è il limite di *traiettoria/output*, non la context window. Distinzione persa dalla stampa (INCUBE dice "elabora 1M token": ambiguo).
+- Output token limit **1M** (da 64K) — è il limite di *traiettoria/output*, non la context window. Distinzione persa dalla stampa (il post dice "elabora 1M token": ambiguo).
 - DeepSWE v1.1 **77.9%** (SOTA dichiarato), Vals Index #1, AutomationBench #1 (51.3%), LVBench 91.7%, CWE-bench v1 68% (pari primo).
 - Prezzo introduttivo $2/M input, $10/M output, cache -95%; raddoppio dopo (footnote).
 
@@ -46,11 +50,11 @@ Google, 30 settembre 2026: nuovo modello frontier **Gemini 4 Argon** per task lu
 - Il "governo USA" nel comunicato è **revisore, non utente**: processo volontario di pre-release review. Confusione frequente nella stampa non-anglofona.
 - Safety framing da modello high-risk: monitoraggio chain-of-thought anti-misalignment, leader su Gray Swan IPI (prompt injection), release senza guardrail cyber solo per defender fidati.
 
-## Verifica del post INCUBE (3/10/2026)
+## Verifica del post Telegram (3/10/2026)
 
 Fedele sui numeri confermati (DeepSWE, 300 TiB, prezzo, migrazioni Rust). Due caveat: 1M = output non contesto; Vibe Code 91.9% non verificabile dalla fonte primaria. "Великий камбэк" corretto sui numeri, ottimista sui tempi: per un API key normale Argon è ancora una slide, non un modello.
 
-*Aggiunta dal thread Telegram del 3/10/2026 (condivisione post INCUBE.AI in russo + fetch diretto del blog Google).*
+*Aggiunta dal thread Telegram del 3/10/2026 (condivisione post Telegram inoltrato da PK + fetch diretto del blog Google).*
 <!-- openclaw:wiki:generated:end -->
 
 ## Related
@@ -61,5 +65,6 @@ Fedele sui numeri confermati (DeepSWE, 300 TiB, prezzo, migrazioni Rust). Due ca
 
 ### Referenced By
 
+- [Gemini 4 Carbon — il frontier Google a accesso controllato: #1 AA v5, SOTA cybersecurity, rollout solo cyber defenders](gemini-4-carbon-il-frontier-google-a-accesso-controllato-1-aa-v5-sota-cybersecurity-rollout-solo-cyber-defenders.md)
 - [Google](../entities/google.md)
 <!-- openclaw:wiki:related:end -->

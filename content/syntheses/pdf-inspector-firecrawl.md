@@ -19,6 +19,7 @@ publish: true
 ### Collegamenti
 - Prodotto da [Firecrawl](../entities/firecrawl.md), insieme ad [anydoc](anydoc-firecrawl.md) — stessa impronta: Rust, local-first, niente rete sul percorso veloce
 - Complementare a MinerU, non alternativo: decide *quali* pagine mandare all'OCR, non lo sostituisce
+- Alternativa self-host per l'OCR/PDF parsing: [[syntheses/nvidia-nemotron-3-5-parse-parser-documenti-0-63b|NVIDIA Nemotron 3.5 Parse]] (0,63B, OpenMDW, vLLM OpenAI-compatibile)
 <!-- openclaw:human:end -->
 
 ## Summary
@@ -87,4 +88,6 @@ Alternativa local-first a PyMuPDF4LLM e MarkItDown per estrazione PDF→Markdown
 
 - [Firecrawl](../entities/firecrawl.md)
 - [Gotenberg](gotenberg.md)
+- [NVIDIA Nemotron 3.5 Parse — parser di documenti da 0,63B che compete con modelli 6× più grandi](nvidia-nemotron-3-5-parse-parser-documenti-0-63b.md)
+- [Papermorph – PDF in web-book interattivo (GitHub)](../sources/dozentwelve-papermorph-github.md)
 <!-- openclaw:wiki:related:end -->

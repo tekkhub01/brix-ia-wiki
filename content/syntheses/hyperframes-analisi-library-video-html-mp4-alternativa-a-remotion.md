@@ -88,6 +88,11 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+
+### Collegamenti (audit 2026-10-22)
+- Stessa famiglia 'output deterministico da HTML': [[syntheses/karpathy-formati-di-output-per-capire-gli-llm-asd-ste100-diagrammi-html-video|Karpathy — formati di output per capire gli LLM (diagrammi HTML/video)]]
+- Affine per infografiche interattive HTML: Anatomy — skill per infografiche isometriche interattive
+- Pipeline HTML→file deterministica (PDF): [[syntheses/gotenberg|Gotenberg]]
 <!-- openclaw:human:end -->
 
 ## Summary

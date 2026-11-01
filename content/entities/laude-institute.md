@@ -5,7 +5,7 @@ pageType: entity
 entityType: organization
 sourceIds:
   - sources/verifica-leaderboard-benchmark-2026-08-26.md
-updatedAt: 2026-08-26T00:00:00Z
+updatedAt: 2026-10-25T04:00:00Z
 publish: true
 ---
 
@@ -34,10 +34,17 @@ per il reward hacking rilevato.
 | v2.0 | live | — |
 | **v2.1** | live — 89 task curati, refresh verificato di v2.0 | 83,8% — Claude Code + Fable 5 (xhigh) |
 | **3.0** (ex Frontier-Bench, `frontierbench.ai`) | shipped | 42,7% — Opus 5 (max) + mini-SWE-agent |
+| **4.0** | live (ott 2026) | 64,8% — Opus 5.5 — classifica guidata da Anthropic; risultati ottobre separati per Muse Wonder Full/Wonder, Step 5 Preview, Mistral Large 4; ~35 modelli valutati alla snapshot 23/10 (specchio di benchlm.ai) |
 | terminal-bench-science 1.0 | coming soon | — |
 
 La v2.1 corregge 28 dei 89 task della v2.0 e introduce validazione continua, così che
 i punteggi riflettano la capacità dell'agente e non i buchi dell'ambiente.
+
+> **Refresh 2026-10-25 (sweep, seconda mano):** Terminal-Bench **4.0** è live da ottobre
+> con board pubblica separata per harness (niente rank cross-harness). Fonti: mirror
+> llm-stats/benchlm/codingfleet, non la leaderboard ufficiale — numeri da verificare alla
+> fonte. Il repo è ora `harbor-framework/terminal-bench`, hosted da Harbor + Laude Institute;
+> compute sponsor Modal, Anthropic, OpenAI, Google.
 
 ## Perché ci interessa
 

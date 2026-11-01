@@ -77,6 +77,11 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+
+### Collegamenti (audit 2026-10-22)
+- Confronto architetturale: Architettura retrieval stratificata — la nostra alternativa self-host
+- Stesso problema (contesto/memoria per agenti): [[syntheses/headroom-context-compression-layer-per-ai-agent-headroomlabs-ai|Headroom — context compression]] e [[syntheses/ctxport-portabilità-del-contesto-tra-ai|CtxPort — portabilità del contesto]]
+- Fonte verificata: Supermemory — fonti verificate (non pubblicata: interna)
 <!-- openclaw:human:end -->
 
 ## Summary
@@ -151,4 +156,9 @@ Criteri da riusare nella ricerca dei prossimi candidati (Mem0, Zep, Cognee, Grap
 <!-- openclaw:wiki:related:start -->
 ### Sources
 
+
+### Referenced By
+
+- [Google "Sleep" framework — consolidamento offline dei modelli linguistici: BABILong a 10M token](google-sleep-framework-consolidamento-offline-dei-modelli-linguistici.md)
+- [SAGE: A Self-Evolving Agentic Graph-Memory Engine (arXiv 2605.12061)](../sources/sage-agentic-graph-memory-abs.md)
 <!-- openclaw:wiki:related:end -->

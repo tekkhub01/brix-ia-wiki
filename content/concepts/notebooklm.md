@@ -3,8 +3,8 @@ title: "NotebookLM (Google)"
 category: concept
 sources: [raw/notes/llm-memory-context-evolution-2026.md]
 created: 2026-04-28
-updated: 2026-08-14
-verified: 2026-04-28
+updated: 2026-11-01
+verified: 2026-11-01
 tags: [product, rag, agents, citations, caching]
 aliases: [NotebookLM, Notebook LM]
 confidence: medium
@@ -20,6 +20,22 @@ publish: true
 **Positioning:** "Your personal AI research assistant" — source-centric, not chat-centric
 
 > **Freshness caveat.** The architecture below was recorded from an April 2026 research pass which described a Gemini 1.5 Pro / Flash backbone with a 2M-token context window. That model generation is old relative to this page's date, and the specific backbone, source limits, and word counts have **not been re-verified**. Treat the *shape* of the stack as reliable and the *numbers* as needing a refresh. The architectural claims are what this wiki cites elsewhere; the version details are not.
+
+> **Refresh 2026-11-01 (sweep, secondhand — practitioner/blog sources, not Google docs).**
+> The product was **renamed to Gemini Notebook in July 2026** (per Jeff Su's March-2026
+> walkthrough, updated). The 2026 feature wave is consistent with the hybrid-stack thesis
+> this page holds: a **1M-token chat context window** with saved chat history and Goals;
+> **Deep Research** and Web/Fast-Research source discovery inside the Sources Panel
+> (the tool now finds its own sources — a drift from the strict "only what you upload"
+> positioning); **Gemini 3-class reasoning** replacing the 1.5-era backbone; slide-level
+> editing and PPTX export (Feb 2026); **Data Tables**; image (OCR) and CSV source types;
+> prompt limit raised 500 → 10,000 characters; **Cinematic Video Overviews** on Google's
+> VO video model (Ultra-only); live-syncing Google Docs/Slides/Sheets as sources; and
+> notebooks usable as a source inside the Gemini app (Dec 2025/Jan 2026). The Google
+> blog "Do your best research with NotebookLM" adds a secure cloud computer for code
+> execution and report/chart/spreadsheet/slide output generation. None of this changes
+> the retrieval/caching/attribution architecture above; it extends the generation side
+> of the pipeline. Numbers remain secondhand until a primary Google source is ingested.
 
 ## Architecture (hybrid)
 

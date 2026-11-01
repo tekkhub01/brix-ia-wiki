@@ -3,8 +3,8 @@ title: "Context Caching"
 category: concept
 sources: [raw/notes/llm-memory-context-evolution-2026.md]
 created: 2026-04-28
-updated: 2026-08-14
-verified: 2026-08-12
+updated: 2026-10-25
+verified: 2026-10-25
 tags: [inference-optimization, caching, cost]
 aliases: [Context Caching, Prompt Caching]
 confidence: high
@@ -82,6 +82,14 @@ For on-premise LLM (GLM 5.1 + vLLM/KTransformers), similar techniques exist:
 - **vLLM PagedAttention** caches KV across requests (but not named "context caching")
 - **KTransformers** offloads KV cache to CPU/GPU split
 - Custom implementation possible: precompute document embeddings once, reuse across queries with prefix caching
+
+**Numeri (refresh 2026-10-25, seconda mano — fonti tech 2026, da verificare):**
+- vLLM Automatic Prefix Caching su prefissi ripetuti: **>50% di GPU-time risparmiato** (Thaki Cloud, giu 2026) — fascia paragonabile al cache-read cloud, ma il cloud sconta il *prezzo* del token, on-prem libera *GPU-seconds*.
+- Costo strutturale assente nel cloud: overhead APC misurato in vLLM **−36.7% throughput / +25% TPOT** nel caso peggiore (SqueezeBits vs TensorRT-LLM, giu 2026); il cache occupa RAM GPU locale.
+- Il pezzo economicamente più grosso — prefix caching **cross-node** — on-prem è DIY (pattern Mooncake-style disaggregation), non arriva col flag `--enable-prefix-caching` (DevOpsBeast, mag 2026).
+- Dettaglio per deployment multi-tenant: `cache_salt` per-request isola i blocchi KV fra tenant (packet.ai, ago 2026).
+
+Collegata: domanda `q-onprem-prefix-caching` (ora partially-answered).
 
 ## Related entries
 

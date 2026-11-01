@@ -4,6 +4,7 @@ id: synthesis.decision-model-jev-e-l-ecosistema-open-source-laya-von-kev-jevlike
 title: "Decision model: Jev e l'ecosistema open source (Laya, von, kev, jevlike)"
 sourceIds:
   - source.wiki-jev-typesafe
+  - source.wiki-jev-1-14-2026-10-16
 claims:
   - text: "Laya: 421M ModernBERT-large, Apache 2.0, p50 32.8ms vs Jev 236-276ms;
       zero-shot 0.362, 0.766 solo fine-tuned"
@@ -34,12 +35,22 @@ claims:
         path: https://github.com/rmalde/minecraft-agent
       - kind: web
         path: https://x.com/rronak_/status/2101544156757950697
+  - text: "Benchmark indipendente (Eugene Pro AI, 30 task, 10 livelli): Laya locale
+      risponde in ≤200 ms ma sbaglia su confidenza calibrata e azioni
+      distruttive (casi 11, 16, 26, 27, 30); Jev cloud più preciso — conferma la
+      lettura 'self-host con fine-tuning, non download diretto'."
+    confidence: 0.8
+    evidence:
+      - kind: url
+        sourceId: youtube:kCqNB4pg_5s
+        note: "video 26:54 del 2026-10-02; dettagli nella sintesi 'Benchmark decision
+          model: 30 task locale vs cloud'"
 questions:
   - "Nessuna riproduzione indipendente dei benchmark Laya-vs-Jev: chi la fa?"
   - kev (decoder Qwen3.5 tiny) regge il confronto di latenza con gli encoder?
 confidence: 0.8
 status: active
-updatedAt: 2026-09-22T12:20:01.498Z
+updatedAt: 2026-10-22T15:10:18.376Z
 publish: true
 ---
 
@@ -47,6 +58,9 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+**Che cos'è un decision model:** modello non autoregressivo che riceve stato + domande tipate e restituisce probabilità calibrate (choice/score) in pochi ms — non genera testo, decide. Categoria introdotta da Jev (TypeSafe); ecosistema open source mappato in questa pagina.
+
+**Benchmark indipendente 30 task (locale vs cloud):** [[syntheses/benchmark-decision-model-30-task-locale-vs-cloud-eugene-pro-ai|Benchmark decision model: 30 task locale vs cloud (Eugene Pro AI)]] — Laya locale veloce ma meno calibrata; conferma la lettura self-host + fine-tuning.
 <!-- openclaw:human:end -->
 
 ## Summary
@@ -79,10 +93,24 @@ API chiusa, nessun paper/weights/dataset. Decision model non autoregressivo: sta
 - Da tenere d'occhio: CUA-S1-FORMS dimostra che uno specialista da 2.8 MB batte Jev sul suo terreno → per task stretti (smistamento PDF, routing) il modello piccolo dedicato è la scelta giusta.
 
 **Caveat**: tutti i benchmark cross-prodotto (Laya vs Jev) sono auto-riportati dalle parti in causa; a oggi nessuna riproduzione indipendente.
+
+## Aggiornamento 2026-10-16 — Jev 1.14: immagini, tipo box, long context
+Fonte verificata: `sources/wiki-jev-1-14-2026-10-16.md` (blog + docs TypeSafe, 16/10).
+- **jev-1.14.0** (14/10): miglioramenti ovunque, gains maggiori su multilingua. `jev-latest` passerà a 1.14 dopo ~1 settimana.
+- **Immagini** (`TypeSafe-Danger-Zone-Images: true`): 1.13 "era multimodale da sempre". Assets referenziabili in state/instructions/criteria. PNG/JPEG, 280–1568 px, max 16 MiB. Ogni riferimento ripetuto riconta i token.
+- **Tipo `box`** (solo 1.14): bounding box + confidence — prima primitiva non-decisionale.
+- **Long context** (`TypeSafe-Danger-Zone-Long-Context: true`): 64k/32k → 262k per-request E per-question, stesso prezzo, più lento e meno accurato.
+- **Prezzi confermati**: $0.042/Mtok input, output gratis; immagini allo stesso tariffario, ma la guida per stimare i token-immagine è "soon" → il calcolo community "$0.0001 a immagine" non è ufficiale.
+- **Caveat TypeSafe**: tutto "danger zone", multimodale peggiore del testo puro, esplicitamente non production-ready.
+- **Impatto sulla nostra decisione**: nessuna variazione — self-host resta la via. Da ri-valutare il pattern "dov'è X in immagine" solo quando i flag escono dal danger zone e la tokenizzazione immagini sarà documentata.
 <!-- openclaw:wiki:generated:end -->
 
 ## Related
 <!-- openclaw:wiki:related:start -->
 ### Sources
 
+
+### Referenced By
+
+- [Benchmark decision model: 30 task locale vs cloud (Eugene Pro AI)](benchmark-decision-model-30-task-locale-vs-cloud-eugene-pro-ai.md)
 <!-- openclaw:wiki:related:end -->

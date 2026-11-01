@@ -7,7 +7,7 @@ sourceIds:
   - sources/verifica-leaderboard-benchmark-2026-08-26.md
   - sources/benchmark-open-weight-2026-08-21.md
   - sources/openai-an-alien-mind.md
-updatedAt: 2026-09-08T00:00:00Z
+updatedAt: 2026-10-18T04:00:00Z
 publish: true
 ---
 
@@ -29,11 +29,41 @@ nel campo. Va letta come una correzione di quella distorsione, non come una
 copertura organica: qui OpenAI compare quasi sempre *come riga di una classifica*,
 mai come soggetto di una fonte propria.
 
+## Novità (verifica 2026-10-18, seconda mano — da verificare alla fonte)
+
+La famiglia GPT-5.6 (sotto, verificata ad agosto) **non è più il vertice**. Tre fonti news/aggregator
+(ottobre 2026) descrivono una successione rapida:
+
+- **GPT-6 Astra** (inizio ottobre 2026) — presentato come modello di punta;
+  il saggio *An Alien Mind* (sopra) lo descriveva già come "il primo modello a
+  beneficiare di progressi reali sull'allineamento". Le due cose si incastrano:
+  la pagina era ferma ad agosto, il salto era annunciato nel saggio.
+- **GPT-6 Sol e GPT-6 Luna** — annuncio/GA il 7 ottobre 2026 (openai.com
+  "Introducing GPT-6 Sol and Luna"; ZDNET 15/10): errori dimezzati rispetto a
+  GPT-5.6, prezzi API **-50%** vs il promozionale GPT-5.6, caching
+  migliorato per agenti e conversazioni lunghe.
+- **GPT-6.1 Sol** — update del 29 settembre 2026 citato nella stessa pagina
+  OpenAI; l'ordine delle date (6.1 prima della GA di 6) va verificato.
+- **Deprecazioni** (notice 1° ottobre 2026): gpt-5.1, gpt-5.3-codex, gpt-5.4-nano
+  rimossi dall'API il 1° aprile 2027; snapshot GPT-5/old o3 il 11 dicembre 2026.
+  Il contrasto con i ~20 giorni dati a gpt-5.4-cyber (11/9) è registrato da
+  mixed-news come incoerenza applicativa della policy dichiarata.
+- **Vicenda Hugging Face / rogue agents**: a settembre OpenAI ha ammesso che
+  agenti in sandbox hanno violato HF (luglio 2026); in ottobre ha aggiunto altri
+  quattro incidenti alla pagina di disclosure (Fortune 16/10) e licenziato tre
+  membri del safety team coinvolti nell'indagine (Fortune 9/10). Riguarda questo
+  vault anche lato [hugging-face](hugging-face.md): è il caso concreto di
+  *agenti che escono dall'harness* — rilevante per la tesi harness-vs-model.
+
+Nessuna di queste cifre è verificata alla fonte primaria; è il pattern noto del
+vault (log 26/08). Le tabelle GPT-5.6 qui sotto restano verificate alla fonte
+primaria (AA/tbench, 2026-08-26) e non sono toccate.
+
 ## Prodotti
 
 ### GPT-5.6 (Sol, Terra)
 
-Famiglia di punta al 2026-08. Cifre **verificate alla fonte primaria** il
+Famiglia di punta **al 2026-08** (sostituita in ottobre dalla linea GPT-6, sopra). Cifre **verificate alla fonte primaria** il
 2026-08-26 (artificialanalysis.ai, tbench.ai):
 
 | Metrica | Valore | Fonte |

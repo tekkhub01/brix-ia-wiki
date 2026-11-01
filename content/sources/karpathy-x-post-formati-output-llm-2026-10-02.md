@@ -31,7 +31,7 @@ Karpathy sostiene che passeremo sempre più tempo a *capire* gli output degli LL
 
 ![Infografica ASD-STE100](../_attachments/karpathy-asd-ste100-infographic-2026-10-03.jpg)
 
-*Infografica ASD-STE100 ricevuta da PK via Telegram (post INCUBE.AI, 3/10/2026): struttura documento, anatomia frase, verbi approvati/non approvati, dizionario, limiti regole, timeline.*
+*Infografica ASD-STE100 ricevuta da PK via Telegram (post Telegram inoltrato da PK, 3/10/2026): struttura documento, anatomia frase, verbi approvati/non approvati, dizionario, limiti regole, timeline.*
 
 ## Fonti secondarie
 

@@ -1,10 +1,10 @@
 ---
 title: "Agentic RAG"
 category: concept
-sources: [raw/notes/llm-memory-context-evolution-2026.md]
+sources: [raw/notes/llm-memory-context-evolution-2026.md, sources/self-rag-asai-et-al-arxiv-2310-11511-abstract.md]
 created: 2026-04-28
-updated: 2026-08-14
-verified: 2026-08-12
+updated: 2026-10-11
+verified: 2026-10-11
 tags: [retrieval, agents, rag]
 aliases: [Agentic RAG]
 confidence: high
@@ -35,6 +35,10 @@ publish: true
 - **Query planner agent**: decomposes complex questions, identifies required data sources
 - **Retriever agents**: one per source type (vector, keyword, SQL, API, graph)
 - **Validator agent**: cross-checks answer against retrieved spans; demands citations
+
+### Lineage of the validation step: Self-RAG (2023)
+
+The validator agent has an academic precursor the corpus previously left unattributed: **Self-RAG** (Asai et al., arXiv 2310.11511; [abstract in vault](../sources/self-rag-asai-et-al-arxiv-2310-11511-abstract.md)). Self-RAG trains a *single* LM to emit **reflection tokens** that decide when to retrieve (`Retrieve`), judge whether retrieved passages are relevant (`ISREL`), whether its own generation is supported by them (`ISSUP`), and whether it is useful (`ISUSE`) — critique internalized in the generator rather than delegated to a separate agent. Its stated motivation is the same one behind adaptive retrieval here: "indiscriminately retrieving and incorporating a fixed number of retrieved passages... diminishes LM versatility." The lineage is Self-RAG (2023, trained reflection tokens) → agentic validation (2025–2026, a separate verifier step in the loop). The 2026 wave externalizes what Self-RAG internalized.
 - **Router agent**: decides which retriever to call next based on intermediate results
 
 ## Benefits
@@ -97,3 +101,4 @@ NotebookLM uses a limited form of Agentic RAG: query rewriting + hybrid retrieva
 ## Sources
 
 - [llm-memory-context-evolution-2026](../sources/llm-memory-context-evolution-2026.md)
+- [Self-RAG (Asai et al., arXiv 2310.11511)](../sources/self-rag-asai-et-al-arxiv-2310-11511-abstract.md)

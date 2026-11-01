@@ -19,7 +19,7 @@ tags: [ai-agents, langgraph, react, sub-agents, research-agent, course]
 - Type: `local-file`
 - Origine: https://github.com/langchain-ai/deep-agents-from-scratch
 - Autore: LangChain (langchain-ai), licenza MIT
-- Provenienza: forward Telegram (canale INCUBE.AI), inviato da PK il 2026-09-01
+- Provenienza: forward Telegram inviato da PK il 2026-09-01
 - Updated: 2026-09-01T13:57:28.173Z
 
 ## Content
@@ -57,7 +57,6 @@ Sub-Agent, Custom Tools / MCP.
 
 ### Link esterni
 - Repo: https://github.com/langchain-ai/deep-agents-from-scratch
-- Canale Telegram origine: https://t.me/+jqUKtk2A-LxlMWQ6 (INCUBE.AI)
 
 ## Notes
 <!-- openclaw:human:start -->

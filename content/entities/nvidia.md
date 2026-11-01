@@ -7,7 +7,8 @@ sourceIds:
   - sources/qwen3-8-how-to-run-locally-unsloth.md
   - sources/brix-ia-llm-locale-2026-guida-hardware-pmi.md
   - sources/nvidia-parakeet-tdt-0-6b-v2.md
-updatedAt: 2026-09-01T00:00:00Z
+  - sources/nvidia-nemotron-3-5-parse-hf.md
+updatedAt: 2026-10-18T04:00:00Z
 publish: true
 ---
 
@@ -57,6 +58,20 @@ apre esplicitamente contro i claim di marketing di questa classe di prodotti
 ("*Claimed 40 tok/s… Reality max 3.3 tok/s theoretical*"), che è il motivo per cui
 le sue cifre sono fra le poche qui a non provenire dal produttore.
 
+### RTX Spark — nuovo prodotto, ottobre 2026 (seconda mano, da verificare)
+
+Al Microsoft Windows event del 7 ottobre 2026 NVIDIA ha lanciato la piattaforma
+**RTX Spark Superchip** (Grace CPU + Blackwell RTX GPU in un solo chip per
+laptop/desktop Windows): preorder 7/10, disponibilità laptop **16 ottobre 2026**
+da 6 OEM (ASUS, Dell, HP, Lenovo, MSI, Microsoft), da **$2.599**; desktop
+compatti a novembre. Fino a 6.144 CUDA core e 128 GB di memoria unificata.
+È il segmento **sotto DGX Spark** (che resta a $4.999/64GB e $6.950/128GB —
+prezzi confermati, e DGX Spark 64GB in vendita dal 23 ottobre via altri OEM,
+blog NVIDIA 2/10). Per il vault conta perché cambia la fascia bassa della
+guia hardware PMI: il "presente e futuro" dell'inferenza locale ha una nuova
+classe di macchina a metà fra il mini PC e la workstation. Fonti: blog NVIDIA
+7/10, techpowerup, tech-insider 17/10 — tutte seconda mano.
+
 ### Rubin
 
 Architettura successiva a Blackwell, attesa H2 2026. Nessun dato di prima mano.
@@ -96,6 +111,7 @@ disponibili — la guida hardware — lo ridimensionano.
 ### Referenced By
 
 - [Hugging Face](hugging-face.md)
+- [NVIDIA Nemotron 3.5 Parse — parser di documenti da 0,63B che compete con modelli 6× più grandi](../syntheses/nvidia-nemotron-3-5-parse-parser-documenti-0-63b.md)
 
 ### Related Pages
 
@@ -110,3 +126,4 @@ disponibili — la guida hardware — lo ridimensionano.
 ## Fonti
 
 - [Qwen3.8 — How to Run Locally (Unsloth)](../sources/qwen3-8-how-to-run-locally-unsloth.md)
+- [NVIDIA Nemotron 3.5 Parse — model card Hugging Face](../sources/nvidia-nemotron-3-5-parse-hf.md)

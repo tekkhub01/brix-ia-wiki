@@ -12,7 +12,7 @@ publish: true
 **Source URL:** https://github.com/anthropics/commerce-agents  
 **Author:** Anthropic  
 **Type:** Reference implementation (Apache 2.0) — non è un prodotto  
-**Introduced via:** richiesta PK (post video INCUBE.AI, tradotto e ripubblicato su Telegram)
+**Introduced via:** richiesta PK (post video Telegram inoltrato da PK, tradotto e ripubblicato)
 
 ## Cos'è
 

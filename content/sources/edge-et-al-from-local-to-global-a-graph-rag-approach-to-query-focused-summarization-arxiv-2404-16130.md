@@ -41,9 +41,15 @@ The use of retrieval-augmented generation (RAG) to retrieve relevant information
 
 ## Notes
 <!-- openclaw:human:start -->
+
+### Collegamenti (audit 2026-10-22)
+- Concetto di riferimento: [[topics/llm-memory/wiki/concepts/graphrag|GraphRAG]] — questo è il paper fondativo
+- Domanda aperta collegata: [[topics/llm-memory/inventory/candidates/q-graphrag-global-query-margin|GraphRAG global-query margin]]
 <!-- openclaw:human:end -->
 
 ## Related
 <!-- openclaw:wiki:related:start -->
-- No related pages yet.
+### Referenced By
+
+- [Do We Still Need GraphRAG? (RAGSearch benchmark, arXiv 2604.09666)](do-we-still-need-graphrag-ragsearch-benchmark-arxiv-2604-09666.md)
 <!-- openclaw:wiki:related:end -->

@@ -43,6 +43,10 @@ NOTE: the abstract on the arXiv page contains typos (Exsting, constucts, structr
 
 ## Notes
 <!-- openclaw:human:start -->
+
+### Collegamenti (audit 2026-10-22)
+- Concetto di riferimento: [[topics/llm-memory/wiki/concepts/graphrag|GraphRAG]]
+- Prodotto concorrente nella stessa nicchia (memoria grafo-agnostica per agenti): [[syntheses/supermemory-motore-di-memoria-e-contesto-per-agenti-ai-valutazione|Supermemory — valutazione]]
 <!-- openclaw:human:end -->
 
 ## Related

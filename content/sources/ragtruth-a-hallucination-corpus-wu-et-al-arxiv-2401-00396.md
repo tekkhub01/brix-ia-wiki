@@ -39,6 +39,10 @@ Retrieval-augmented generation (RAG) has become a main technique for alleviating
 
 ## Notes
 <!-- openclaw:human:start -->
+
+### Collegamenti (audit 2026-10-22)
+- Usato come yardstick in: [[topics/llm-memory/inventory/candidates/q-wiki-provenance-vs-ragtruth|Wiki provenance vs RAGTruth]]
+- Tema verifica/attribuzione: [[syntheses/llm-as-a-verifier-la-verifica-come-asse-di-scaling|LLM-as-a-verifier]] · [[topics/llm-memory/wiki/concepts/span-level-attribution|Span-level attribution]]
 <!-- openclaw:human:end -->
 
 ## Related

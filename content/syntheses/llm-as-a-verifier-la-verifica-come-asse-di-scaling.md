@@ -130,5 +130,6 @@ modello premium non è un confronto di costo per task finché quel 5 non ci entr
 - [DeepSeek](../entities/deepseek.md)
 - [Due classifiche per lo stesso benchmark — perché un punteggio non è del modello](due-classifiche-per-lo-stesso-benchmark.md)
 - [Harness Engineering — Agent = Model + Harness: The 6-Layer Production Playbook](../sources/harness-engineering-6-layer-playbook-2026.md)
+- [RAGTruth: A Hallucination Corpus (Wu et al., arXiv 2401.00396)](../sources/ragtruth-a-hallucination-corpus-wu-et-al-arxiv-2401-00396.md)
 - [Scaling Intelligence Lab (Stanford)](../entities/scaling-intelligence-lab.md)
 <!-- openclaw:wiki:related:end -->

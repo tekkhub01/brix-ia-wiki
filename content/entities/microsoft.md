@@ -5,7 +5,7 @@ pageType: entity
 entityType: organization
 sourceIds:
   - sources/webwright-microsoft-github.md
-updatedAt: 2026-09-01T00:00:00Z
+updatedAt: 2026-10-18T04:00:00Z
 publish: true
 ---
 
@@ -16,6 +16,26 @@ publish: true
 **Rilevanza per questo vault:** presente in 22 pagine, quasi sempre come *piattaforma
 di distribuzione altrui* (Azure, Foundry, Copilot) e due volte come autore di
 qualcosa che questo vault studia davvero — Webwright e GraphRAG
+
+## Novità (verifica 2026-10-18, seconda mano — da verificare alla fonte)
+
+- **MAI-Base-2** — pretraining completato, annunciato 15 ottobre 2026 (Microsoft
+  AI Lab Notes, "Frontier Pre-training at Microsoft AI"): MoE 2,8T parametri
+  totali / 80B attivi, addestrato su ~16k GPU GB200 in 38 giorni; Microsoft
+  dichiara efficienza di training **4-12× rispetto a DeepSeek-V4-Pro-Base** e
+  "better pretraining" di OpenAI con un quarto della potenza di calcolo.
+  Nessuna riproduzione esterna, nessun peso pubblico, nessun endpoint: il
+  confronto è self-report del vendor — la stessa classe di numeri che il vault
+  tratta con la checklist del 26/08. Rilevante qui perché la pagina deepseek
+  porta i suoi numeri di efficienza da un forward non verificato: MAI-Base-2
+  è la prima claim di efficienza *contendente* registrata in vault.
+- **Microsoft Execution Containers (MXC)** — GA 7 ottobre 2026 su Windows 11:
+  containment a runtime per agenti AI (policy su file/rete applicate fuori dal
+  controllo dell'agente). Unsloth AI è fra i primi tool che lo supportano.
+  È un pezzo di **harness lato sistema operativo**: il layer permissions del
+  playbook a 6 layer che diventa infrastruttura del vendor — collegato alla
+  tesi [harness-vs-model](../topics/harness-vs-model.md)
+  e alla q-minimal-vs-elaborate-harness (l'ambiente che sostituisce le layer).
 
 ## Prodotti
 
@@ -68,7 +88,9 @@ GitHub, non per quello che vende.
 
 ## Related
 <!-- openclaw:wiki:related:start -->
-- No related pages yet.
+### Referenced By
+
+- [Webwright — Microsoft Browser Agent](../syntheses/webwright-microsoft-browser-agent.md)
 <!-- openclaw:wiki:related:end -->
 
 

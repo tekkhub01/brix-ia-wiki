@@ -89,6 +89,8 @@ Strumento di **context compression** mature (Apache-2.0, molto attivo, ~66k star
 ### Referenced By
 
 - [CtxPort — portabilità del contesto tra AI](ctxport-portabilità-del-contesto-tra-ai.md)
+- [Google "Sleep" framework — consolidamento offline dei modelli linguistici: BABILong a 10M token](google-sleep-framework-consolidamento-offline-dei-modelli-linguistici.md)
 - [Headroom Labs](../entities/headroom-labs.md)
+- [Supermemory — motore di memoria e contesto per agenti AI (valutazione)](supermemory-motore-di-memoria-e-contesto-per-agenti-ai-valutazione.md)
 - [xAI](../entities/xai.md)
 <!-- openclaw:wiki:related:end -->

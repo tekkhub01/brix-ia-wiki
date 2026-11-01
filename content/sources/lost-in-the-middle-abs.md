@@ -40,6 +40,10 @@ While recent language models have the ability to take long contexts as input, re
 
 ## Notes
 <!-- openclaw:human:start -->
+
+### Collegamenti (audit 2026-10-22)
+- Concetto di riferimento: [[topics/llm-memory/wiki/concepts/long-context-models|Long-context models]]
+- Domanda aperta collegata: [[topics/llm-memory/inventory/candidates/q-long-context-compiled-vs-raw|Long context: compilato vs raw]]
 <!-- openclaw:human:end -->
 
 ## Related

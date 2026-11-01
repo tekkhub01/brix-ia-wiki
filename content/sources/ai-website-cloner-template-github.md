@@ -306,5 +306,6 @@ AI coding agents, web development, Next.js, reverse engineering, design systems,
 ### Referenced By
 
 - [Introducing Claude Design by Anthropic Labs](anthropic-claude-design-labs.md)
+- [REA – Reverse Engineer Anything (GitHub)](morluto-rea-github.md)
 - [Startupa.ge - Platform for Founders, Investors & Talent](../syntheses/startupa-ge-platform-for-founders-investors-talent.md)
 <!-- openclaw:wiki:related:end -->

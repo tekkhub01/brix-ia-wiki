@@ -31,7 +31,7 @@ publish: true
 
 ![Tabella benchmark Gemini 4 Argon vs competitor](../_attachments/gemini-4-argon-benchmarks-table-2026-09-30.jpg)
 
-*Tabella comparativa (da INCUBE.AI, non dal blog): Argon vs GPT-6 Astra vs Claude Fable 5.1 vs Claude Opus 5.5 su 8 categorie. Include Vibe Code Bench 91.9% e GraphWalks 99.7%, numeri NON presenti nel blog ufficiale.*
+*Tabella comparativa (da post Telegram inoltrato da PK, non dal blog): Argon vs GPT-6 Astra vs Claude Fable 5.1 vs Claude Opus 5.5 su 8 categorie. Include Vibe Code Bench 91.9% e GraphWalks 99.7%, numeri NON presenti nel blog ufficiale.*
 
 ## Fonti secondarie
 

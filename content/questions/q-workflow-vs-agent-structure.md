@@ -1,11 +1,11 @@
 ---
 title: "Should the structure of a run live in the workflow engine or in the agent's own scaffolding?"
 kind: question
-status: proposed
+status: partially-answered
 priority: p1
 created: 2026-09-01
-updated: 2026-09-01
-last_checked: 2026-09-01
+updated: 2026-10-18
+last_checked: 2026-10-18
 tags: [question, gap, harness, agentic-loop, workflows]
 summary: "Archon encodes the sequence in YAML owned by the engineer; Deep Agents builds the same capabilities inside the agent as planning, offloading and delegation. The vault holds no evidence comparing them."
 confidence: medium
@@ -41,3 +41,18 @@ the two shapes each agent-cluster source in this vault actually implements
 (Archon, DSH, JCode, Prime Agent, Webwright, Deep Agents), which is a
 classification pass over material already ingested. A distribution across six
 systems is weak evidence but it is evidence, and it costs one afternoon.
+
+## Resolution (sweep 2026-10-18) — partially-answered, external sources are practitioner-grade only
+
+Web search (ottobre 2026) trova consenso operativo ma non esperimenti controllati:
+la risposta di produzione dichiarata ovunque è **l'ibrido** — "deterministic
+skeleton + agent nodes" (InfiniSynapse, agents-vs-workflows, 2026-09-14: workflow
+dove passi/SLA/compliance sono noti, agenti dove intent e tool path variano).
+Il confronto strutturale più vicino alle due fonti del vault è nel dibattito sui
+durable workflow engine (Temporal replay = struttura esterna con vincolo di
+determinismo vs checkpoint-based = struttura interna senza disciplina, tanayshah.dev
+2026): trade-off registrato come auditability-vs-costing-engineering, non
+capability-vs-model-scale. **Nessuna fonte misura la domanda vera del vault** —
+cosa succede alla scelta quando il modello migliora. Il next action originale
+(classificazione delle 6 sorgenti già ingerite su quale delle due forme
+implementano) resta valida e non richiede ricerca esterna.

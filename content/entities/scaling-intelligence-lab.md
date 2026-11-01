@@ -5,7 +5,8 @@ pageType: entity
 entityType: organization
 sourceIds:
   - sources/llm-as-a-verifier-arxiv-2607-05391.md
-updatedAt: 2026-08-26T00:00:00Z
+updatedAt: 2026-10-25T04:00:00Z
+verified_note: refresh 2026-10-25 (sweep) — nessuna novità oltre il paper 2607.05391; verificato alla pagina ufficiale del lab che la novità di luglio è anche il reward denso per RL (SAC/GRPO, robotica + reasoning matematico), coerente con la sintesi in vault
 publish: true
 ---
 

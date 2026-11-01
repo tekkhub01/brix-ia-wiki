@@ -2144,6 +2144,11 @@ You must first conduct reasoning inside <think>…</think>.
 
 ## Notes
 <!-- openclaw:human:start -->
+
+### Collegamenti (audit 2026-10-22)
+- Concetto di riferimento: [[topics/llm-memory/wiki/concepts/graphrag|GraphRAG]]
+- Paper fondativo della categoria: [[sources/edge-et-al-from-local-to-global-a-graph-rag-approach-to-query-focused-summarization-arxiv-2404-16130|Edge et al., From Local to Global]]
+- Domanda aperta collegata: [[topics/llm-memory/inventory/candidates/q-graphrag-vs-wiki-ingest-cost|GraphRAG vs Wiki ingest cost]]
 <!-- openclaw:human:end -->
 
 ## Related

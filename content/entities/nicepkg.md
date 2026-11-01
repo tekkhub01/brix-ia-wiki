@@ -5,7 +5,8 @@ pageType: entity
 entityType: organization
 sourceIds:
   - sources/ctxport-nicepkg-github.md
-updatedAt: 2026-08-26T00:00:00Z
+updatedAt: 2026-10-25T04:00:00Z
+verified_note: refresh 2026-10-25 (sweep) — repo attivo, nessuna release nuova rilevata (ricerca 2a mano); il formato è citato come "Content Bundle" anche su DeepWiki, variante di nome da non correggere senza fonte
 publish: true
 ---
 

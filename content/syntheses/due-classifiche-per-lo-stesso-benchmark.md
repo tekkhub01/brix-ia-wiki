@@ -125,6 +125,7 @@ harness né perché conti. Questi numeri sono la ragione empirica per aprirlo.
 
 - [Artificial Analysis](../entities/artificial-analysis.md)
 - [Claude Code Mods — plugin per personalizzare interfaccia e tool call (docs ufficiali)](../sources/claude-code-mods-docs-2026-10-05.md)
+- [Gemini 4 Argon — il ritorno frontier di Google (rollout a fasi, 1M output token)](gemini-4-argon-il-ritorno-frontier-di-google-rollout-a-fasi-1m-output-token.md)
 - [Harness Engineering — Agent = Model + Harness: The 6-Layer Production Playbook](../sources/harness-engineering-6-layer-playbook-2026.md)
 - [Laude Institute](../entities/laude-institute.md)
 - [LLM-as-a-Verifier — la verifica come asse di scaling](llm-as-a-verifier-la-verifica-come-asse-di-scaling.md)

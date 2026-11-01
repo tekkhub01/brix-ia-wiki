@@ -20,6 +20,7 @@ publish: true
 ### Stato del modello (dreaming 2026-09-27)
 - **Superalato da v3.** `parakeet-tdt-0.6b-v3` (HF, tech report arXiv 2509.14128) estende v2 da inglese-only a **25 lingue europee incluso l'italiano**, con language detection automatica; CC BY 4.0, timestamp a livello parola/segmento, audio fino a 24 min (full attention, A100 80GB) o 3 ore (local attention). Per la catena audio italiana della wiki, v3 è ora la scelta giusta; la v2 resta inglese + "multilingua" nel blockquote generato era impreciso (v2 = English-only). Fonte: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 
+- Fratello NVIDIA nella stessa filosofia (0,6B, task stretto): [[syntheses/nvidia-nemotron-3-5-parse-parser-documenti-0-63b|Nemotron 3.5 Parse]]
 <!-- openclaw:human:end -->
 
 ## Summary
@@ -44,5 +45,6 @@ publish: true
 ### Referenced By
 
 - [NVIDIA](../entities/nvidia.md)
+- [NVIDIA Nemotron 3.5 Parse — parser di documenti da 0,63B che compete con modelli 6× più grandi](nvidia-nemotron-3-5-parse-parser-documenti-0-63b.md)
 - [Qwen3 Audiobook Converter (WhiskeyCoder)](qwen3-audiobook-converter.md)
 <!-- openclaw:wiki:related:end -->

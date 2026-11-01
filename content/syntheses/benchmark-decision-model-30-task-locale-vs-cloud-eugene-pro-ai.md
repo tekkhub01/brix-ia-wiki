@@ -29,6 +29,9 @@ publish: true
 
 ## Notes
 <!-- openclaw:human:start -->
+**Contesto:** questo benchmark testa la categoria "decision model" (modelli non autoregressivi che restituiscono probabilità calibrate su domande tipate, es. Jev/Laya) su 30 task a 10 livelli di difficoltà, locale vs cloud.
+
+**Vedi anche:** [[syntheses/decision-model-jev-e-l-ecosistema-open-source-laya-von-kev-jevlike|Decision model: Jev e l'ecosistema open source (Laya, von, kev, jevlike)]] — mappa dell'ecosistema e lettura operativa (self-host + fine-tuning).
 <!-- openclaw:human:end -->
 
 ## Summary
@@ -97,5 +100,7 @@ Sintesi del video "Локальная Laya или облачный Jev? 30 те�
 
 ## Related
 <!-- openclaw:wiki:related:start -->
-- No related pages yet.
+### Referenced By
+
+- [Decision model: Jev e l'ecosistema open source (Laya, von, kev, jevlike)](decision-model-jev-e-l-ecosistema-open-source-laya-von-kev-jevlike.md)
 <!-- openclaw:wiki:related:end -->

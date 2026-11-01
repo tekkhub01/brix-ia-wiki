@@ -15,7 +15,7 @@ publish: true
 # Claude Code Mods — la superficie dell'harness diventa estendibile
 
 **Source:** https://code.claude.com/docs/en/plugins/mods/overview (docs ufficiali, fetch 2026-10-05)
-**Annuncio:** post X @ClaudeDevs 2105721434807083061 (secondo mano, via INCUBE.AI 5/10 — non verificato il tweet, verificata la documentazione)
+**Annuncio:** post X @ClaudeDevs 2105721434807083061 (secondo mano, via post Telegram 5/10 — non verificato il tweet, verificata la documentazione)
 **Richiede:** Claude Code **v2.1.287+**, attive di default
 
 ## Cosa sono
@@ -107,7 +107,7 @@ lo stesso harness. Ricade nel problema delle [due classifiche](../syntheses/due-
   **terminal-browser** (zenbu-labs — browser nel terminale), **claude-pokemon-mod** (il
   "gioco sopra il prompt" del post russo è un mod reale), **glass** (look da desktop-app).
   **OneWave-AI/claude-code-mods**: 10 mod MIT con 155 test, orientati guardrail.
-- Annuncio: post @ClaudeDevs 1/10 (non 5/10 — la segnalazione INCUBE era in ritardo di 4
+- Annuncio: post @ClaudeDevs 1/10 (non 5/10 — la segnalazione del post era in ritardo di 4
   giorni); Boris Cherny: "non c'è motivo per cui l'esperienza di Claude di tutti debba
   essere identica".
 

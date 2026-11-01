@@ -48,7 +48,7 @@ Tesi: passeremo sempre più tempo a **capire gli output** degli LLM, più che a 
 
 Questi trucchi sono già usabili on-demand: spiegazioni "in stile STE all'80%", diagrammi Mermaid, pagine HTML interattive (skill `md2html`), video (pipeline Remotion/generazione). Candidabile come skill dedicata se PK lo usa spesso.
 
-*Aggiunta dal thread Telegram del 3/10/2026 (post INCUBE.AI in russo + verifica fonte originale).*
+*Aggiunta dal thread Telegram del 3/10/2026 (post Telegram in russo inoltrato da PK + verifica fonte originale).*
 <!-- openclaw:wiki:generated:end -->
 
 ## Related
@@ -59,5 +59,6 @@ Questi trucchi sono già usabili on-demand: spiegazioni "in stile STE all'80%", 
 
 ### Referenced By
 
+- [HyperFrames — analisi library video HTML→MP4 (alternativa a Remotion)](hyperframes-analisi-library-video-html-mp4-alternativa-a-remotion.md)
 - [Karpathy, Andrej](../entities/karpathy-andrej.md)
 <!-- openclaw:wiki:related:end -->

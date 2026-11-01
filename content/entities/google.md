@@ -83,6 +83,7 @@ generazione vincolata — è smontata nel topic wiki, non qui:
 ### Referenced By
 
 - [Esperimenti Quantizzazione Gemma 4 12B — QAT, MTP, TurboQuant](../syntheses/esperimenti-quantizzazione-gemma-4-12b-qat-mtp-turboquant.md)
+- [Gemini 4 Argon — il ritorno frontier di Google (rollout a fasi, 1M output token)](../syntheses/gemini-4-argon-il-ritorno-frontier-di-google-rollout-a-fasi-1m-output-token.md)
 - [Google Code Wiki — la documentazione come wiki ricompilata](../syntheses/google-code-wiki-documentazione-viva-dei-repository.md)
 - [L'Incrocio delle Tecnologie di Compressione Locale — Gemma 4 12B tra QAT, MTP e TurboQuant](../sources/l-incrocio-delle-tecnologie-di-compressione-locale-gemma-4-12b-tra-qat-mtp-e-turboquant.md)
 

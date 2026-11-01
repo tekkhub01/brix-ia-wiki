@@ -111,5 +111,7 @@ Gotenberg è adottato da migliaia di aziende in produzione e da progetti open-so
 
 - [anydoc (Firecrawl)](anydoc-firecrawl.md)
 - [Firecrawl](../entities/firecrawl.md)
+- [HyperFrames — analisi library video HTML→MP4 (alternativa a Remotion)](hyperframes-analisi-library-video-html-mp4-alternativa-a-remotion.md)
+- [NVIDIA Nemotron 3.5 Parse — parser di documenti da 0,63B che compete con modelli 6× più grandi](nvidia-nemotron-3-5-parse-parser-documenti-0-63b.md)
 - [PDF Inspector (Firecrawl)](pdf-inspector-firecrawl.md)
 <!-- openclaw:wiki:related:end -->

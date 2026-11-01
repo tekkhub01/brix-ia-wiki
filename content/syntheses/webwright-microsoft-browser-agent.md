@@ -16,6 +16,9 @@ publish: true
 ### Collegamenti (dreaming 2026-08-15)
 - Cluster agent-loop: [Archon](../sources/archon-workflow-engine.md), [Loop Engineering](../sources/loop-engineering-complete-guide-huashu.md)
 
+
+### Collegamenti (audit 2026-10-22)
+- Entità: [[entities/microsoft|Microsoft]] — Webwright è un agente browser Microsoft
 <!-- openclaw:human:end -->
 
 ## Summary

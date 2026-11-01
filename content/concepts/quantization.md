@@ -3,8 +3,8 @@ title: "Quantization"
 category: concept
 sources: [qwen3-8-how-to-run-locally-unsloth, esperimenti-quantizzazione-gemma-4-12b-qat-mtp-turboquant]
 created: 2026-04-28
-updated: 2026-08-15
-verified: 2026-06-11
+updated: 2026-11-01
+verified: 2026-11-01
 tags: [inference-optimization, kv-cache, local-models]
 aliases: [Quantization, Quantizzazione]
 confidence: high
@@ -32,6 +32,19 @@ Standard LLM weights are stored in 16-bit (FP16/BF16) or 32-bit (FP32) floating 
 - **GPTQ** — post-training quantization optimized for transformer layers
 - **BnB / bitsandbytes** — HuggingFace ecosystem 4-bit/8-bit
 - **NVFP4** — 4-bit floating point for NVIDIA Blackwell (RTX 50x, DGX Spark, B200/B300), served via vLLM or SGLang; ~1.5× faster than BF16 at comparable file size, 92–97% top-1 recovery
+
+> **Refresh 2026-11-01 (sweep, secondhand — Unsloth docs/blog + HF model cards).**
+> Unsloth's current method is **Dynamic 3.0 GGUFs** (docs page "Unsloth Dynamic 3.0
+> GGUFs"), with per-family perplexity & KL-divergence benchmarks for every GGUF
+> (Qwen3.5 line Feb 2026; Qwen3.6 and Gemma 4 benchmark update Apr 20 2026) — the
+> "method beats bit count" claim above is now the vendor's own evaluation axis, not
+> just this vault's reading of two corpora. Repository scale keeps growing: Unsloth
+> shipped **Qwen3.8-Flash-Next-GGUF at 177B** on 2026-10-17, the same model line in
+> production on this host's GX10. The "self-quantize on day one" practice (imatrix +
+> llama-bench loops) is now documented as standard workflow for day-zero model
+> evaluation. No change to the empirical claims above; the corroboration is that the
+> benchmarking methodology (KL divergence alongside MMLU-style accuracy) is becoming
+> the community norm.
 
 ## Corroboration: method beats bit count
 

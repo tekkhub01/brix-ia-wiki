@@ -54,7 +54,7 @@ publish: true
 
 ### Update 2026-10-05 — desktop macOS/Windows (verifica via GitHub API)
 
-Segnalazione INCUBE.AI (canale Telegram russo, 4/10): "DeepSeek ha rilasciato Harness per
+Segnalazione da post Telegram (inoltrato da PK, 4/10): "DeepSeek ha rilasciato Harness per
 macOS e Windows — alternativa aperta a Claude Code e Codex; l'agente può crearsi plugin da
 solo in chat". Verificato alla fonte:
 
